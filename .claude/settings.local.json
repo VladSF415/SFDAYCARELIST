@@ -4,7 +4,14 @@
       "Bash(wc:*)",
       "Bash(xcopy:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: SF Daycare List with production-ready Postgres\n\n- Complete React + TypeScript frontend\n- Fastify backend with Postgres integration\n- Database schema with neighborhoods, daycares, reviews, analytics\n- Migration and seed scripts\n- Railway deployment configuration\n- FilterPanel, DaycareDetail, Home pages\n- LocalBusiness structured data for SEO\n\nReady for Railway deployment.\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh --version:*)",
+      "Bash(gh repo create:*)",
+      "Bash(gh auth login)",
+      "Bash(git commit:*)",
+      "Bash(git push)"
     ]
   }
 }

@@ -53,7 +53,7 @@ const DaycareCard: React.FC<DaycareCardProps> = ({ daycare }) => {
       daycare.pricing.infant_monthly,
       daycare.pricing.toddler_monthly,
       daycare.pricing.preschool_monthly
-    ].filter(p => p && p > 0);
+    ].filter((p): p is number => p !== undefined && p > 0);
     return prices.length > 0 ? Math.min(...prices) : null;
   };
 

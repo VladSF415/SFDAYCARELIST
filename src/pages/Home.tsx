@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
 import DaycareGrid from '../components/DaycareGrid';
 import FilterPanel, { FilterState } from '../components/FilterPanel';
 import '../styles/Home.css';
@@ -57,7 +56,6 @@ interface Neighborhood {
 }
 
 function Home() {
-  const [searchParams, setSearchParams] = useSearchParams();
   const [daycares, setDaycares] = useState<Daycare[]>([]);
   const [neighborhoods, setNeighborhoods] = useState<Neighborhood[]>([]);
   const [filteredDaycares, setFilteredDaycares] = useState<Daycare[]>([]);
@@ -127,7 +125,7 @@ function Home() {
           d.pricing.infant_monthly,
           d.pricing.toddler_monthly,
           d.pricing.preschool_monthly
-        ].filter((p) => p && p > 0);
+        ].filter((p): p is number => p !== undefined && p > 0);
 
         if (prices.length === 0) return false;
 

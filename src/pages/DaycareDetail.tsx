@@ -5,7 +5,6 @@ import '../styles/DaycareDetail.css';
 
 // Import data directly for now
 import daycaresData from '../../data/daycares.json';
-import neighborhoodsData from '../../data/neighborhoods.json';
 
 interface Daycare {
   id: string;
@@ -167,9 +166,6 @@ function DaycareDetail() {
   };
 
   const minPrice = getMinPrice();
-
-  // Get neighborhood info
-  const neighborhood = neighborhoodsData.find((n: any) => n.slug === daycare.location.neighborhood);
 
   return (
     <div className="daycare-detail-page">

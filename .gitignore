@@ -83,3 +83,6 @@ public/uploads/*
 # Backup files
 *.bak
 *.backup
+
+# Reference projects (not part of this project)
+AI PLATFORMS LIST 2025/
