@@ -1,0 +1,443 @@
+/* Landing Page Styles - Brutalist Design */
+
+.landing-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.landing-hero {
+  padding: 80px 20px 60px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  border-bottom: 8px solid #000000;
+}
+
+.landing-hero-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.stat-item {
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #ffffff;
+  color: #000000;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-hero-cta {
+  display: inline-block;
+  background: white;
+  color: #000000;
+  padding: 16px 40px;
+  border: 4px solid #ffffff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-hero-cta:hover {
+  box-shadow: 8px 8px 0 #ffffff;
+  transform: translate(-2px, -2px);
+}
+
+/* Introduction Section */
+.landing-introduction {
+  padding: 60px 20px;
+  background: white;
+}
+
+.last-updated {
+  text-align: center;
+  color: #000000;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.introduction-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+  font-weight: 600;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.introduction-content p {
+  margin-bottom: 20px;
+}
+
+/* Interactive Feature Section */
+.landing-interactive {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+/* Content Sections */
+.landing-section {
+  padding: 60px 20px;
+  background: white;
+}
+
+.landing-section:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.landing-section h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-section h3 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 30px 0 20px;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.subsection {
+  margin-top: 40px;
+  padding-left: 20px;
+  border-left: 6px solid #000000;
+}
+
+/* Featured Platforms Grid */
+.landing-platforms {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.landing-platforms h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.platform-card {
+  background: white;
+  border: 6px solid #000000;
+  padding: 24px;
+  transition: none;
+  position: relative;
+}
+
+.platform-card:hover {
+  box-shadow: 12px 12px 0 #000000;
+  transform: translate(-4px, -4px);
+}
+
+.platform-card h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.platform-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #000000;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 3px solid #000000;
+  font-size: 0.75rem;
+  font-weight: 900;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.featured-badge {
+  background: #ffff00;
+  color: #000000;
+}
+
+.verified-badge {
+  background: #000000;
+  color: #ffffff;
+}
+
+.rating {
+  font-size: 0.95rem;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 8px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.pricing {
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tag {
+  background: #000000;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.view-more {
+  text-align: center;
+  margin-top: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+/* FAQ Section */
+.landing-faq {
+  padding: 60px 20px;
+  background: white;
+}
+
+.landing-faq h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+/* Related Resources */
+.landing-related {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.landing-related h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.related-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.resource-card {
+  background: white;
+  padding: 24px;
+  border: 4px solid #000000;
+  transition: none;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-card:hover {
+  box-shadow: 8px 8px 0 #000000;
+  transform: translate(-2px, -2px);
+}
+
+.resource-card h3 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.resource-card .arrow {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/* CTA Section */
+.landing-cta {
+  padding: 80px 20px;
+  text-align: center;
+  background: #000000;
+  color: white;
+  border-top: 8px solid #000000;
+  border-bottom: 8px solid #000000;
+}
+
+.landing-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.landing-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.cta-button {
+  background: white;
+  color: #000000;
+  padding: 16px 40px;
+  border: 4px solid #ffffff;
+  font-weight: 900;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+.cta-button:hover {
+  box-shadow: 8px 8px 0 #ffffff;
+  transform: translate(-2px, -2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-hero-title {
+    font-size: 2rem;
+  }
+
+  .landing-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .landing-hero-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .landing-section h2,
+  .landing-platforms h2,
+  .landing-faq h2,
+  .landing-related h2 {
+    font-size: 1.75rem;
+  }
+
+  .platforms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-cta h2 {
+    font-size: 1.75rem;
+  }
+}

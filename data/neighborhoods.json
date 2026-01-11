@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "mission-district",
+    "name": "Mission District",
+    "description": "Vibrant, diverse neighborhood known for its Latino culture, murals, and excellent public transit. Family-friendly with numerous parks, playgrounds, and community resources. Close to BART and major bus lines.",
+    "daycare_count": 47,
+    "center_lat": 37.7599,
+    "center_lng": -122.4194,
+    "zip_codes": ["94110"],
+    "nearby_neighborhoods": ["castro", "noe-valley", "potrero-hill"],
+    "bart_stations": ["16th St Mission", "24th St Mission"],
+    "parks": ["Dolores Park", "Mission Playground", "Garfield Square"],
+    "seo": {
+      "meta_title": "Mission District Daycares - 47 Licensed Centers | SF Daycare List",
+      "meta_description": "Find the best daycare in Mission District SF. 47 licensed centers, verified reviews, availability info. Compare programs near BART."
+    }
+  },
+  {
+    "slug": "noe-valley",
+    "name": "Noe Valley",
+    "description": "Family-oriented neighborhood with a small-town feel. Known for excellent schools, safe streets, and strong community. Popular with young families seeking quality childcare and education.",
+    "daycare_count": 28,
+    "center_lat": 37.7516,
+    "center_lng": -122.4295,
+    "zip_codes": ["94114"],
+    "nearby_neighborhoods": ["castro", "mission-district", "glen-park"],
+    "bart_stations": [],
+    "parks": ["Noe Valley Town Square", "Upper Noe Recreation Center"],
+    "seo": {
+      "meta_title": "Noe Valley Daycares - 28 Licensed Centers | SF Daycare List",
+      "meta_description": "Discover top daycares in Noe Valley. 28 licensed centers in SF's most family-friendly neighborhood. Verified parent reviews, enrollment availability."
+    }
+  },
+  {
+    "slug": "castro",
+    "name": "Castro",
+    "description": "Historic, inclusive neighborhood known for its welcoming atmosphere and strong LGBTQ+ community. Walkable with excellent transit access via Castro BART station.",
+    "daycare_count": 18,
+    "center_lat": 37.7609,
+    "center_lng": -122.4350,
+    "zip_codes": ["94114"],
+    "nearby_neighborhoods": ["noe-valley", "mission-district", "haight-ashbury"],
+    "bart_stations": ["Castro"],
+    "parks": ["Eureka Valley Recreation Center", "Tank Hill"],
+    "seo": {
+      "meta_title": "Castro Daycares - 18 Licensed Centers | SF Daycare List",
+      "meta_description": "Find inclusive daycares in Castro neighborhood. 18 licensed centers, LGBTQ+-affirming programs, near Castro BART. Verified reviews."
+    }
+  },
+  {
+    "slug": "marina",
+    "name": "Marina",
+    "description": "Upscale waterfront neighborhood with views of the Golden Gate Bridge. Popular with young professionals and families. Close to the Presidio and Crissy Field.",
+    "daycare_count": 22,
+    "center_lat": 37.8031,
+    "center_lng": -122.4346,
+    "zip_codes": ["94123"],
+    "nearby_neighborhoods": ["pacific-heights", "russian-hill", "presidio"],
+    "bart_stations": [],
+    "parks": ["Marina Green", "Crissy Field", "Palace of Fine Arts"],
+    "seo": {
+      "meta_title": "Marina Daycares - 22 Licensed Centers | SF Daycare List",
+      "meta_description": "Top daycares in San Francisco Marina district. 22 licensed centers near Marina Green and Crissy Field. Premium programs, parent reviews."
+    }
+  },
+  {
+    "slug": "pacific-heights",
+    "name": "Pacific Heights",
+    "description": "Prestigious neighborhood with beautiful Victorian homes and tree-lined streets. Known for excellent schools and upscale amenities. Families value quality education and childcare.",
+    "daycare_count": 15,
+    "center_lat": 37.7890,
+    "center_lng": -122.4376,
+    "zip_codes": ["94115"],
+    "nearby_neighborhoods": ["marina", "presidio-heights", "western-addition"],
+    "bart_stations": [],
+    "parks": ["Lafayette Park", "Alta Plaza Park"],
+    "seo": {
+      "meta_title": "Pacific Heights Daycares - 15 Licensed Centers | SF Daycare List",
+      "meta_description": "Premium daycares in Pacific Heights SF. 15 licensed centers, high-quality programs, Mandarin immersion available. Verified parent reviews."
+    }
+  },
+  {
+    "slug": "russian-hill",
+    "name": "Russian Hill",
+    "description": "Central SF neighborhood known for Lombard Street and stunning city views. Mix of families and professionals. Convenient to downtown and North Beach.",
+    "daycare_count": 12,
+    "center_lat": 37.8016,
+    "center_lng": -122.4194,
+    "zip_codes": ["94109"],
+    "nearby_neighborhoods": ["marina", "pacific-heights", "north-beach"],
+    "bart_stations": [],
+    "parks": ["Russian Hill Park", "Michelangelo Playground"],
+    "seo": {
+      "meta_title": "Russian Hill Daycares - 12 Licensed Centers | SF Daycare List",
+      "meta_description": "Find daycares in Russian Hill San Francisco. 12 licensed centers, convenient to downtown, verified reviews, enrollment availability."
+    }
+  },
+  {
+    "slug": "sunset-inner",
+    "name": "Inner Sunset",
+    "description": "Residential neighborhood near Golden Gate Park and UCSF. Popular with families for its quieter pace, affordable housing, and proximity to parks. Good Muni access.",
+    "daycare_count": 35,
+    "center_lat": 37.7644,
+    "center_lng": -122.4691,
+    "zip_codes": ["94122"],
+    "nearby_neighborhoods": ["sunset-outer", "haight-ashbury", "richmond-inner"],
+    "bart_stations": [],
+    "parks": ["Golden Gate Park", "Inner Sunset Playground"],
+    "seo": {
+      "meta_title": "Inner Sunset Daycares - 35 Licensed Centers | SF Daycare List",
+      "meta_description": "Best daycares near Golden Gate Park in Inner Sunset. 35 licensed centers, affordable options, near UCSF. Parent reviews, availability."
+    }
+  },
+  {
+    "slug": "richmond-inner",
+    "name": "Inner Richmond",
+    "description": "Culturally diverse, family-friendly neighborhood with Asian restaurants, bakeries, and markets. Easy access to Golden Gate Park and the Presidio. Strong sense of community.",
+    "daycare_count": 41,
+    "center_lat": 37.7813,
+    "center_lng": -122.4648,
+    "zip_codes": ["94118"],
+    "nearby_neighborhoods": ["richmond-outer", "presidio", "sunset-inner"],
+    "bart_stations": [],
+    "parks": ["Mountain Lake Park", "Julius Kahn Playground"],
+    "seo": {
+      "meta_title": "Inner Richmond Daycares - 41 Licensed Centers | SF Daycare List",
+      "meta_description": "Top daycares in Inner Richmond SF. 41 licensed centers, bilingual Cantonese/Mandarin programs, near Golden Gate Park. Reviews, pricing."
+    }
+  },
+  {
+    "slug": "soma",
+    "name": "SOMA (South of Market)",
+    "description": "Urban neighborhood undergoing rapid development. Home to tech companies, museums, and new residential buildings. Growing number of young families in newer developments.",
+    "daycare_count": 24,
+    "center_lat": 37.7786,
+    "center_lng": -122.4047,
+    "zip_codes": ["94103", "94107"],
+    "nearby_neighborhoods": ["financial-district", "mission-bay", "mission-district"],
+    "bart_stations": ["Powell", "Montgomery", "Civic Center"],
+    "parks": ["South Park", "Yerba Buena Gardens"],
+    "seo": {
+      "meta_title": "SOMA Daycares - 24 Licensed Centers | SF Daycare List",
+      "meta_description": "Find daycares in SOMA San Francisco. 24 licensed centers near tech companies, convenient to BART. Modern facilities, parent reviews."
+    }
+  },
+  {
+    "slug": "financial-district",
+    "name": "Financial District",
+    "description": "Downtown SF business center with growing residential population. Convenient for working parents with offices downtown. Multiple BART and Muni lines.",
+    "daycare_count": 16,
+    "center_lat": 37.7946,
+    "center_lng": -122.4027,
+    "zip_codes": ["94104", "94111"],
+    "nearby_neighborhoods": ["soma", "north-beach", "chinatown"],
+    "bart_stations": ["Montgomery", "Embarcadero"],
+    "parks": ["Sue Bierman Park", "Justin Herman Plaza"],
+    "seo": {
+      "meta_title": "Financial District Daycares - 16 Licensed Centers | SF Daycare List",
+      "meta_description": "Downtown SF daycares in Financial District. 16 licensed centers near BART, convenient for working parents. Extended hours, reviews."
+    }
+  },
+  {
+    "slug": "hayes-valley",
+    "name": "Hayes Valley",
+    "description": "Trendy neighborhood with boutiques, restaurants, and a strong arts scene. Increasingly popular with young families. Close to parks and cultural institutions.",
+    "daycare_count": 14,
+    "center_lat": 37.7753,
+    "center_lng": -122.4242,
+    "zip_codes": ["94102"],
+    "nearby_neighborhoods": ["western-addition", "castro", "mission-district"],
+    "bart_stations": ["Civic Center"],
+    "parks": ["Patricia's Green", "Alamo Square Park"],
+    "seo": {
+      "meta_title": "Hayes Valley Daycares - 14 Licensed Centers | SF Daycare List",
+      "meta_description": "Find daycares in trendy Hayes Valley SF. 14 licensed centers near Civic Center BART, Alamo Square. Parent reviews, programs."
+    }
+  },
+  {
+    "slug": "potrero-hill",
+    "name": "Potrero Hill",
+    "description": "Sunny neighborhood with a small-town feel and strong community spirit. Popular with families for its weather, parks, and local businesses. Quieter than many SF neighborhoods.",
+    "daycare_count": 19,
+    "center_lat": 37.7584,
+    "center_lng": -122.3993,
+    "zip_codes": ["94107"],
+    "nearby_neighborhoods": ["mission-district", "mission-bay", "dogpatch"],
+    "bart_stations": [],
+    "parks": ["Potrero Hill Recreation Center", "Jackson Playground"],
+    "seo": {
+      "meta_title": "Potrero Hill Daycares - 19 Licensed Centers | SF Daycare List",
+      "meta_description": "Best daycares in sunny Potrero Hill. 19 licensed centers, family-friendly neighborhood, community-focused programs. Reviews, availability."
+    }
+  }
+]

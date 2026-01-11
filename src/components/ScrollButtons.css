@@ -1,0 +1,111 @@
+/* ============================================================================
+   SCROLL BUTTONS - BRUTALIST STYLE
+   ============================================================================ */
+
+.scroll-buttons {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scroll-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  color: #ffffff;
+  border: 4px solid #000000;
+  cursor: pointer;
+  padding: 8px;
+  transition: none;
+  font-family: 'Courier New', 'Courier', monospace;
+  font-weight: 900;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.scroll-button:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 6px 6px 0 #000000;
+  transform: translate(-2px, -2px);
+}
+
+.scroll-button:active {
+  box-shadow: 3px 3px 0 #000000;
+  transform: translate(-1px, -1px);
+}
+
+.scroll-button span {
+  display: block;
+  text-align: center;
+  line-height: 1;
+}
+
+.scroll-button svg {
+  flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .scroll-buttons {
+    right: 16px;
+    bottom: 16px;
+    gap: 8px;
+  }
+
+  .scroll-button {
+    width: 50px;
+    height: 50px;
+    font-size: 8px;
+    padding: 6px;
+  }
+
+  .scroll-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-buttons {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .scroll-button {
+    width: 45px;
+    height: 45px;
+    font-size: 7px;
+    border-width: 3px;
+  }
+
+  .scroll-button:hover {
+    box-shadow: 4px 4px 0 #000000;
+  }
+}
+
+/* Accessibility */
+.scroll-button:focus {
+  outline: 3px solid #000000;
+  outline-offset: 3px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-button {
+    transition: none;
+  }
+
+  .scroll-button:hover {
+    transform: none;
+  }
+}

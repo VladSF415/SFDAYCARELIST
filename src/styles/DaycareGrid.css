@@ -1,0 +1,116 @@
+/* DaycareGrid Component Styles */
+
+.daycare-grid-container {
+  width: 100%;
+}
+
+.daycare-grid-header {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-gray-100);
+}
+
+.results-count {
+  color: var(--color-gray-600);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.results-count strong {
+  color: var(--color-gray-900);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.daycare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* Loading State */
+.daycare-grid-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  text-align: center;
+}
+
+.daycare-grid-loading p {
+  margin-top: var(--spacing-md);
+  color: var(--color-gray-600);
+  font-size: 1rem;
+}
+
+/* Empty State */
+.daycare-grid-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3xl) var(--spacing-md);
+  text-align: center;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin: var(--spacing-xl) 0;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.daycare-grid-empty h3 {
+  font-size: 1.5rem;
+  color: var(--color-gray-900);
+  margin-bottom: var(--spacing-sm);
+}
+
+.daycare-grid-empty p {
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-xs);
+}
+
+.empty-hint {
+  font-size: 0.875rem;
+  color: var(--color-gray-400);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .daycare-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .daycare-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .daycare-grid-header {
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .daycare-grid {
+    gap: var(--spacing-md);
+  }
+
+  .empty-icon {
+    font-size: 3rem;
+  }
+
+  .daycare-grid-empty h3 {
+    font-size: 1.25rem;
+  }
+}
