@@ -329,15 +329,18 @@ fastify.addHook('onSend', async (request, reply, payload) => {
 // Initialize Stripe (only if API key is provided)
 const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY) : null;
 
-// Load platforms data (legacy - will be migrated to DB later)
-let platforms = [];
+// Load daycare data (will use database once DATABASE_URL is set)
+let daycares = [];
 try {
-  const data = readFileSync(join(__dirname, 'platforms.json'), 'utf-8');
-  platforms = JSON.parse(data);
-  console.log(`✅ Loaded ${platforms.length} platforms (from JSON)`);
+  const data = readFileSync(join(__dirname, 'data', 'daycares.json'), 'utf-8');
+  daycares = JSON.parse(data);
+  console.log(`✅ Loaded ${daycares.length} daycares (from JSON)`);
 } catch (error) {
-  console.error('Failed to load platforms:', error);
+  console.log('⚠️  No daycares.json found - will use database');
 }
+
+// Legacy variable for AI Platforms List routes (not used in SF Daycare List)
+const platforms = [];
 
 // Database status check
 let dbConnected = false;
