@@ -6,20 +6,20 @@ import { dirname, join } from 'path';
 import Stripe from 'stripe';
 import satori from 'satori';
 import sharp from 'sharp';
-import chatService from './ai-chat-service.js';
+// import chatService from './ai-chat-service.js'; // Not needed for SF Daycare List
 import geoip from 'geoip-lite';
 import rateLimit from '@fastify/rate-limit';
 import db from './db/index.js';
 
 // Use database-based analytics if DATABASE_URL is set, otherwise fallback to file-based
-import { trackChatInteraction as trackDB, getAnalytics as getDB, initAnalyticsDB } from './db-analytics.js';
-import { trackChatInteraction as trackFile, getAnalytics as getFile } from './chat-analytics.js';
+// import { trackChatInteraction as trackDB, getAnalytics as getDB, initAnalyticsDB } from './db-analytics.js';
+// import { trackChatInteraction as trackFile, getAnalytics as getFile } from './chat-analytics.js';
 
-const useDatabase = !!process.env.DATABASE_URL;
-console.log(`[Analytics] Using ${useDatabase ? 'PostgreSQL' : 'File-based'} storage`);
+// const useDatabase = !!process.env.DATABASE_URL;
+// console.log(`[Analytics] Using ${useDatabase ? 'PostgreSQL' : 'File-based'} storage`);
 
-export const trackChatInteraction = useDatabase ? trackDB : trackFile;
-export const getAnalytics = useDatabase ? getDB : getFile;
+// export const trackChatInteraction = useDatabase ? trackDB : trackFile;
+// export const getAnalytics = useDatabase ? getDB : getFile;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -2346,7 +2346,8 @@ fastify.get('/daycare/:slug', async (request, reply) => {
   }
 });
 
-// AI Chat endpoint
+// AI Chat endpoint - DISABLED FOR SF DAYCARE LIST (was for AI Platforms List)
+/*
 fastify.post('/api/chat', async (request, reply) => {
   const { message, sessionId } = request.body;
 
@@ -2424,6 +2425,7 @@ fastify.get('/api/chat/analytics', async (request, reply) => {
 fastify.get('/api/chat/stats', async () => {
   return chatService.getStats();
 });
+*/
 
 // Catch-all 404 handler with proper error handling and logging
 fastify.setNotFoundHandler((request, reply) => {
