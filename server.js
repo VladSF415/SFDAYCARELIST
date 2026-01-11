@@ -2460,13 +2460,13 @@ fastify.setNotFoundHandler((request, reply) => {
 const start = async () => {
   try {
     // Initialize database analytics if DATABASE_URL is set
-    if (useDatabase) {
-      await initAnalyticsDB();
-    }
+    // if (useDatabase) {
+    //   await initAnalyticsDB();
+    // }
 
     const port = process.env.PORT || 3001;
     await fastify.listen({ port, host: '0.0.0.0' });
-    console.log(`🚀 AI Platforms Directory running on port ${port}`);
+    console.log(`🚀 SF Daycare List running on port ${port}`);
 
     // Start Telegram bot ONLY if explicitly enabled (prevents conflicts)
     // This should ONLY be enabled in the worker service, NOT main service
