@@ -12,6 +12,7 @@
     "db:migrate": "node db/migrate.js",
     "db:seed": "node db/seed.js",
     "db:setup": "npm run db:migrate && npm run db:seed",
+    "db:setup-complete": "node setup-db.js",
     "organize": "node scripts/auto-organize.mjs",
     "organize:fix": "node scripts/auto-organize.mjs --fix",
     "organize:scrape": "node scripts/auto-organize.mjs --scrape --fix",
