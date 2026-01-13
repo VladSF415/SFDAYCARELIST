@@ -2640,7 +2640,7 @@ async function syncDatabaseInBackground() {
               d.location?.latitude || 37.7749,
               d.location?.longitude || -122.4194,
               d.location?.public_transit || [],
-              d.licensing?.license_number || '',
+              d.licensing?.license_number || null,
               d.licensing?.status || 'Licensed',
               d.licensing?.type || 'Child Care Center',
               d.licensing?.capacity || 0,
