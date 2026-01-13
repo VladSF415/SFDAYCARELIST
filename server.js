@@ -2596,14 +2596,14 @@ const start = async () => {
     try {
       const countResult = await db.query('SELECT COUNT(*) FROM daycares');
       const dbCount = parseInt(countResult.rows[0].count);
-      const jsonCount = daycaresData.length;
+      const jsonCount = daycares.length;
 
       console.log(`📊 Database: ${dbCount} daycares, JSON: ${jsonCount} daycares`);
 
       if (jsonCount > dbCount) {
         console.log(`🔄 Syncing database with JSON data (${jsonCount - dbCount} new daycares)...`);
 
-        for (const d of daycaresData) {
+        for (const d of daycares) {
           await db.query(
             `INSERT INTO daycares (
               slug, name, description,
