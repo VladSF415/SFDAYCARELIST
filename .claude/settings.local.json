@@ -35,7 +35,11 @@
       "Bash(tee:*)",
       "Bash(npm run scrape:enhanced:*)",
       "Bash(taskkill:*)",
-      "Bash(npm run db:seed:*)"
+      "Bash(npm run db:seed:*)",
+      "Bash(xargs -I {} sh -c 'echo \"\"=== {} ===\"\" && head -30 \"\"{}\"\"')",
+      "Bash($env:DATABASE_URL=\"postgresql://postgres:cmzEIToxDPxtRLSKqfEaZtFLEZPwEKkq@mainline.proxy.rlwy.net:41907/railway\")",
+      "Bash(python -m json.tool:*)",
+      "Bash(python:*)"
     ]
   }
 }

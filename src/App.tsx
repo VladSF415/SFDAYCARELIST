@@ -20,7 +20,6 @@ import DMCA from './pages/legal/DMCA';
 import Disclaimer from './pages/legal/Disclaimer';
 import Footer from './components/Footer';
 import type { Daycare } from './types/components';
-import daycaresData from './data/daycares.json';
 
 // Lazy load neighborhood page
 const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
@@ -40,9 +39,21 @@ function PageViewTracker() {
 function App() {
   const [daycares, setDaycares] = useState<Daycare[]>([]);
 
-  // Load daycares data on mount
+  // Load daycares data from API on mount
   useEffect(() => {
-    setDaycares(daycaresData as Daycare[]);
+    const fetchDaycares = async () => {
+      try {
+        const response = await fetch('/api/daycares');
+        if (response.ok) {
+          const data = await response.json();
+          setDaycares(data);
+        }
+      } catch (error) {
+        console.error('Error fetching daycares:', error);
+      }
+    };
+
+    fetchDaycares();
   }, []);
 
   return (

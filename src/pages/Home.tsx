@@ -9,10 +9,6 @@ import '../styles/Home.css';
 // Lazy load map component for better performance
 const TransitPulseMap = lazy(() => import('../components/TransitPulseMap/TransitPulseMap'));
 
-// Import data directly for now (later we'll fetch from API)
-import daycaresData from '../../data/daycares.json';
-import neighborhoodsData from '../../data/neighborhoods.json';
-
 interface Daycare {
   id: string;
   name: string;
@@ -78,10 +74,29 @@ function Home() {
 
   const resultsRef = useRef<HTMLDivElement>(null);
 
-  // Load data on mount
+  // Load data on mount from API
   useEffect(() => {
-    setDaycares(daycaresData as Daycare[]);
-    setNeighborhoods(neighborhoodsData as Neighborhood[]);
+    const fetchData = async () => {
+      try {
+        // Fetch daycares from API
+        const daycaresResponse = await fetch('/api/daycares');
+        if (daycaresResponse.ok) {
+          const daycaresData = await daycaresResponse.json();
+          setDaycares(daycaresData);
+        }
+
+        // Fetch neighborhoods from API
+        const neighborhoodsResponse = await fetch('/api/neighborhoods');
+        if (neighborhoodsResponse.ok) {
+          const neighborhoodsData = await neighborhoodsResponse.json();
+          setNeighborhoods(neighborhoodsData);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   // Apply filters whenever filters, search, or daycares change
