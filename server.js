@@ -2632,7 +2632,7 @@ async function syncDatabaseInBackground() {
               d.location?.neighborhood || '',
               d.location?.latitude || 37.7749,
               d.location?.longitude || -122.4194,
-              JSON.stringify(d.location?.public_transit || []),
+              d.location?.public_transit || [],
               d.licensing?.license_number || '',
               d.licensing?.status || 'Licensed',
               d.licensing?.type || 'Child Care Center',
