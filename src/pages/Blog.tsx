@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { SocialMetaTags } from '../components/SocialMetaTags';
-import { getGuideDescription } from '../data/guideDescriptions';
 import './legal/LegalPage.css';
 
 interface PillarContent {
@@ -385,7 +384,7 @@ export default function Blog() {
                               fontFamily: "'Courier New', monospace",
                               lineHeight: '1.5'
                             }}>
-                              {getGuideDescription(item.slug)}
+                              {item.metaDescription || `Comprehensive guide to ${item.category} resources and information.`}
                             </p>
                           </Link>
                         ))}
