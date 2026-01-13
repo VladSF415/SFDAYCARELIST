@@ -132,9 +132,9 @@ export default function Navigation() {
       <div className="nav-container">
         {/* Logo and Brand */}
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logo.png" alt="AI Platforms Directory Logo" />
+          <img src="/logo.png" alt="SF Daycare List Logo" />
           <span className="nav-brand">
-            AI Platforms<span className="nav-brand-sub">Directory</span>
+            SF Daycare<span className="nav-brand-sub">List</span>
           </span>
         </Link>
 
@@ -142,10 +142,10 @@ export default function Navigation() {
         <form className="nav-search desktop-search" onSubmit={handleSearch}>
           <input
             type="text"
-            placeholder="Search AI tools..."
+            placeholder="Search daycares..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            aria-label="Search AI tools"
+            aria-label="Search daycares"
           />
           <button type="submit" aria-label="Search">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
