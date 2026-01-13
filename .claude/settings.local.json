@@ -24,7 +24,8 @@
       "Bash(git push:*)",
       "Bash(test:*)",
       "Bash(npm run build:*)",
-      "Bash(railway:*)"
+      "Bash(railway:*)",
+      "Bash(curl:*)"
     ]
   }
 }

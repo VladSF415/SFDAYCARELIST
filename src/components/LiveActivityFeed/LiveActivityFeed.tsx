@@ -25,6 +25,9 @@ export default function LiveActivityFeed({
   useEffect(() => {
     if (!enabled || daycares.length === 0) return;
 
+    // Track all timeouts for cleanup
+    const intervalTimeouts: NodeJS.Timeout[] = [];
+
     // Generate initial activity after a short delay
     const initialTimeout = setTimeout(() => {
       const activity = generateRandomActivity(daycares);
@@ -48,17 +51,14 @@ export default function LiveActivityFeed({
         addNewActivity();
         // Schedule the next one
         const nextTimeout = scheduleNext();
-        setIntervals(prev => [...prev, nextTimeout]);
+        intervalTimeouts.push(nextTimeout);
       }, interval);
     };
-
-    // Track all timeouts for cleanup
-    const [intervalTimeouts, setIntervals] = useState<NodeJS.Timeout[]>([]);
 
     // Start the interval chain after initial activity
     const chainStart = setTimeout(() => {
       const firstInterval = scheduleNext();
-      setIntervals([firstInterval]);
+      intervalTimeouts.push(firstInterval);
     }, 3000);
 
     // Auto-dismiss toasts after 8 seconds
