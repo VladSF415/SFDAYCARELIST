@@ -32,6 +32,7 @@
     "ai:landing": "node scripts/generate-landing-pages.mjs --all",
     "scrape:all": "node scripts/scrapers/master-scraper.mjs",
     "scrape:discover": "node scripts/scrapers/text-search-discover.mjs",
+    "scrape:enhanced": "node scripts/scrapers/enhanced-discovery.mjs",
     "scrape:ca": "node scripts/scrapers/ca-licensing-scraper.mjs",
     "scrape:google": "node scripts/scrapers/google-places-scraper.mjs",
     "scrape:yelp": "node scripts/scrapers/yelp-scraper.mjs",
