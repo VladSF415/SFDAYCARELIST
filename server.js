@@ -2587,6 +2587,13 @@ fastify.setNotFoundHandler((request, reply) => {
 // Background database sync function
 async function syncDatabaseInBackground() {
   try {
+    // Ensure "unknown" neighborhood exists for daycares without assigned neighborhoods
+    await db.query(
+      `INSERT INTO neighborhoods (slug, name, description, center_lat, center_lng)
+       VALUES ('unknown', 'Unknown', 'Daycares without assigned neighborhood', 37.7749, -122.4194)
+       ON CONFLICT (slug) DO NOTHING`
+    );
+
     const countResult = await db.query('SELECT COUNT(*) FROM daycares');
     const dbCount = parseInt(countResult.rows[0].count);
     const jsonCount = daycares.length;
@@ -2629,7 +2636,7 @@ async function syncDatabaseInBackground() {
               d.location?.city || 'San Francisco',
               d.location?.state || 'CA',
               d.location?.zip || '',
-              d.location?.neighborhood || '',
+              d.location?.neighborhood || 'unknown',
               d.location?.latitude || 37.7749,
               d.location?.longitude || -122.4194,
               d.location?.public_transit || [],
