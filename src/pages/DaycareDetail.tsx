@@ -3,8 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import DaycareStructuredData from '../components/LocalBusinessSchema';
 import '../styles/DaycareDetail.css';
 
-// Import data directly for now
-import daycaresData from '../../data/daycares.json';
+// Removed local JSON import - now using API
 
 interface Daycare {
   id: string;
@@ -101,16 +100,40 @@ interface Daycare {
 function DaycareDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [daycare, setDaycare] = useState<Daycare | null>(null);
+  const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'overview' | 'program' | 'pricing'>('overview');
 
   useEffect(() => {
-    const found = daycaresData.find((d: any) => d.slug === slug);
-    if (found) {
-      setDaycare(found as Daycare);
-      // Update page title
-      document.title = found.seo?.meta_title || `${found.name} - SF Daycare List`;
-    }
+    const fetchDaycare = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`/api/daycares/${slug}`);
+        if (response.ok) {
+          const data = await response.json();
+          setDaycare(data);
+          // Update page title
+          document.title = data.seo?.meta_title || `${data.name} - SF Daycare List`;
+        } else {
+          setDaycare(null);
+        }
+      } catch (error) {
+        console.error('Error fetching daycare:', error);
+        setDaycare(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchDaycare();
   }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="container" style={{ padding: '60px 20px', textAlign: 'center' }}>
+        <h2>Loading...</h2>
+      </div>
+    );
+  }
 
   if (!daycare) {
     return (
