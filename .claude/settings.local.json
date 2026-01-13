@@ -32,7 +32,10 @@
       "Bash(npm run scrape:winnie:*)",
       "Bash(npm run import:list:*)",
       "Bash(npm run scrape:discover:*)",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(npm run scrape:enhanced:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm run db:seed:*)"
     ]
   }
 }

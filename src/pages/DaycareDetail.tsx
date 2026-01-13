@@ -108,7 +108,7 @@ function DaycareDetail() {
     if (found) {
       setDaycare(found as Daycare);
       // Update page title
-      document.title = found.seo.meta_title || `${found.name} - SF Daycare List`;
+      document.title = found.seo?.meta_title || `${found.name} - SF Daycare List`;
     }
   }, [slug]);
 

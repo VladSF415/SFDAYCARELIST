@@ -1,0 +1,264 @@
+# San Francisco Daycares
+# Format: Name | Address
+# One daycare per line
+# Lines starting with # are ignored
+
+Bright Horizons at UCSF | 2130 Folsom St, San Francisco, CA 94110
+Little Bee Preschool | 95 Presidio Ave, San Francisco, CA 94115
+Building Kidz School | 1655 Market St, San Francisco, CA 94103
+Kids Kingdom | 1234 Valencia St, San Francisco, CA 94110
+Blue Side Preschool | 567 Mission St, San Francisco, CA 94105
+
+# Add more daycares below (one per line):
+# Name | Address
+#
+# Real San Francisco daycares (verified addresses):
+Children's Day School | 333 Dolores St, San Francisco, CA 94110
+Lycée Français de San Francisco | 755 Ashbury St, San Francisco, CA 94117
+The Avenues KinderCare | 28th Ave & California St, San Francisco, CA 94121
+Learning Bridge Preschool | 1395 9th Ave, San Francisco, CA 94122
+Bright Horizons Mission Bay | 410 China Basin St, San Francisco, CA 94158
+SF Little Lyncs | 2026 Divisadero St, San Francisco, CA 94115
+Laurel Hill Preschool | 450 Somerset St, San Francisco, CA 94134
+Wu Yee Children's Services Chinatown | 888 Clay St, San Francisco, CA 94108
+Building Kidz | 1655 Market St, San Francisco, CA 94103
+KinderCare at SOMA | 1101 Connecticut St, San Francisco, CA 94107
+
+# ADD YOUR DAYCARES HERE - Just copy/paste name and address from any website
+# Format: Name | Address
+# Examples from Yelp, Google Maps, or any daycare website work!
+# San Francisco Daycares - Auto-discovered via Google Places
+# Format: Name | Address
+# Generated on: 2026-01-13T06:51:35.406Z
+
+Sunshine Kids SF Daycare | 8 Seymour St, San Francisco, CA 94115, United States
+Petite Journey French Daycare | 1206 Fulton St, San Francisco, CA 94117, United States
+Little Munchkins | 391 Haight St, San Francisco, CA 94102, United States
+Angel baby Childcare | 78 Haight St Apt 104, San Francisco, CA 94102, United States
+Au P'tit Monde de San Francisco | 1100 Divisadero St, San Francisco, CA 94115, United States
+UCSF at Laurel Heights Child Development Center | 2675 Geary Blvd #400, San Francisco, CA 94118, United States
+Pac Heights Kidz Preschool & Daycare | 2710 Pine St, San Francisco, CA 94115, United States
+childcare94133 | 1352 Grant Ave, San Francisco, CA 94133, United States
+Montessori School of San Francisco | 1550 Eddy St # 500, San Francisco, CA 94115, United States
+Mama Bear Home Daycare | 455 Fell St, San Francisco, CA 94102, United States
+Happy Trails Family Childcare | 690 Long Bridge St, San Francisco, CA 94158, United States
+the Modern PlaySpace Preschool & Daycare | 250 Clara St UNIT 5, San Francisco, CA 94107, United States
+Petite Explorer Preschool NOPA | 823 Divisadero St, San Francisco, CA 94117, United States
+L’Academy Language Immersion Preschool & Infant Daycare Hayes Valley San Francisco | 42 Waller St, San Francisco, CA 94102, United States
+Little Children's Development Center | 1223 Webster St, San Francisco, CA 94115, United States
+Sky Bear ChildCare | 946 Elizabeth St, San Francisco, CA 94114, United States
+La Creche Daycare | 461 Ashbury St, San Francisco, CA 94117, United States
+Garden Daycare | 935 Quintara St, San Francisco, CA 94116, United States
+Tuya's Daycare | 2731 Geary Blvd Unit A, San Francisco, CA 94118, United States
+Building Kidz of San Francisco | 143 Clement St, San Francisco, CA 94118, United States
+Friends of St Francis Child Cr | 50 Belcher St, San Francisco, CA 94114, United States
+Apple Tree School | 888 Folsom St, San Francisco, CA 94107, United States
+L'Academy Language Immersion Preschool & Infant Daycare Potrero Hill San Francisco | 200 Kansas St, San Francisco, CA 94103, United States
+Suen An Child Care (Learn n Play) | 1655 Powell St, San Francisco, CA 94133, United States
+El Papalote Family Childcare | 735 O'Farrell St #4, San Francisco, CA 94109, United States
+Little Seeds Childcare | 4355 Anza St, San Francisco, CA 94121, United States
+Keydin’s Family Daycare | 43 Harrington St, San Francisco, CA 94112, United States
+Rainbow Family Childcare | 3834 26th St, San Francisco, CA 94131, United States
+Grammy's Day Care | 1225 Steiner St # 517, San Francisco, CA 94115, United States
+SOMA Daycare and Preschool | 473 Bryant St, San Francisco, CA 94107, United States
+Twinkle Star Day Care | 351 Ulloa St, San Francisco, CA 94127, United States
+Wonderful Children Preschool & Day Care | 15 Whaleship Plz, San Francisco, CA 94111, United States
+Meaningful Beginnings Daycare | 633 Taraval St, San Francisco, CA 94116, United States
+Huellitas Family Child Care | 2265 Mission St APT 1, San Francisco, CA 94110, United States
+Little Crystal Learning Child Care | 690 Long Bridge St #118, San Francisco, CA 94158, United States
+L'Academy Language Immersion Preschool & Infant Daycare Nob Hill San Francisco | 1868 Van Ness Ave, San Francisco, CA 94109, United States
+Meaningful Beginnings Development Center | 254 Laguna Honda Blvd, San Francisco, CA 94116, United States
+Magic Kingdom of Learning | 701 27th Ave, San Francisco, CA 94121, United States
+Little Treasures Child Care | 233 Lincoln Wy, San Francisco, CA 94122, United States
+Tiny Steps Daycare San Francisco | 39 Escondido Ave, San Francisco, CA 94132, United States
+L'Academy Language Immersion Preschool & Infant Daycare Lower Nob Hill / CPMC San Francisco | 1040/1060 Geary St, San Francisco, CA 94109, United States
+Kids Kingdom | 1840 Lombard St, San Francisco, CA 94123, United States
+C5 Children's School | 455 Golden Gate Ave #2400, San Francisco, CA 94102, United States
+Little Sweet Home Daycare | 471 19th Ave #1, San Francisco, CA 94121, United States
+Holy Family Day Home | 299 Dolores St, San Francisco, CA 94103, United States
+Tiny Giants | 1748 Clay St, San Francisco, CA 94109, United States
+Sandmann Family Day Care | 4023 Cesar Chavez St, San Francisco, CA 94131, United States
+DiDiDa Academy | 373 5th Ave, San Francisco, CA 94118, United States
+Sunshine & Smiles Daycare | 1070 Bridgeview, San Francisco, CA 94158, United States
+Angela's Infant Children Center | 775 7th Ave, San Francisco, CA 94118, United States
+Little Learners Daycare | 222 Taylor St, San Francisco, CA 94102, United States
+The Growing Tree School | 1984 Great Hwy, San Francisco, CA 94116, United States
+Creative Gardens Preschool and Daycare Center | 1429 Valencia St, San Francisco, CA 94110, United States
+Semillitas Family Daycare | 771 Capp St, San Francisco, CA 94110, United States
+BLUEBELL KIDS DAYCARE & PRESCHOOL | 243 Avila St, San Francisco, CA 94123, United States
+Fun Tree Daycare | 1180 4th St, San Francisco, CA 94158, United States
+Modern Education Family Childcare - Hayes Valley | 455 Fell St, San Francisco, CA 94102, United States
+Ellie Daycare | 1719 32nd Ave, San Francisco, CA 94122, United States
+Fun With Kooky Family Daycare | 1180 4th St Room 215, San Francisco, CA 94158, United States
+Lucy's Family Daycare | 936 S Van Ness Ave #19, San Francisco, CA 94110, United States
+Laurel Hill Nursery School | 401 Euclid Ave, San Francisco, CA 94118, United States
+Pacific Primary School | 1500 Grove St, San Francisco, CA 94117, United States
+Blueside Preschool | 1019 Ashbury St Apt. 1, San Francisco, CA 94117, United States
+JCCSF Helen Diller Family Preschool | 3200 California St, San Francisco, CA 94118, United States
+The International School of San Francisco: Maternelle/Preschool | 1155 Page St, San Francisco, CA 94117, United States
+San Francisco Waldorf Preschool | 2938 Washington St, San Francisco, CA 94115, United States
+Mission Montessori | 50 Fell St, San Francisco, CA 94102, United States
+Phoebe Hearst Preschool | 1315 Ellis St, San Francisco, CA 94115, United States
+SLS Preschool | 1335 Sutter St, San Francisco, CA 94109, United States
+Tinker Preschool Cole Valley Mandarin Immersion | 1749 Waller St, San Francisco, CA 94117, United States
+NOPA Montessori | 2114 Hayes St, San Francisco, CA 94117, United States
+Haight Ashbury Cooperative Nursery School | 1180 Stanyan St, San Francisco, CA 94117, United States
+Chibi Chan Preschool | 2507 Pine St, San Francisco, CA 94115, United States
+Alta Plaza Preschool | 2140 Pierce St, San Francisco, CA 94115, United States
+Tinker Preschool Inc. | 554 Clement St, San Francisco, CA 94118, United States
+Teremok Preschool | 2460 Sutter St, San Francisco, CA 94115, United States
+Little School | 1520 Lyon St, San Francisco, CA 94115, United States
+Montessori Children's House of the West Coast | 25 Lake St, San Francisco, CA 94118, United States
+Rocky Mountain Participation Nursery School | 2475 15th St, San Francisco, CA 94114, United States
+Lycee Francais de San Francisco | 755 Ashbury St, San Francisco, CA 94117, United States
+Buen Dia Family School | 589 Guerrero St, San Francisco, CA 94110, United States
+Little Bee Preschool (Cow Hollow) | 2733 Lombard St, San Francisco, CA 94123, United States
+Star of the Sea Preschool | 360 9th Ave, San Francisco, CA 94118, United States
+One Fifty Parker Ave School | 150 Parker Ave, San Francisco, CA 94118, United States
+Little Bee Preschool (Presidio) | 9 Funston Ave, San Francisco, CA 94129, United States
+Cole Valley Gan Preschool | 1300 Shrader St, San Francisco, CA 94117, United States
+L’Academy Language Immersion Preschool & Infant Daycare Mission/Noe San Francisco | 866 Valencia St, San Francisco, CA 94110, United States
+Calvary Nursery School | 2515 Fillmore St, San Francisco, CA 94115, United States
+SF Tikes Academy | 1133 S Van Ness Ave, San Francisco, CA 94110, United States
+Early Start Preschool & Child Care | 337 5th Ave, San Francisco, CA 94118, United States
+Theresa S. Mahler Early Education School | 990 Church St, San Francisco, CA 94114, United States
+L'Academy Language Immersion Preschool & Infant Daycare SOMA San Francisco | 55 Ringold Street, 322 8th St, San Francisco, CA 94103, United States
+The Russian Hill School | 2026 Divisadero St, San Francisco, CA 94115, United States
+Rosenberg Early Childhood Center | 325 Arguello Blvd, San Francisco, CA 94118, United States
+Color Me French Preschool LLC | 125 Clement St, San Francisco, CA 94118, United States
+Children's Council of San Francisco | 445 Church St, San Francisco, CA 94114, United States
+Russian Hill Academy | 1520 Pacific Ave, San Francisco, CA 94109, United States
+Les Kidz | 475 Panorama Dr, San Francisco, CA 94131, United States
+Learning Bridge Preschool | 1050 Kirkham St, San Francisco, CA 94122, United States
+Tule Elk Park Child Development Center | 2110 Greenwich St, San Francisco, CA 94123, United States
+Studio Montessori | 633 8th St, San Francisco, CA 94103, United States
+Peekadoodle Preschool | 4228 Geary Blvd, San Francisco, CA 94118, United States
+Les Petits Canards French Immersion Preschool | 2521 McAllister St A, San Francisco, CA 94118, United States
+¡HolaKids! Spanish Immersion Preschool | 301 Euclid Ave, San Francisco, CA 94118, United States
+Little Star Preschool Too | 1105 Quintara St, San Francisco, CA 94116, United States
+UCSF at Mission Bay Child Development Center | 727 Nelson Rising Ln, San Francisco, CA 94158, United States
+Yerba Buena Gardens Child Development Center | 790 Folsom St, San Francisco, CA 94107, United States
+Happy Garden Child Care Center | 18 Day St, San Francisco, CA 94110, United States
+Mis Amigos Daycare Childcare Services in San Francisco | 314 Cortland Ave, San Francisco, CA 94110, United States
+Dolphin Stars Childcare | 1331 Harrison St, San Francisco, CA 94103, United States
+Chinatown Community Children's Center | 979 Clay St, San Francisco, CA 94108, United States
+South of Market Child Care | 790 Folsom St, San Francisco, CA 94107, United States
+Child Development Center | 2333 Buchanan St, San Francisco, CA 94115, United States
+UCSF at Marilyn Reed Lucia Child Development Center | 610 Parnassus Ave, San Francisco, CA 94122, United States
+Almaden Daycare | 48 Almaden Ct, San Francisco, CA 94118, United States
+Golden Childhood Daycare | 33 Colby St, San Francisco, CA 94134, United States
+Mission Child Care Consortium, Inc | 4750 Mission St, San Francisco, CA 94112, United States
+Precious Babes Family Childcare | 1611 Powell St, San Francisco, CA 94133, United States
+Building Kidz of San Francisco on 20th Ave | 1258 20th Ave, San Francisco, CA 94122, United States
+UCSF at Kirkham Child Development Center | 10 Kirkham St, San Francisco, CA 94143, United States
+Child Development Center | San Francisco, CA 94102, United States
+Whitney Young Child Development Center | 1101 Masonic Ave, San Francisco, CA 94117, United States
+Tung Lok Early Childhood Learning Center | 75 Vallejo St, San Francisco, CA 94111, United States
+Hongs family daycare | 1642 24th Ave, San Francisco, CA 94122, United States
+Oyunaa's Daycare | 482 19th Ave, San Francisco, CA 94121, United States
+Chinatown Community Children's Center North Beach | 715 Chestnut St, San Francisco, CA 94133, United States
+Smiley Family Daycare | 96 Ney St, San Francisco, CA 94110, United States
+Golden Sun Family Childcare | 2131 Ortega St, San Francisco, CA 94122, United States
+Bernal Infant and Child Care | 120 Virginia Ave, San Francisco, CA 94110, United States
+Little Leaf Daycare | 384 San Benito Wy, San Francisco, CA 94127, United States
+Little LYNC Preschool and Family Center | 501 Connecticut St, San Francisco, CA 94107, United States
+Hands and Hearts Daycare and Preschool | 1301 42nd Ave, San Francisco, CA 94122, United States
+Panda Garden Family Child Care | 2570 23rd Ave, San Francisco, CA 94116, United States
+Gigi’s Family Daycare | 100 Baden St, San Francisco, CA 94131, United States
+Amy’s family child care(China basin) | 701 China Basin St Apt113, San Francisco, CA 94158, United States
+Angel's Family Home Daycare | 702 Naples St, San Francisco, CA 94112, United States
+Liliana’s Family Daycare | 2351 41st Ave, San Francisco, CA 94116, United States
+Diana's Family Daycare | 45 Water St, San Francisco, CA 94133, United States
+Blooming Stars Family Daycare | 222 Beale St, San Francisco, CA 94105, United States
+Shayna's Family Daycare | 1745 Clement St, San Francisco, CA 94121, United States
+Modern Education Family Childcare - Mission Bay | will be provided upon tour request, 1180 4th St Unit number, San Francisco, CA 94158, United States
+YanDan's family child care (Potrero Hill) | 1601 Mariposa St, San Francisco, CA 94107, United States
+Noe Valley Family Childcare | 309 30th St, San Francisco, CA 94131, United States
+Ella's Second Home | 1354 10th Ave, San Francisco, CA 94122, United States
+Silvia's Family Daycare | 646 Lombard St, San Francisco, CA 94133, United States
+Dong Dong's Family Childcare | 1615 Wallace Ave, San Francisco, CA 94124, United States
+HappyChild Family Daycare | 730 Paris St, San Francisco, CA 94112, United States
+Little Angels Family Day Care | 1144 Irving St, San Francisco, CA 94122, United States
+Pikaboo Family Day Care Home | 701 China Basin St #347, San Francisco, CA 94158, United States
+SmileyBaby Family Child Care | 475 Hamilton St, San Francisco, CA 94134, United States
+Modern Education Family Childcare - SoMa | hidden for privacy, 821 Folsom St Unit number, San Francisco, CA 94107, United States
+Pasitos Gigantes Daycare | 1454 9th Ave Unit A, San Francisco, CA 94122, United States
+LGM Family Child Care Home | 3068 Cesar Chavez St, San Francisco, CA 94110, United States
+Bright Star Family Child Care | 71 Canyon Dr, San Francisco, CA 94112, United States
+Sweet Home Family Child Care | 900 Silver Ave, San Francisco, CA 94134, United States
+Tater Tots Family Daycare | 43 Brighton Ave, San Francisco, CA 94112, United States
+Sunny Side Tots Childcare | 329 Silver Ave, San Francisco, CA 94112, United States
+Each One Teach One Family Childcare | 141 Wool St, San Francisco, CA 94110, United States
+Little cookies family child care | 1368 20th Ave, San Francisco, CA 94122, United States
+Little Dinos Family Childcare | 600 Niagara Ave, San Francisco, CA 94112, United States
+Jenny's Family Daycare | 95 Granada Ave, San Francisco, CA 94112, United States
+Our Rainbow Kids Family Childcare | 2566 23rd Ave, San Francisco, CA 94116, United States
+Claudette's Family Daycare | 1961 Lombard St, San Francisco, CA 94123, United States
+Winnie Cuties Family Childcare | 345 20th Ave, San Francisco, CA 94121, United States
+Tilly's Tots | 601 Diamond St, San Francisco, CA 94114, United States
+Fernandes Family childcare | 210 Flournoy St, San Francisco, CA 94112, United States
+Sunflower Family Daycare | 2332 Alemany Blvd, San Francisco, CA 94112, United States
+Little Dreamers Daycare | 29 Pinto Ave, San Francisco, CA 94132, United States
+Vicky's Too Family Childcare | 2691 15th Ave, San Francisco, CA 94127, United States
+Love & Learn Nursery School | 1419 Howard St, San Francisco, CA 94103, United States
+Noe Valley Nursery School | 5210 Diamond Heights Blvd, San Francisco, CA 94131, United States
+Peter's Place Nursery School | 227 Balboa St, San Francisco, CA 94118, United States
+Telegraph Hill Cooperative Nursery School | 1401 Broadway, San Francisco, CA 94109, United States
+Petite Explorer Preschool | 722 S Van Ness Ave, San Francisco, CA 94110, United States
+Glenridge Cooperative Nursery School | Elk St, San Francisco, CA 94131, United States
+Miraloma Cooperative Nursery School | 443 Foerster St, San Francisco, CA 94127, United States
+Little Angels Nursery School | 610 Cortland Ave, San Francisco, CA 94110, United States
+Potrero Hill Montessori School | 1701 17th St, San Francisco, CA 94103, United States
+Little Earthlings Forest School, LLC | 100 Overlook Dr, San Francisco, CA 94122, United States
+Acorn Nursery School | 1751 11th Ave, San Francisco, CA 94122, United States
+Treehouse Pre K | 16 Agua Way, San Francisco, CA 94127, United States
+L’Academy Language Immersion Preschool and Infant Daycare Center | 685 Natoma St, San Francisco, CA 94103, United States
+Spire School by Parks Plus Creation | 4224 California St #107, San Francisco, CA 94118, United States
+The Serra Preschool | 7 Funston Ave, San Francisco, CA 94129, United States
+Sunset Coop Nursery School | 4245 Lawton St, San Francisco, CA 94122, United States
+Baby Prodigy Nursery | 5135 Geary Blvd, San Francisco, CA 94118, United States
+Alphabet Kids Day Care | 2428 19th Ave, San Francisco, CA 94116, United States
+Little Ducklings Daycare | 339 17th Ave, San Francisco, CA 94121, United States
+Little Dolphin Day Care | 1822 39th Ave, San Francisco, CA 94122, United States
+Little Sun Day Care | 1675 Funston Ave, San Francisco, CA 94122, United States
+St Nicholas Day Care-Preschool | 5200 Diamond Heights Blvd, San Francisco, CA 94131, United States
+Mi Cunita de Noe Valley Nursery | 440 29th St, San Francisco, CA 94131, United States
+Little Bananas Infant / Toddler School | 2511 45th Ave, San Francisco, CA 94116, United States
+Little Universe Child Care | 2074 22nd Ave, San Francisco, CA 94116, United States
+City Kids Day School | 1424 Vallejo St, San Francisco, CA 94109, United States
+Rainbow Kidz | 187 Gold Mine Dr, San Francisco, CA 94131, United States
+Little Trailblazers | 50 Fremont St Suite 300, San Francisco, CA 94105, United States
+San Francisco Public Montessori | 2340 Jackson St, San Francisco, CA 94115, United States
+The Maria Montessori School Of The Golden Gate Co. | 62 Lenox Way, San Francisco, CA 94127, United States
+Glen Park Montessori | 647 Chenery St, San Francisco, CA 94131, United States
+Montessori House of Children | 1187 Franklin St, San Francisco, CA 94109, United States
+Big City Montessori School | 240 Industrial St, San Francisco, CA 94124, United States
+Bambini Montessori School | 2042 Clement St, San Francisco, CA 94121, United States
+San Francisco Montessori Academy | 1566 32nd Ave, San Francisco, CA 94122, United States
+The Dahlia School of San Francisco | 116 Channel St, San Francisco, CA 94158, United States
+Growing Minds Montessori Preschool | 139 Miramar Ave, San Francisco, CA 94112, United States
+Montessori Story | 2675 30th Ave, San Francisco, CA 94116, United States
+Creative Montessori Preschool | 3101 Vicente St, San Francisco, CA 94116, United States
+Montessori Children's Center | 80 Juan Bautista Cir, San Francisco, CA 94132, United States
+Cielito Lindo Montessori School | 101 Gold Mine Dr, San Francisco, CA 94131, United States
+San Francisco Montessori Academy - 22nd Ave | 1283 22nd Ave, San Francisco, CA 94122, United States
+Provident Montessori | 1601 Mariposa St #115, San Francisco, CA 94107, United States
+Rainbow Montessori | 2358 24th Ave, San Francisco, CA 94116, United States
+Casa dei Bambini School | 2401 Taraval St, San Francisco, CA 94116, United States
+The Dahlia School of San Francisco Elementary | 1245 4th St, San Francisco, CA 94158, United States
+Little Forest Explorers, LLC | 900 John F Kennedy Dr, San Francisco, CA 94121, United States
+Little Robles in the Sunset | 1319 20th Ave, San Francisco, CA 94122, United States
+California Montessori School | 480 San Anselmo Ave N, San Bruno, CA 94066, United States
+Mills Montessori School | 1400 Hillside Blvd, South San Francisco, CA 94080, United States
+preschool, san francisco, montessori | 1187 Franklin St, San Francisco, CA 94109, United States
+Le Port Montessori School | 50 Fell St, San Francisco, CA 94102, United States
+Little Wonders Montessori | 1663 32nd Ave, San Francisco, CA 94122, United States
+Little Eden | 581 Chenery St, San Francisco, CA 94131, United States
+Holistic Seedlings Wonderschool | 255 Fremont St #108a, San Francisco, CA 94105, United States
+Adorable Friends Wonderschool | 502 11th Ave, San Francisco, CA 94118, United States
+Modern Montessori | 2344 17th Ave, San Francisco, CA 94116, United States
+The Jaclyn Taylor School | 281 Monterey Blvd, San Francisco, CA 94131, United States
+Wonder Years School | 380 21st Ave, San Francisco, CA 94121, United States
+Katherine Michiels School | 1335 Guerrero St, San Francisco, CA 94110, United States
+Busy Bees Montessori | 1420 Taraval St, San Francisco, CA 94116, United States
+Belvedere Montessori Pre-Sch | 155 Belvedere St, San Francisco, CA 94117, United States
