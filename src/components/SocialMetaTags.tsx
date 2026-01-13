@@ -19,7 +19,7 @@ export function SocialMetaTags({
   title,
   description,
   url,
-  image = 'https://aiplatformslist.com/og-image.png',
+  image = 'https://sfdaycarelist.com/og-image.png',
   type = 'website',
   author,
   publishedTime,
@@ -49,7 +49,7 @@ export function SocialMetaTags({
     setMetaTag('og:url', url);
     setMetaTag('og:image', image);
     setMetaTag('og:type', type);
-    setMetaTag('og:site_name', 'AI Platforms List');
+    setMetaTag('og:site_name', 'SF Daycare List');
 
     // Twitter Card tags
     setMetaTag('twitter:card', 'summary_large_image', true);

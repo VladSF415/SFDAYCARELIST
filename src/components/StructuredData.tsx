@@ -61,16 +61,16 @@ export function createSoftwareApplicationSchema(platform: any) {
   };
 }
 
-export function createItemListSchema(platforms: any[], category?: string) {
+export function createItemListSchema(daycares: any[], neighborhood?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: category
-      ? `Best ${category} AI Platforms & Tools`
-      : 'AI Platforms Directory - Complete List',
-    description: category
-      ? `Curated list of the best ${category} AI platforms and tools`
-      : 'Comprehensive directory of AI platforms, tools, and software',
+    name: neighborhood
+      ? `Best Daycares in ${neighborhood}`
+      : 'SF Daycare List - Licensed Daycares Directory',
+    description: neighborhood
+      ? `Licensed daycares in ${neighborhood}, San Francisco`
+      : 'Comprehensive directory of licensed daycares in San Francisco',
     numberOfItems: platforms.length,
     itemListElement: platforms.slice(0, 50).map((platform, index) => ({
       '@type': 'ListItem',

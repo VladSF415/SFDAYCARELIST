@@ -5,7 +5,7 @@
  * for different page types across the site.
  */
 
-const BASE_URL = 'https://aiplatformslist.com';
+const BASE_URL = 'https://sfdaycarelist.com';
 const OG_IMAGE_ENDPOINT = '/og-image.png';
 
 /**
@@ -31,74 +31,49 @@ export function generateOgImageUrl(title: string, subtitle?: string): string {
 /**
  * Generate OG image for homepage
  */
-export function getHomeOgImage(platformCount: number): string {
+export function getHomeOgImage(daycareCount: number): string {
   return generateOgImageUrl(
-    'AI Platforms List',
-    `Discover ${platformCount}+ AI Tools & Software`
+    'SF Daycare List',
+    `Find ${daycareCount}+ Licensed Daycares in San Francisco`
   );
 }
 
 /**
- * Generate OG image for category pages
+ * Generate OG image for neighborhood pages
  */
-export function getCategoryOgImage(categoryName: string, count: number): string {
+export function getNeighborhoodOgImage(neighborhoodName: string, count: number): string {
   return generateOgImageUrl(
-    `Best ${categoryName} AI Tools`,
-    `Explore ${count}+ platforms in this category`
+    `${neighborhoodName} Daycares`,
+    `Find ${count}+ licensed daycares in this neighborhood`
   );
 }
 
 /**
- * Generate OG image for platform detail pages
+ * Generate OG image for daycare detail pages
  */
-export function getPlatformOgImage(platformName: string, description?: string): string {
+export function getDaycareOgImage(daycareName: string, description?: string): string {
   const subtitle = description
     ? description.substring(0, 80) + (description.length > 80 ? '...' : '')
-    : 'Discover this AI platform';
+    : 'Licensed daycare in San Francisco';
 
-  return generateOgImageUrl(platformName, subtitle);
+  return generateOgImageUrl(daycareName, subtitle);
 }
 
 /**
  * Generate OG image for comparison pages
  */
-export function getComparisonOgImage(platform1: string, platform2: string): string {
+export function getComparisonOgImage(daycare1: string, daycare2: string): string {
   return generateOgImageUrl(
-    `${platform1} vs ${platform2}`,
-    'Complete Side-by-Side Comparison'
+    `${daycare1} vs ${daycare2}`,
+    'Compare San Francisco Daycares'
   );
 }
 
 /**
- * Generate OG image for alternatives pages
- */
-export function getAlternativesOgImage(platformName: string, count?: number): string {
-  const subtitle = count
-    ? `${count}+ Alternative AI Tools & Software`
-    : 'Discover Alternative AI Tools';
-
-  return generateOgImageUrl(
-    `${platformName} Alternatives`,
-    subtitle
-  );
-}
-
-/**
- * Generate OG image for best-of pages
- */
-export function getBestOfOgImage(title: string, category?: string): string {
-  const subtitle = category
-    ? `Best ${category} AI Tools - Expert Curated`
-    : 'Top AI Platforms - Expert Curated';
-
-  return generateOgImageUrl(title, subtitle);
-}
-
-/**
- * Generate OG image for pillar/guide pages
+ * Generate OG image for guide pages
  */
 export function getGuideOgImage(title: string, description?: string): string {
-  const subtitle = description || 'Complete Guide & Best Practices';
+  const subtitle = description || 'San Francisco Daycare Guide';
   return generateOgImageUrl(title, subtitle);
 }
 
