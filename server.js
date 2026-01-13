@@ -76,7 +76,7 @@ function isSearchBot(userAgent) {
  * Generate SEO-optimized HTML for platform pages
  */
 function generatePlatformHTML(platform, baseUrl) {
-  const title = escapeHtml(`${platform.name} - AI Platform Review | AI Platforms List`);
+  const title = escapeHtml(`${platform.name} - AI Platform Review | SF Daycare List`);
   const description = escapeHtml(platform.description?.substring(0, 160) || `Discover ${platform.name}, an AI platform in the ${platform.category} category.`);
   const url = escapeHtml(`${baseUrl}/platform/${platform.slug}`);
 
@@ -128,7 +128,7 @@ function generatePlatformHTML(platform, baseUrl) {
   </div>` : ''}
   ${platform.website || platform.url ? `
   <a href="${escapeHtml(platform.website || platform.url)}" class="cta" target="_blank" rel="noopener">Visit ${escapeHtml(platform.name)} →</a>` : ''}
-  <p style="margin-top: 3rem; color: #666; font-size: 0.875rem;">© 2026 AI Platforms List. All rights reserved.</p>
+  <p style="margin-top: 3rem; color: #666; font-size: 0.875rem;">© 2026 SF Daycare List. All rights reserved.</p>
 </body>
 </html>`;
 }
@@ -146,7 +146,7 @@ function generateContentHTML(content, baseUrl, type = 'comparison') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} | AI Platforms List</title>
+  <title>${title} | SF Daycare List</title>
   <meta name="description" content="${description}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="${url}">
@@ -158,7 +158,7 @@ function generateContentHTML(content, baseUrl, type = 'comparison') {
 <body>
   <h1>${title}</h1>
   <p>${description}</p>
-  <p style="margin-top: 2rem; color: #666;">© 2026 AI Platforms List</p>
+  <p style="margin-top: 2rem; color: #666;">© 2026 SF Daycare List</p>
 </body>
 </html>`;
 }
@@ -345,7 +345,7 @@ try {
   console.log('⚠️  No daycares.json found - will use database');
 }
 
-// Legacy variable for AI Platforms List routes (not used in SF Daycare List)
+// Legacy variable for SF Daycare List routes (not used in SF Daycare List)
 const platforms = [];
 
 // Database status check
@@ -504,7 +504,7 @@ fastify.register(rateLimit, {
 // CANONICAL URLs: Prevent duplicate content
 // ===========================================
 fastify.addHook('onRequest', async (request, reply) => {
-  const baseUrl = process.env.BASE_URL || 'https://aiplatformslist.com';
+  const baseUrl = process.env.BASE_URL || 'https://sfdaycarelist.com';
 
   // Remove query parameters for canonical URL
   const canonicalPath = request.url.split('?')[0];
@@ -606,7 +606,7 @@ fastify.addHook('onRequest', async (request, reply) => {
     return; // Regular users continue to normal routing
   }
 
-  const baseUrl = process.env.BASE_URL || 'https://aiplatformslist.com';
+  const baseUrl = process.env.BASE_URL || 'https://sfdaycarelist.com';
   const url = request.url.split('?')[0]; // Remove query params
 
   try {
@@ -806,8 +806,8 @@ fastify.addHook('onSend', async (request, reply, payload) => {
       try {
         const data = JSON.parse(payload);
         // Add copyright notice to API responses
-        data._copyright = '© 2026 AI Platforms List. All rights reserved. Unauthorized copying or redistribution prohibited.';
-        data._source = 'https://aiplatformslist.com';
+        data._copyright = '© 2026 SF Daycare List. All rights reserved. Unauthorized copying or redistribution prohibited.';
+        data._source = 'https://sfdaycarelist.com';
         return JSON.stringify(data);
       } catch (e) {
         // If parsing fails, return original payload
@@ -1630,7 +1630,7 @@ try {
 // Dynamic OG Image Generator
 fastify.get('/og-image.png', async (request, reply) => {
   const {
-    title = 'AI Platforms List',
+    title = 'SF Daycare List',
     subtitle = `Discover ${platforms.length}+ AI Tools & Software`,
     type = 'home'
   } = request.query;
@@ -1730,7 +1730,7 @@ fastify.get('/og-image.png', async (request, reply) => {
                               color: '#ffffff',
                               letterSpacing: '-0.5px',
                             },
-                            children: 'AI Platforms List',
+                            children: 'SF Daycare List',
                           },
                         },
                       ],
@@ -1975,7 +1975,7 @@ fastify.get('/api/image/share-card', async (request, reply) => {
 
 // Dynamic Sitemap.xml
 fastify.get('/sitemap.xml', async (request, reply) => {
-  const baseUrl = process.env.BASE_URL || 'https://aiplatformslist.com';
+  const baseUrl = process.env.BASE_URL || 'https://sfdaycarelist.com';
   const today = new Date().toISOString().split('T')[0];
 
   let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
@@ -2136,10 +2136,10 @@ fastify.get('/sitemap.xml', async (request, reply) => {
 
 // Robots.txt
 fastify.get('/robots.txt', async (request, reply) => {
-  const baseUrl = process.env.BASE_URL || 'https://aiplatformslist.com';
+  const baseUrl = process.env.BASE_URL || 'https://sfdaycarelist.com';
 
-  const robots = `# AI Platforms List - Robots.txt
-# © 2026 AI Platforms List. All content protected.
+  const robots = `# SF Daycare List - Robots.txt
+# © 2026 SF Daycare List. All content protected.
 
 # Google and legitimate search engines
 User-agent: *
@@ -2477,7 +2477,7 @@ fastify.get('/daycare/:slug', async (request, reply) => {
   }
 });
 
-// AI Chat endpoint - DISABLED FOR SF DAYCARE LIST (was for AI Platforms List)
+// AI Chat endpoint - DISABLED FOR SF DAYCARE LIST (was for SF Daycare List)
 /*
 fastify.post('/api/chat', async (request, reply) => {
   const { message, sessionId } = request.body;
