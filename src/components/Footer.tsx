@@ -4,21 +4,21 @@ import './Footer.css';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const [stats, setStats] = useState({ platforms: 743, categories: 17 });
+  const [stats, setStats] = useState({ daycares: 5, neighborhoods: 12 });
 
   useEffect(() => {
     // Fetch actual stats from API
-    fetch('/api/platforms?limit=0')
+    fetch('/api/daycares?limit=0')
       .then(res => res.json())
       .then(data => {
-        setStats(prev => ({ ...prev, platforms: data.total || prev.platforms }));
+        setStats(prev => ({ ...prev, daycares: data.total || prev.daycares }));
       })
       .catch(() => {});
 
-    fetch('/api/categories')
+    fetch('/api/neighborhoods')
       .then(res => res.json())
       .then(data => {
-        setStats(prev => ({ ...prev, categories: data.length || prev.categories }));
+        setStats(prev => ({ ...prev, neighborhoods: data.length || prev.neighborhoods }));
       })
       .catch(() => {});
   }, []);
@@ -31,28 +31,28 @@ export default function Footer() {
           <div className="footer-section">
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px' }}>
               <img
-                src="/logo.png"
-                alt="AI Platforms Directory Logo"
-                style={{ width: '40px', height: '40px', borderRadius: '0', border: '2px solid #fff' }}
+                src="/logo-temp.svg"
+                alt="SF Daycare List Logo"
+                style={{ width: '40px', height: '40px' }}
               />
-              <h3 style={{ margin: 0 }}>AI Platforms Directory</h3>
+              <h3 style={{ margin: 0 }}>SF Daycare List</h3>
             </div>
             <p>
-              The most comprehensive directory of AI platforms, tools, and services.
-              Discover, compare, and choose the best AI solutions for your needs.
+              The most comprehensive directory of licensed daycares in San Francisco.
+              Find trusted childcare options across all SF neighborhoods with verified reviews and transparent pricing.
             </p>
             <div className="footer-stats">
               <div className="stat">
-                <strong>{stats.platforms}+</strong>
-                <span>AI Platforms</span>
+                <strong>{stats.daycares}+</strong>
+                <span>Daycares</span>
               </div>
               <div className="stat">
-                <strong>{stats.categories}+</strong>
-                <span>Categories</span>
+                <strong>{stats.neighborhoods}+</strong>
+                <span>Neighborhoods</span>
               </div>
               <div className="stat">
-                <strong>Daily</strong>
-                <span>Updates</span>
+                <strong>Licensed</strong>
+                <span>& Verified</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/submit">Submit Platform</Link></li>
+              <li><Link to="/submit">List Your Daycare</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/blog">Blog</Link></li>
@@ -71,25 +71,25 @@ export default function Footer() {
 
           {/* Resources */}
           <div className="footer-section">
-            <h4>Resources & Guides</h4>
+            <h4>Parent Resources</h4>
             <ul>
-              <li><Link to="/how-to-choose-ai-platforms">How to Choose AI Platforms</Link></li>
-              <li><Link to="/machine-learning-tools-directory">ML Tools Directory</Link></li>
-              <li><Link to="/natural-language-processing-tools">NLP Tools</Link></li>
-              <li><Link to="/computer-vision-platforms">Computer Vision</Link></li>
-              <li><Link to="/enterprise-ai-solutions">Enterprise AI</Link></li>
+              <li><Link to="/choosing-a-daycare">Choosing a Daycare Guide</Link></li>
+              <li><Link to="/licensing-information">Understanding Licensing</Link></li>
+              <li><Link to="/financial-aid">Financial Aid & Subsidies</Link></li>
+              <li><Link to="/preschool-readiness">Preschool Readiness</Link></li>
+              <li><Link to="/contact">Questions? Contact Us</Link></li>
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* Neighborhoods */}
           <div className="footer-section">
-            <h4>Popular Categories</h4>
+            <h4>Popular Neighborhoods</h4>
             <ul>
-              <li><Link to="/?category=llms">Large Language Models</Link></li>
-              <li><Link to="/?category=generative-ai">Generative AI</Link></li>
-              <li><Link to="/?category=code-ai">Code AI</Link></li>
-              <li><Link to="/?category=image-generation">Image Generation</Link></li>
-              <li><Link to="/?category=video-ai">Video AI</Link></li>
+              <li><Link to="/neighborhood/mission">Mission District</Link></li>
+              <li><Link to="/neighborhood/noe-valley">Noe Valley</Link></li>
+              <li><Link to="/neighborhood/castro">Castro</Link></li>
+              <li><Link to="/neighborhood/soma">SoMa</Link></li>
+              <li><Link to="/neighborhood/sunset">Sunset District</Link></li>
             </ul>
           </div>
 
@@ -110,14 +110,14 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p className="copyright">
-              © {currentYear} AI Platforms Directory. Operated by <strong>Badly Creative LLC</strong>. All rights reserved.
+              © {currentYear} SF Daycare List. Operated by <strong>Badly Creative LLC</strong>. All rights reserved.
             </p>
             <div className="footer-links">
               <Link to="/sitemap.xml">Sitemap</Link>
               <span className="separator">•</span>
               <Link to="/rss">RSS Feed</Link>
               <span className="separator">•</span>
-              <a href="https://github.com/VladSF415/ai-platforms-directory" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/VladSF415/SFDAYCARELIST" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </div>

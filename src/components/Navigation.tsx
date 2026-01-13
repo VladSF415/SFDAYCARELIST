@@ -132,7 +132,7 @@ export default function Navigation() {
       <div className="nav-container">
         {/* Logo and Brand */}
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logo.png" alt="SF Daycare List Logo" />
+          <img src="/logo-temp.svg" alt="SF Daycare List Logo" />
           <span className="nav-brand">
             SF Daycare<span className="nav-brand-sub">List</span>
           </span>

@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Playful building/house shape -->
+  <rect x="8" y="18" width="24" height="18" rx="2" fill="#FF6B35"/>
+  <path d="M6 20L20 8L34 20" stroke="#1E3A8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Windows -->
+  <rect x="13" y="23" width="5" height="5" rx="1" fill="#FFF"/>
+  <rect x="22" y="23" width="5" height="5" rx="1" fill="#FFF"/>
+  <!-- Door -->
+  <rect x="16" y="30" width="8" height="6" rx="1" fill="#1E3A8A"/>
+  <!-- Sun -->
+  <circle cx="32" cy="12" r="3" fill="#FCD34D"/>
+</svg>
