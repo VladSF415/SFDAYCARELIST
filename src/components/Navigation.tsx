@@ -293,22 +293,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}>
-          {/* Mobile Search */}
-          <form className="nav-search mobile-search" onSubmit={handleSearch}>
-            <input
-              type="text"
-              placeholder="Search AI tools..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              aria-label="Search AI tools"
-            />
-            <button type="submit" aria-label="Search">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="8" />
-                <path d="m21 21-4.35-4.35" />
-              </svg>
-            </button>
-          </form>
+          {/* Mobile Search - REMOVED duplicate search, use desktop search bar */}
 
           <ul className="mobile-menu-list">
             <li>

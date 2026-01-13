@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { trackPageView } from './utils/analytics';
 import Navigation from './components/Navigation';
 import ScrollButtons from './components/ScrollButtons';
-import ChatWidget from './components/ChatWidget';
+// import ChatWidget from './components/ChatWidget'; // REMOVED - AI Platforms leftover
 import Home from './pages/Home';
 import DaycareDetail from './pages/DaycareDetail';
 import SubmitTool from './pages/SubmitTool';
@@ -73,7 +73,7 @@ function App() {
           </Routes>
         </Suspense>
         <ScrollButtons />
-        <ChatWidget />
+        {/* <ChatWidget /> */} {/* REMOVED - AI Platforms leftover */}
         <Footer />
       </div>
     </Router>
