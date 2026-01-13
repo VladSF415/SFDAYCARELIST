@@ -15,14 +15,14 @@ export default function Disclaimer() {
           <section>
             <h2>Operating Entity</h2>
             <p>
-              AI Platforms Directory is owned and operated by <strong>Badly Creative LLC</strong>. All payments, subscriptions, and transactions are processed by Badly Creative LLC, which is the name that will appear on your statements.
+              SF Daycare List is owned and operated by <strong>Badly Creative LLC</strong>. All payments, subscriptions, and transactions are processed by Badly Creative LLC, which is the name that will appear on your statements.
             </p>
           </section>
 
           <section>
             <h2>Information Accuracy</h2>
             <p>
-              The information on AI Platforms Directory is provided for general informational purposes only. While we strive for accuracy, we make no warranties about the completeness, reliability, or accuracy of this information.
+              The information on SF Daycare List is provided for general informational purposes only. While we strive for accuracy, we make no warranties about the completeness, reliability, or accuracy of this information.
             </p>
           </section>
 

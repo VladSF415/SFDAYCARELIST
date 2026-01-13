@@ -6,262 +6,102 @@ export default function About() {
   return (
     <>
       <SocialMetaTags
-        title="About Us - AI Platforms List"
-        description="Learn about AI Platforms List, the most comprehensive directory of AI tools and software. Discover our mission, team, and how we curate the best AI platforms."
-        url="https://aiplatformslist.com/about"
+        title="About Us - SF Daycare List"
+        description="Learn about SF Daycare List, the most comprehensive directory of licensed daycares in San Francisco. Find quality childcare near you."
+        url="https://sfdaycarelist.com/about"
       />
 
       <div className="legal-page">
         <div className="legal-container">
           <div className="legal-header">
             <Link to="/" className="back-link">← Back to Home</Link>
-            <h1>About AI Platforms List</h1>
-            <p className="last-updated">Your Trusted AI Tools Directory Since 2024</p>
+            <h1>About SF Daycare List</h1>
+            <p className="last-updated">San Francisco's Trusted Daycare Directory</p>
           </div>
 
           <div className="legal-content">
             <section>
               <h2>Our Mission</h2>
               <p>
-                AI Platforms List is the most comprehensive and curated directory of artificial intelligence tools and software. Our mission is to help businesses, developers, and enthusiasts discover the right AI solutions for their needs.
+                SF Daycare List is the most comprehensive directory of licensed daycares in San Francisco.
+                Our mission is to help parents find safe, quality childcare options across all SF neighborhoods.
               </p>
               <p>
-                With over <strong>743+ AI platforms</strong> and growing, we provide detailed information, comparisons, and guides to help you navigate the rapidly evolving AI landscape.
+                We provide detailed information about licensed daycares, including availability, pricing, programs,
+                and verified parent reviews to help you make the best choice for your family.
               </p>
             </section>
 
             <section>
               <h2>What We Offer</h2>
-              <div className="feature-grid">
-                <div>
-                  <h3>Comprehensive Directory</h3>
-                  <p>Browse 743+ AI tools across 17 categories including writing, coding, image generation, video creation, analytics, and more.</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '24px' }}>
+                <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '24px', border: '2px solid #e2e8f0' }}>
+                  <h3 style={{ color: '#1e3a8a', marginBottom: '12px' }}>Comprehensive Directory</h3>
+                  <p>Browse licensed daycares across all 12 major SF neighborhoods with detailed profiles, photos, and contact information.</p>
                 </div>
-                <div>
-                  <h3>Expert Curation</h3>
-                  <p>Every platform is carefully reviewed and verified to ensure quality and legitimacy.</p>
+                <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '24px', border: '2px solid #e2e8f0' }}>
+                  <h3 style={{ color: '#1e3a8a', marginBottom: '12px' }}>Verified Reviews</h3>
+                  <p>Read authentic reviews from real SF parents to learn about their experiences with local daycares.</p>
                 </div>
-                <div>
-                  <h3>Detailed Comparisons</h3>
-                  <p>Side-by-side comparisons of popular AI tools to help you make informed decisions.</p>
+                <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '24px', border: '2px solid #e2e8f0' }}>
+                  <h3 style={{ color: '#1e3a8a', marginBottom: '12px' }}>Licensing Information</h3>
+                  <p>View California licensing status, inspection scores, and compliance records for complete transparency.</p>
                 </div>
-                <div>
-                  <h3>In-Depth Guides</h3>
-                  <p>Comprehensive guides and best practices for different AI use cases and categories.</p>
+                <div style={{ background: '#f9fafb', borderRadius: '12px', padding: '24px', border: '2px solid #e2e8f0' }}>
+                  <h3 style={{ color: '#1e3a8a', marginBottom: '12px' }}>Parent Resources</h3>
+                  <p>Access guides on choosing daycares, understanding licensing, financial aid, and preschool readiness.</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <h2>How We Curate</h2>
-              <p>Quality is our top priority. Here's how we ensure the best directory experience:</p>
-              <ul>
-                <li><strong>Manual Review:</strong> Every submission is manually reviewed by our team</li>
-                <li><strong>Quality Checks:</strong> We verify functionality, legitimacy, and user reviews</li>
-                <li><strong>Regular Updates:</strong> Platforms are continuously monitored for changes and updates</li>
-                <li><strong>Community Feedback:</strong> We listen to user feedback and ratings</li>
-                <li><strong>Transparency:</strong> Clear distinction between free, freemium, and paid tools</li>
+              <h2>Why Trust Us?</h2>
+              <p>SF Daycare List is operated by <strong>Badly Creative LLC</strong>, a San Francisco-based company dedicated to helping local families.</p>
+              <ul style={{ lineHeight: '1.8', marginTop: '16px' }}>
+                <li><strong>Local Focus:</strong> We exclusively serve San Francisco families and understand SF's unique childcare landscape</li>
+                <li><strong>Verified Data:</strong> All licensing information is sourced from California Department of Social Services</li>
+                <li><strong>No Bias:</strong> We don't favor certain daycares - all listings are treated equally unless premium</li>
+                <li><strong>Parent-First:</strong> Built by parents, for parents, to make the childcare search easier</li>
+                <li><strong>Transparency:</strong> Clear pricing, availability, and honest reviews from real SF families</li>
               </ul>
             </section>
 
             <section>
-              <h2>Our Categories</h2>
-              <p>We organize AI tools into intuitive categories to help you find exactly what you need. Each category features in-depth guides, comparisons, and curated tool selections:</p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>🤖 Large Language Models (LLMs)</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Discover powerful language models like ChatGPT, Claude, GPT-4, and open-source alternatives. Compare capabilities,
-                    pricing, and use cases for content generation, coding, research, and conversational AI.
-                  </p>
-                  <Link to="/category/llms" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore LLMs →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>✨ Generative AI Tools</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Explore cutting-edge generative AI platforms for creating text, images, videos, and audio. From Midjourney and DALL-E
-                    to music generators and video synthesis tools.
-                  </p>
-                  <Link to="/category/generative-ai" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Generative AI →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>💻 Code AI Assistants</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Find the best AI coding tools including GitHub Copilot alternatives, code completion, debugging assistants, and
-                    automated testing platforms to boost developer productivity.
-                  </p>
-                  <Link to="/category/code-ai" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Code AI →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>👁️ Computer Vision</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Access advanced computer vision platforms for object detection, facial recognition, image classification, OCR, and
-                    visual AI applications across industries.
-                  </p>
-                  <Link to="/category/computer-vision" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Computer Vision →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>📝 Natural Language Processing</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Discover NLP tools for text analysis, sentiment detection, entity extraction, translation, summarization, and
-                    language understanding capabilities.
-                  </p>
-                  <Link to="/category/nlp" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore NLP →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>🎨 Image Generation</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Compare the best AI image generators from text-to-image tools like Midjourney and DALL-E to specialized art AI platforms.
-                  </p>
-                  <Link to="/category/image-generation" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Image Generation →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>🎬 Video & Audio AI</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Find AI video editing, generation, and image creation tools. From text-to-video platforms to AI-powered editing
-                    suites and audio synthesis software.
-                  </p>
-                  <Link to="/category/video-ai" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Video AI →
-                  </Link>
-                </div>
-
-                <div style={{ border: '3px solid #000', padding: '20px', background: '#fff' }}>
-                  <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '10px' }}>📊 Analytics & BI</h3>
-                  <p style={{ lineHeight: '1.6', marginBottom: '10px' }}>
-                    Discover AI-powered analytics and business intelligence tools for data analysis, visualization, and automated insights
-                    that drive better decisions.
-                  </p>
-                  <Link to="/category/analytics-bi" style={{ color: '#000', textDecoration: 'underline', fontWeight: '900', textDecorationThickness: '2px' }}>
-                    Explore Analytics →
-                  </Link>
-                </div>
-              </div>
-
-              <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-                <Link to="/" style={{
-                  display: 'inline-block',
-                  padding: '14px 28px',
-                  background: '#000',
-                  color: '#fff',
-                  textDecoration: 'none',
-                  fontFamily: "'Courier New', monospace",
-                  fontWeight: '900',
-                  fontSize: '14px',
-                  textTransform: 'uppercase',
-                  border: '4px solid #000'
-                }}>
-                  View All Categories →
+              <h2>SF Neighborhoods We Cover</h2>
+              <p>Find licensed daycares in all major San Francisco neighborhoods:</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', marginTop: '20px' }}>
+                <Link to="/neighborhood/mission" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600', transition: 'all 0.2s' }}>
+                  📍 Mission District
+                </Link>
+                <Link to="/neighborhood/noe-valley" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600' }}>
+                  📍 Noe Valley
+                </Link>
+                <Link to="/neighborhood/castro" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600' }}>
+                  📍 Castro
+                </Link>
+                <Link to="/neighborhood/pacific-heights" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600' }}>
+                  📍 Pacific Heights
+                </Link>
+                <Link to="/neighborhood/marina" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600' }}>
+                  📍 Marina
+                </Link>
+                <Link to="/neighborhood/sunset" style={{ padding: '12px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '8px', textDecoration: 'none', color: '#1e3a8a', fontWeight: '600' }}>
+                  📍 Sunset District
                 </Link>
               </div>
             </section>
 
             <section>
-              <h2>For Platform Owners</h2>
+              <h2>Get In Touch</h2>
               <p>
-                Are you building an AI tool? We'd love to feature your platform in our directory.
-                <Link to="/submit" style={{ marginLeft: '0.5rem', color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px', fontWeight: '900' }}>
-                  Submit your AI platform →
+                Have questions? Want to list your daycare? We'd love to hear from you!
+              </p>
+              <p style={{ marginTop: '16px' }}>
+                <Link to="/contact" style={{ display: 'inline-block', padding: '12px 24px', background: 'linear-gradient(135deg, #ff6b35, #ee6c4d)', color: 'white', borderRadius: '24px', textDecoration: 'none', fontWeight: '700' }}>
+                  Contact Us
                 </Link>
               </p>
-              <p>Benefits of listing your platform:</p>
-              <ul>
-                <li>Reach thousands of potential users actively searching for AI tools</li>
-                <li>Increase your platform's visibility and SEO</li>
-                <li>Get featured in relevant comparisons and guides</li>
-                <li>Build credibility with verified badges</li>
-              </ul>
             </section>
-
-            <section>
-              <h2>Our Commitment</h2>
-              <p>
-                We are committed to maintaining the most accurate, comprehensive, and user-friendly AI directory on the web. We don't accept payment for listings or reviews, ensuring our directory remains unbiased and trustworthy.
-              </p>
-              <p>
-                <strong>Transparency:</strong> Featured listings are clearly marked and help support the operation of this directory while maintaining editorial independence.
-              </p>
-            </section>
-
-            <section>
-              <h2>Contact Us</h2>
-              <p>
-                Have questions, suggestions, or want to report an issue? We'd love to hear from you.
-              </p>
-              <p>
-                <strong>Email:</strong> <a href="mailto:info@aiplatformslist.com" style={{ color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px' }}>info@aiplatformslist.com</a>
-              </p>
-              <p>
-                <strong>Submit a Platform:</strong> <Link to="/submit" style={{ color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px' }}>Use our submission form</Link>
-              </p>
-            </section>
-
-            <section>
-              <h2>Stay Updated</h2>
-              <p>
-                The AI landscape changes rapidly. We continuously update our directory with new platforms, features, and guides to keep you informed about the latest developments in AI technology.
-              </p>
-              <p>
-                Bookmark us and check back regularly to discover new AI tools and stay ahead of the curve.
-              </p>
-            </section>
-
-            <div style={{
-              marginTop: '3rem',
-              padding: '2rem',
-              background: '#f5f5f5',
-              border: '4px solid #000000'
-            }}>
-              <h3 style={{ marginTop: 0, fontFamily: "'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px' }}>AI Platforms List by the Numbers</h3>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '900', color: '#000000', fontFamily: "'Courier New', monospace" }}>743+</div>
-                  <div style={{ color: '#666', fontSize: '0.9rem', fontFamily: "'Courier New', monospace", textTransform: 'uppercase' }}>AI Platforms</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '900', color: '#000000', fontFamily: "'Courier New', monospace" }}>17+</div>
-                  <div style={{ color: '#666', fontSize: '0.9rem', fontFamily: "'Courier New', monospace", textTransform: 'uppercase' }}>Categories</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '900', color: '#000000', fontFamily: "'Courier New', monospace" }}>100+</div>
-                  <div style={{ color: '#666', fontSize: '0.9rem', fontFamily: "'Courier New', monospace", textTransform: 'uppercase' }}>Comparisons</div>
-                </div>
-                <div>
-                  <div style={{ fontSize: '2rem', fontWeight: '900', color: '#000000', fontFamily: "'Courier New', monospace" }}>Daily</div>
-                  <div style={{ color: '#666', fontSize: '0.9rem', fontFamily: "'Courier New', monospace", textTransform: 'uppercase' }}>Updates</div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ marginTop: '2rem', textAlign: 'center', padding: '2rem 0', borderTop: '4px solid #000000' }}>
-              <p style={{ fontSize: '0.9rem', color: '#666', fontFamily: "'Courier New', monospace" }}>
-                Operated by <strong style={{ background: '#FFFF00', padding: '2px 8px' }}>BADLY CREATIVE LLC</strong>
-              </p>
-              <div style={{ marginTop: '1rem' }}>
-                <Link to="/privacy" style={{ margin: '0 1rem', color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px', fontFamily: "'Courier New', monospace" }}>Privacy Policy</Link>
-                <Link to="/terms" style={{ margin: '0 1rem', color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px', fontFamily: "'Courier New', monospace" }}>Terms of Service</Link>
-                <Link to="/disclaimer" style={{ margin: '0 1rem', color: '#000000', textDecoration: 'underline', textDecorationThickness: '2px', fontFamily: "'Courier New', monospace" }}>Disclaimer</Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>

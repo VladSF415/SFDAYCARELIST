@@ -15,7 +15,7 @@ export default function TermsOfService() {
           <section>
             <h2>1. Acceptance of Terms</h2>
             <p>
-              By accessing and using AI Platforms Directory ("the Service"), operated by <strong>Badly Creative LLC</strong>, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service.
+              By accessing and using SF Daycare List ("the Service"), operated by <strong>Badly Creative LLC</strong>, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the Service.
             </p>
             <p>
               Any payments, subscriptions, or transactions will be processed by <strong>Badly Creative LLC</strong>. This name will appear on your bank statements and invoices.
@@ -25,7 +25,7 @@ export default function TermsOfService() {
           <section>
             <h2>2. Description of Service</h2>
             <p>
-              AI Platforms Directory is a comprehensive directory of AI platforms, tools, and services operated by Badly Creative LLC. We provide information, comparisons, and resources to help users discover and evaluate AI solutions.
+              SF Daycare List is a comprehensive directory of daycare, tools, and services operated by Badly Creative LLC. We provide information, comparisons, and resources to help users discover and evaluate AI solutions.
             </p>
           </section>
 
@@ -159,7 +159,7 @@ export default function TermsOfService() {
             <h2>16. Contact Information</h2>
             <p>For questions about these Terms, contact us at:</p>
             <ul>
-              <li>Email: info@aiplatformslist.com</li>
+              <li>Email: info@sfdaycarelist.com</li>
               <li>Website: <Link to="/contact">Contact Form</Link></li>
             </ul>
           </section>

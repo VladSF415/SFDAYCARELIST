@@ -29,7 +29,7 @@ export default function DMCA() {
 
           <section>
             <h2>Contact for DMCA</h2>
-            <p>Send notices to: info@aiplatformslist.com</p>
+            <p>Send notices to: info@sfdaycarelist.com</p>
           </section>
 
           <section>
