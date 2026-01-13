@@ -2584,26 +2584,20 @@ fastify.setNotFoundHandler((request, reply) => {
   }
 });
 
-// Start server
-const start = async () => {
+// Background database sync function
+async function syncDatabaseInBackground() {
   try {
-    // Initialize database analytics if DATABASE_URL is set
-    // if (useDatabase) {
-    //   await initAnalyticsDB();
-    // }
+    const countResult = await db.query('SELECT COUNT(*) FROM daycares');
+    const dbCount = parseInt(countResult.rows[0].count);
+    const jsonCount = daycares.length;
 
-    // Auto-sync database with JSON data on startup
-    try {
-      const countResult = await db.query('SELECT COUNT(*) FROM daycares');
-      const dbCount = parseInt(countResult.rows[0].count);
-      const jsonCount = daycares.length;
+    console.log(`📊 Database: ${dbCount} daycares, JSON: ${jsonCount} daycares`);
 
-      console.log(`📊 Database: ${dbCount} daycares, JSON: ${jsonCount} daycares`);
+    if (jsonCount > dbCount) {
+      console.log(`🔄 Syncing database with JSON data (${jsonCount - dbCount} new daycares)...`);
 
-      if (jsonCount > dbCount) {
-        console.log(`🔄 Syncing database with JSON data (${jsonCount - dbCount} new daycares)...`);
-
-        for (const d of daycares) {
+      let synced = 0;
+      for (const d of daycares) {
           await db.query(
             `INSERT INTO daycares (
               slug, name, description,
@@ -2660,6 +2654,10 @@ const start = async () => {
               new Date().toISOString()
             ]
           );
+          synced++;
+          if (synced % 50 === 0) {
+            console.log(`   Progress: ${synced}/${jsonCount} daycares synced`);
+          }
         }
 
         console.log(`✅ Database synced with ${jsonCount} daycares`);
@@ -2667,12 +2665,24 @@ const start = async () => {
         console.log('✅ Database already up to date');
       }
     } catch (syncError) {
-      console.warn('⚠️  Database sync failed (will retry next startup):', syncError.message);
+      console.warn('⚠️  Database sync failed:', syncError.message);
     }
+  }
+
+// Start server
+const start = async () => {
+  try {
+    // Initialize database analytics if DATABASE_URL is set
+    // if (useDatabase) {
+    //   await initAnalyticsDB();
+    // }
 
     const port = process.env.PORT || 3001;
     await fastify.listen({ port, host: '0.0.0.0' });
     console.log(`🚀 SF Daycare List running on port ${port}`);
+
+    // Start database sync in background (non-blocking)
+    syncDatabaseInBackground();
 
     // Start Telegram bot ONLY if explicitly enabled (prevents conflicts)
     // This should ONLY be enabled in the worker service, NOT main service
