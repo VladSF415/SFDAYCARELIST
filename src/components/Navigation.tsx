@@ -25,20 +25,20 @@ export default function Navigation() {
       .catch(err => console.error('Failed to fetch categories:', err));
   }, []);
 
-  // Featured categories to display in dropdown
-  const featuredCategories = [
-    { slug: 'generative-ai', icon: '✨', name: 'Generative AI' },
-    { slug: 'llms', icon: '🧠', name: 'LLMs' },
-    { slug: 'image-generation', icon: '🎨', name: 'Image Generation' },
-    { slug: 'code-ai', icon: '💻', name: 'Code AI' },
-    { slug: 'video-generation', icon: '🎬', name: 'Video Generation' },
-    { slug: 'healthcare-ai', icon: '🏥', name: 'Healthcare AI' },
-    { slug: 'vibe-coding', icon: '⚡', name: 'Vibe Coding' },
-    { slug: 'agent-platforms', icon: '🤖', name: 'AI Agents' },
-    { slug: 'developer-tools', icon: '🛠️', name: 'Developer Tools' },
-    { slug: 'analytics-bi', icon: '📊', name: 'Analytics & BI' },
-    { slug: 'computer-vision', icon: '👁️', name: 'Computer Vision' },
-    { slug: 'nlp', icon: '📝', name: 'NLP' },
+  // Featured neighborhoods to display in dropdown
+  const featuredNeighborhoods = [
+    { slug: 'mission', icon: '🌮', name: 'Mission District' },
+    { slug: 'noe-valley', icon: '🏡', name: 'Noe Valley' },
+    { slug: 'castro', icon: '🌈', name: 'Castro' },
+    { slug: 'pacific-heights', icon: '🏛️', name: 'Pacific Heights' },
+    { slug: 'sunset', icon: '🌅', name: 'Sunset District' },
+    { slug: 'richmond', icon: '🌳', name: 'Richmond District' },
+    { slug: 'soma', icon: '🏢', name: 'SoMa' },
+    { slug: 'haight-ashbury', icon: '🎸', name: 'Haight-Ashbury' },
+    { slug: 'marina', icon: '⛵', name: 'Marina District' },
+    { slug: 'potrero-hill', icon: '⛰️', name: 'Potrero Hill' },
+    { slug: 'bernal-heights', icon: '🐕', name: 'Bernal Heights' },
+    { slug: 'north-beach', icon: '🍝', name: 'North Beach' },
   ];
 
   // Handle scroll for sticky header
@@ -168,7 +168,7 @@ export default function Navigation() {
               aria-haspopup="true"
               aria-label="Browse categories menu"
             >
-              Categories
+              Neighborhoods
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                 <polyline points="6 9 12 15 18 9" />
               </svg>
@@ -176,23 +176,23 @@ export default function Navigation() {
             {isCategoriesOpen && (
               <div className="nav-dropdown-menu categories-dropdown">
                 <div className="dropdown-header">
-                  <span className="dropdown-title">🎯 FEATURED CATEGORIES</span>
+                  <span className="dropdown-title">📍 SF NEIGHBORHOODS</span>
                 </div>
                 <div className="nav-dropdown-grid">
-                  {featuredCategories.map((cat) => {
-                    const categoryData = categories.find(c => c.slug === cat.slug);
+                  {featuredNeighborhoods.map((neighborhood) => {
+                    const neighborhoodData = categories.find(c => c.slug === neighborhood.slug);
                     return (
                       <Link
-                        key={cat.slug}
-                        to={`/category/${cat.slug}`}
+                        key={neighborhood.slug}
+                        to={`/neighborhood/${neighborhood.slug}`}
                         onClick={closeMenu}
                         className="nav-dropdown-item category-item"
                       >
-                        <span className="category-icon">{cat.icon}</span>
+                        <span className="category-icon">{neighborhood.icon}</span>
                         <div className="category-info">
-                          <span className="category-name">{cat.name}</span>
-                          {categoryData && (
-                            <span className="category-count">{categoryData.count} tools</span>
+                          <span className="category-name">{neighborhood.name}</span>
+                          {neighborhoodData && (
+                            <span className="category-count">{neighborhoodData.count} daycares</span>
                           )}
                         </div>
                       </Link>
@@ -204,7 +204,7 @@ export default function Navigation() {
                   className="nav-dropdown-all view-all-categories"
                   type="button"
                 >
-                  View All {categories.length}+ Categories →
+                  View All Neighborhoods →
                 </button>
               </div>
             )}
@@ -225,49 +225,46 @@ export default function Navigation() {
             {isResourcesOpen && (
               <div className="nav-dropdown-menu" style={{ minWidth: '400px' }}>
                 <Link
-                  to="/how-to-choose-ai-platforms"
+                  to="/choosing-a-daycare"
                   onClick={closeMenu}
                   className="nav-dropdown-item"
                   style={{ marginBottom: '8px' }}
                 >
-                  🎯 How to Choose AI Platforms
+                  🎯 Choosing a Daycare Guide
                 </Link>
                 <Link
-                  to="/machine-learning-tools-directory"
+                  to="/licensing-information"
                   onClick={closeMenu}
                   className="nav-dropdown-item"
                   style={{ marginBottom: '8px' }}
                 >
-                  🤖 ML Tools Directory
+                  📋 Understanding Licensing
                 </Link>
                 <Link
-                  to="/natural-language-processing-tools"
+                  to="/financial-aid"
                   onClick={closeMenu}
                   className="nav-dropdown-item"
                   style={{ marginBottom: '8px' }}
                 >
-                  📝 NLP Tools
+                  💰 Financial Aid & Subsidies
                 </Link>
                 <Link
-                  to="/computer-vision-platforms"
+                  to="/preschool-readiness"
                   onClick={closeMenu}
                   className="nav-dropdown-item"
                   style={{ marginBottom: '8px' }}
                 >
-                  👁️ Computer Vision Platforms
+                  🎓 Preschool Readiness
                 </Link>
                 <Link
-                  to="/enterprise-ai-solutions"
+                  to="/contact"
                   onClick={closeMenu}
                   className="nav-dropdown-item"
                 >
-                  🏢 Enterprise AI Solutions
+                  📧 Contact Us
                 </Link>
               </div>
             )}
-          </li>
-          <li>
-            <Link to="/guides" onClick={closeMenu}>Guides</Link>
           </li>
           <li>
             <Link to="/blog" onClick={closeMenu}>Blog</Link>
@@ -277,7 +274,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link to="/submit" className="nav-cta" onClick={closeMenu}>
-              Submit Tool
+              List Your Daycare
             </Link>
           </li>
         </ul>
@@ -323,9 +320,9 @@ export default function Navigation() {
                 className="mobile-dropdown-trigger"
                 aria-expanded={isCategoriesOpen}
                 aria-haspopup="true"
-                aria-label="Browse categories menu"
+                aria-label="Browse neighborhoods menu"
               >
-                Categories
+                Neighborhoods
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
@@ -333,16 +330,16 @@ export default function Navigation() {
               {isCategoriesOpen && (
                 <div className="mobile-dropdown-content">
                   <div className="nav-dropdown-grid" style={{ gridTemplateColumns: '1fr' }}>
-                    {categories.map((category) => (
+                    {categories.map((neighborhood) => (
                       <Link
-                        key={category.slug}
-                        to={`/category/${category.slug}`}
+                        key={neighborhood.slug}
+                        to={`/neighborhood/${neighborhood.slug}`}
                         onClick={closeMenu}
                         className="nav-dropdown-item"
                         style={{ fontSize: '11px', padding: '10px' }}
                       >
-                        <span>{category.name}</span>
-                        <span style={{ fontSize: '10px' }}>{category.count}</span>
+                        <span>{neighborhood.name}</span>
+                        <span style={{ fontSize: '10px' }}>{neighborhood.count} daycares</span>
                       </Link>
                     ))}
                   </div>
@@ -351,13 +348,10 @@ export default function Navigation() {
                     className="nav-dropdown-all"
                     style={{ background: 'transparent', border: '4px solid #000' }}
                   >
-                    View All Categories →
+                    View All Neighborhoods →
                   </button>
                 </div>
               )}
-            </li>
-            <li>
-              <Link to="/guides" onClick={closeMenu}>Guides</Link>
             </li>
             <li>
               <Link to="/blog" onClick={closeMenu}>Blog</Link>
@@ -366,7 +360,7 @@ export default function Navigation() {
               <Link to="/about" onClick={closeMenu}>About</Link>
             </li>
             <li>
-              <Link to="/submit" onClick={closeMenu}>Submit Tool</Link>
+              <Link to="/submit" onClick={closeMenu}>List Your Daycare</Link>
             </li>
           </ul>
 
