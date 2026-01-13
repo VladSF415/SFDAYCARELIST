@@ -1,0 +1,28 @@
+[
+  {
+    "Facility Name": "ABC Learning Center",
+    "Address": "123 Market Street",
+    "City": "San Francisco",
+    "State": "CA",
+    "ZipCode": "94102",
+    "Phone": "(415) 555-1234",
+    "License Number": "123456789",
+    "License Type": "Child Care Center",
+    "License Status": "Licensed",
+    "Capacity": 50,
+    "County": "San Francisco"
+  },
+  {
+    "Facility Name": "Bright Horizons Daycare",
+    "Address": "456 Valencia Street",
+    "City": "San Francisco",
+    "State": "CA",
+    "ZipCode": "94110",
+    "Phone": "(415) 555-5678",
+    "License Number": "987654321",
+    "License Type": "Child Care Center",
+    "License Status": "Licensed",
+    "Capacity": 75,
+    "County": "San Francisco"
+  }
+]

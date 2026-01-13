@@ -34,6 +34,8 @@
     "scrape:ca": "node scripts/scrapers/ca-licensing-scraper.mjs",
     "scrape:google": "node scripts/scrapers/google-places-scraper.mjs",
     "scrape:yelp": "node scripts/scrapers/yelp-scraper.mjs",
+    "scrape:merge": "node scripts/scrapers/merge-and-enrich.mjs",
+    "scrape:enrich": "node scripts/scrapers/enrich-existing.mjs",
     "deploy:railway": "npm run build && railway up",
     "deploy:vercel": "npm run build && vercel --prod",
     "deploy:firebase": "npm run build && firebase deploy",
