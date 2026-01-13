@@ -1,0 +1,404 @@
+[
+  {
+    "id": "san-francisco-department-of-children-youth-their-f",
+    "name": "San Francisco Department of Children, Youth & Their Families (DCYF)",
+    "tagline": "",
+    "description": "",
+    "hero_image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN1pwN2OBYrQqJKf7Ry-jNN3pCR9Vu-gCgjGGlGETwvmINa8SEyNQrrH8ueMdp_Sz3YJbKq-Zay22gMvsE0hFk8_a_dBRU_dU6NhLk7J6Tqj2TrObIX-dVp5_HH3Qm_ga31DvxIm23qQAuW3dGCF5R_fNnIR-0mNtlYCYmVIdYXiW4Qxmv89kb7ukd4H9FWiMzGb-OYvYjtavGxXIq_2To0OA7ZSXxxQMRApmI_fsz3Vt8kR4rH3U-wnw3gEe6jdfRlWkuv5wqwbiVcc18RKVX38EtVGghp-uLFRKtf52kdHIw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+    "location": {
+      "street": "1455 Market St Suite 17B, USA",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94103",
+      "neighborhood": "",
+      "latitude": 37.7754463,
+      "longitude": -122.4177927,
+      "public_transit": []
+    },
+    "contact": {
+      "phone": "(628) 652-7100",
+      "email": "",
+      "website": "http://www.dcyf.org/"
+    },
+    "hours": {
+      "monday": {
+        "open": "8:30 AM",
+        "close": "5:00 PM"
+      },
+      "tuesday": {
+        "open": "8:30 AM",
+        "close": "5:00 PM"
+      },
+      "wednesday": {
+        "open": "8:30 AM",
+        "close": "5:00 PM"
+      },
+      "thursday": {
+        "open": "8:30 AM",
+        "close": "5:00 PM"
+      },
+      "friday": {
+        "open": "8:30 AM",
+        "close": "5:00 PM"
+      },
+      "saturday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "sunday": {
+        "open": "Closed",
+        "close": "Closed"
+      }
+    },
+    "licensing": {
+      "license_number": "",
+      "status": "Active",
+      "type": "Child Care Center",
+      "capacity": 0,
+      "issued_date": null,
+      "expiration_date": null,
+      "last_inspection": null,
+      "data_source": "Google Places API"
+    },
+    "program": {
+      "age_groups": [
+        "Infants",
+        "Toddlers",
+        "Preschool"
+      ],
+      "ages_min_months": 0,
+      "ages_max_years": 5,
+      "languages": [
+        "English"
+      ],
+      "curriculum": "",
+      "schedule_types": [
+        "Full-time"
+      ],
+      "special_programs": []
+    },
+    "availability": {
+      "accepting_enrollment": true,
+      "infant_spots": null,
+      "toddler_spots": null,
+      "preschool_spots": null,
+      "waitlist_available": null,
+      "last_updated": "2026-01-13"
+    },
+    "pricing": {
+      "infant_monthly": null,
+      "toddler_monthly": null,
+      "preschool_monthly": null,
+      "currency": "USD",
+      "financial_assistance": false,
+      "subsidy_accepted": false
+    },
+    "ratings": {
+      "overall": 4.5,
+      "google_rating": 4.5,
+      "google_review_count": 2,
+      "yelp_rating": 0,
+      "review_count": 2
+    },
+    "reviews": [
+      {
+        "author": "Lawrence Li",
+        "text": "Not excellent, but not bad either",
+        "rating": 4,
+        "date": "2013-03-03",
+        "source": "Google"
+      },
+      {
+        "author": "Kayden “Jayson” Dowker",
+        "text": "",
+        "rating": 5,
+        "date": "2017-06-08",
+        "source": "Google"
+      }
+    ],
+    "photos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN1pwN2OBYrQqJKf7Ry-jNN3pCR9Vu-gCgjGGlGETwvmINa8SEyNQrrH8ueMdp_Sz3YJbKq-Zay22gMvsE0hFk8_a_dBRU_dU6NhLk7J6Tqj2TrObIX-dVp5_HH3Qm_ga31DvxIm23qQAuW3dGCF5R_fNnIR-0mNtlYCYmVIdYXiW4Qxmv89kb7ukd4H9FWiMzGb-OYvYjtavGxXIq_2To0OA7ZSXxxQMRApmI_fsz3Vt8kR4rH3U-wnw3gEe6jdfRlWkuv5wqwbiVcc18RKVX38EtVGghp-uLFRKtf52kdHIw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc"
+    ],
+    "google_place_id": "ChIJzwpUCZyAhYARpD64Jc7SNb4",
+    "verified": true,
+    "featured": false,
+    "created_at": "2026-01-13T06:46:23.715Z",
+    "updated_at": "2026-01-13T06:46:23.715Z"
+  },
+  {
+    "id": "montessori-house-of-children",
+    "name": "Montessori House of Children",
+    "tagline": "",
+    "description": "",
+    "hero_image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2Vs4VxssPqPEwz-EV2FoxR03qQhvc_u9VX0xr_2eBcR_8dFN-CYQG6EmmaRaLmwCjfUhKNY0R0KnnP9SRRC4MNfeGHaDquG9cVWQBXEgsKamn-NABROKD3EMhM8OK0bsK77d_88My-RKZPBInDctAfMCT6E7spmXqLZvlPWNij6qTRV37acD_Vt3Jmx7LjeNCyB7ysjpPVuFK92j9bJMMTY-JkUVYOk5J2AzYfxI849J8oUInrKfrGU7Ikn9USW7q4i26_fiYGURLMA_A7fg9WEfGNN6F69Xmo2GgdEqmoOw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+    "location": {
+      "street": "1187 Franklin St, USA",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94109",
+      "neighborhood": "",
+      "latitude": 37.7852975,
+      "longitude": -122.4237309,
+      "public_transit": []
+    },
+    "contact": {
+      "phone": "(415) 441-7691",
+      "email": "",
+      "website": "http://www.montessorisf.us/"
+    },
+    "hours": {
+      "monday": {
+        "open": "7:30 AM",
+        "close": "5:30 PM"
+      },
+      "tuesday": {
+        "open": "7:30 AM",
+        "close": "5:30 PM"
+      },
+      "wednesday": {
+        "open": "7:30 AM",
+        "close": "5:30 PM"
+      },
+      "thursday": {
+        "open": "7:30 AM",
+        "close": "5:30 PM"
+      },
+      "friday": {
+        "open": "7:30 AM",
+        "close": "5:30 PM"
+      },
+      "saturday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "sunday": {
+        "open": "Closed",
+        "close": "Closed"
+      }
+    },
+    "licensing": {
+      "license_number": "",
+      "status": "Active",
+      "type": "Child Care Center",
+      "capacity": 0,
+      "issued_date": null,
+      "expiration_date": null,
+      "last_inspection": null,
+      "data_source": "Google Places API"
+    },
+    "program": {
+      "age_groups": [
+        "Infants",
+        "Toddlers",
+        "Preschool"
+      ],
+      "ages_min_months": 0,
+      "ages_max_years": 5,
+      "languages": [
+        "English"
+      ],
+      "curriculum": "",
+      "schedule_types": [
+        "Full-time"
+      ],
+      "special_programs": []
+    },
+    "availability": {
+      "accepting_enrollment": true,
+      "infant_spots": null,
+      "toddler_spots": null,
+      "preschool_spots": null,
+      "waitlist_available": null,
+      "last_updated": "2026-01-13"
+    },
+    "pricing": {
+      "infant_monthly": null,
+      "toddler_monthly": null,
+      "preschool_monthly": null,
+      "currency": "USD",
+      "financial_assistance": false,
+      "subsidy_accepted": false
+    },
+    "ratings": {
+      "overall": 0,
+      "google_rating": 0,
+      "google_review_count": 0,
+      "yelp_rating": 0,
+      "review_count": 0
+    },
+    "reviews": [],
+    "photos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2Vs4VxssPqPEwz-EV2FoxR03qQhvc_u9VX0xr_2eBcR_8dFN-CYQG6EmmaRaLmwCjfUhKNY0R0KnnP9SRRC4MNfeGHaDquG9cVWQBXEgsKamn-NABROKD3EMhM8OK0bsK77d_88My-RKZPBInDctAfMCT6E7spmXqLZvlPWNij6qTRV37acD_Vt3Jmx7LjeNCyB7ysjpPVuFK92j9bJMMTY-JkUVYOk5J2AzYfxI849J8oUInrKfrGU7Ikn9USW7q4i26_fiYGURLMA_A7fg9WEfGNN6F69Xmo2GgdEqmoOw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN13UYY8jdTyaQmJpB_N0B-Ftk04l0Z24xKPiBdcX216giHfrVVMjDPBHjrXjeCCQccRNI7ymqaW4HE6s0IFn97DupWUnX6rgxtGaHXUr2Axxc8HeVRt48qGLAY1FG6ugOpDZGDzzKF7F09q3_5xfqmEJZuZ9UFswaQOHHd4WKRKq1rYE98MJqhjcuYQK-w0Px9CY0ValkMtjEx5Vf90_jQDAbU97EkEvRjepamI414d3Ycy3faE5YG__exJaA8T_f_k68Ok_k4MLBFB4vwUnqGxLDfxCvtRMesQXi-6UEL9AQ&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN3scGPn6twl22Fz_LUVx-VLdDy07P-DxbmKlSyvEz_5dPwIhE8KjZ2VND6a91uhJ287c3tjtAEEv6wACHukCPRDQCCuF0dayHT3hL8iqpVJXCY8JzQeegH80KPsqB9FAWNU32d_jXWrqt1uoFjv0AH9j8r7NqLiBBgoTtJ9gCXLi3KaEzgsQqlBchBgL8qtnuOnn9BBqznkMH_EJKa62cg868bLOuadPk-G3zJNMLIaVlhgM7_v-FFTdsiqD2RjdA7EhKyRJIiDqrlBdgwBQq3cZWeq6yHbqypfeZVd1zxtVg&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2yoIFA8272DxUjWV7diE7fpelQGzyHp4lc5wg-LAiaAlsIAID4glnOrfgu21iaH-pn_VGHu1VJYzUMD4H172rcWXrKLuERfRt491JT_51ywNjGKhv5xwQ0qWHNmuTCBgOgl6F8LZrCep9bBN8zeDgDcVTnyLjYdLO5ffJkCreY6fIEaROKyGEQ5bjQ8tYHRPDy3658ibEjYS8LKJVWU3caR0yiRx77zs3Bi1SOXC_VL3R5Y2gsnekTDri_0rMyndVGZjoEs8F6DQaXdTgGOn8E8iLWL-ed-Gxrd_h9Rn6v6g&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN0lALJ2undWMSW873vX7zeBs0EgZPzkVCmuurrQMp3qHyfNETiTHSEM1RrWOReshvqJ26Urb7czHIQbUDfR0eyIbz-xKlxCLoQ7JOGoN1vkQCU0JN2MFDO_WRW_20shnj0va41ek5wUfy4YoqrXAN2mSs0vII-O10FhQJoWKrWLkw6dCN5G_5Ecf7Qb05gOBZbjkqyrOBHpF4eaCtW_72Ckn48CvVQUGYXh6YGUf4tFOXHbuMkyNAb5uLlABWAY3E-dDe49D7l2rzSPqrYC7DbnAg9bwUoe1u3kXY3Iugow7w&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2g9dommbs6TM06UTGNGhu_FM9ip5SAl-q2I51-DjJdIQxBRjhLVCEjOPgWFk6MVXQVbB8Sv47jsNx0fFuSQQ0KQnW9IMWfEhYL67I_DOI9nlqTiQRpAAKDJuq81bhw6K-5WrP3ojGzKF-YH6NAajBoZUyKYlE40lN5FuSZAVih2tbxksowI1NcaF7JTYZVzLDE9xhAr4Yh3iBjcqk5kd4kLKbjQ07W5008_8LFlCz8Tg4JvwQ_jr1XQBugs6SHn4DPtDiJd540TPhUZLak4Qhwwf7g6DF0nTmL1LAvWkGBQA&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN35ftj_FJg01hkn5VhFBnCNjDkXHfqE9H4ADp86QDgvD3Y7dMW0MeTI3mjIG-x11hCEXufluM5vOUO91MdV2t14glezmYa7BYB3GC4Z_bF8Yqm9iI0AunQlsMabktWijYAhCWyKdHgkYk8mLhx4GixlIQrMm6km1JVFFcZmDsL7vzmwG1ZSfO5aN_cU-FlZ3p4kohr7qqMuOx8hIoonTkDWW5Mj8WSuNtBUFnohcMvZwyA7oIIUi20TafPATpSuCGxCXH58c0oiIB_9KMava42eGAEZcWK4kO6NBr7X2lVs1w&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN012QxYyIW6GOrUZTA3qD5R6CV5inRzinBOsYilgDZy4Pr9gE435JCWHasX3UfLpHWdpTtNS6AhuJ3uI8WnXHiiaZV13C7Xf352YD4VYjPTx5BuS0aQFsNDzcmjWWn80W3o4JpdEaiMa6ShY427n_gX4I-uslD8FbOsrbno8T_u-ONp9rsy--SBUavnqgE1885tdZ0AYQjW_KSGTEitIh53ZWIeM0HOSD_F3634RY-gAv1Nloj71Ewj8tzCP0iP5upH9Qi3oo691nXyO7NGAYzpG3t58B88dKo_AMFmot0OUg&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN3vYmDA85yGzNKLi3M1pWD8UEb38MwOoIYRjLqxX94IpjpKn_YRL8cQc-_t9el9V8mATP2QntSXsJY8adEnV54ruiOPg-adMdnQXlNATRakFv5Zki83T2OZYGOfooeAdsMFfoeK0pcmW2_RRkP5sqxTYQX7ywnXbQk5jv0M54rzmVBali_0U7lvvL0gg-Qdq2LnYZE5QZ2q_i23W5O7DEuYo57WnN0pNqlrYY42FkE4L8sSA5LREtYB0FszXGwXpT0L6FOvlWlNqux6HL1HES9tfnDbzoctvnuTiOX0KIZKuA&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN247g5VBDd7QkkRCqNc9PSQBXgxeHA0I9Y2fBwRTDnDk3lXMm17blv5FqAX2-sbgummEfD12kJo_VeiPHPbYe8zqCCeohTBAHvrKYEMNilj_xiNP_nsW907RhdK98YtG7jVd3PhhnKp8iB8PfFB2Nm9BtpHo74HQ8MdS429oji-G_wEoma1iIpKpWVveL4-UhFqfxl_BHu9vC3YZ2ldSJlJu60EcAvfCJTwu34KiQG_ZuWcCKsUAtUyFYhUlVkLrON7K9eEsVsCTrgMWojkciLWZ1u9XlWYmpDrmZmtTC440w&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc"
+    ],
+    "google_place_id": "ChIJ57PB4pWAhYARhwAyO7F5KCA",
+    "verified": true,
+    "featured": false,
+    "created_at": "2026-01-13T06:46:24.315Z",
+    "updated_at": "2026-01-13T06:46:24.315Z"
+  },
+  {
+    "id": "c5-childrens-school",
+    "name": "C5 Children's School",
+    "tagline": "",
+    "description": "",
+    "hero_image": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2_tgBqIAYLej2jxL2sRhAoXb_Vvpt9420gfWRfKtINW2sogLafj2OCWKBo9MmdzuvIA0fhcpUxvPp-pmeyzz7MenONHFpBzzGlxJAGMI4YH65rsMNcDpwR7vaKYGlbZtXmnU9oWKbVmSbQX9enA-WutB-tfz4EKHNIn6UmykkpNOtQU1315TEbwS4AuFg5ByGQiZ07DuSDAd8HVvghFubeGDxrSC5H4TrW3d5dTN85pnmC1wbYA4wtn9IztDt6DDS8NqP7LXky0ka6c144ccD2gF5hXvvDEk_5s6WzoA14-Q&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+    "location": {
+      "street": "455 Golden Gate Ave #2400, USA",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94102",
+      "neighborhood": "",
+      "latitude": 37.781089,
+      "longitude": -122.418101,
+      "public_transit": []
+    },
+    "contact": {
+      "phone": "(415) 703-1277",
+      "email": "",
+      "website": "http://www.c5children.org/"
+    },
+    "hours": {
+      "monday": {
+        "open": "8:00 AM",
+        "close": "5:30 PM"
+      },
+      "tuesday": {
+        "open": "8:00 AM",
+        "close": "5:30 PM"
+      },
+      "wednesday": {
+        "open": "8:00 AM",
+        "close": "5:30 PM"
+      },
+      "thursday": {
+        "open": "8:00 AM",
+        "close": "5:30 PM"
+      },
+      "friday": {
+        "open": "8:00 AM",
+        "close": "5:30 PM"
+      },
+      "saturday": {
+        "open": "Closed",
+        "close": "Closed"
+      },
+      "sunday": {
+        "open": "Closed",
+        "close": "Closed"
+      }
+    },
+    "licensing": {
+      "license_number": "",
+      "status": "Active",
+      "type": "Child Care Center",
+      "capacity": 0,
+      "issued_date": null,
+      "expiration_date": null,
+      "last_inspection": null,
+      "data_source": "Google Places API"
+    },
+    "program": {
+      "age_groups": [
+        "Infants",
+        "Toddlers",
+        "Preschool"
+      ],
+      "ages_min_months": 0,
+      "ages_max_years": 5,
+      "languages": [
+        "English"
+      ],
+      "curriculum": "",
+      "schedule_types": [
+        "Full-time"
+      ],
+      "special_programs": []
+    },
+    "availability": {
+      "accepting_enrollment": true,
+      "infant_spots": null,
+      "toddler_spots": null,
+      "preschool_spots": null,
+      "waitlist_available": null,
+      "last_updated": "2026-01-13"
+    },
+    "pricing": {
+      "infant_monthly": null,
+      "toddler_monthly": null,
+      "preschool_monthly": null,
+      "currency": "USD",
+      "financial_assistance": false,
+      "subsidy_accepted": false
+    },
+    "ratings": {
+      "overall": 4.4,
+      "google_rating": 4.4,
+      "google_review_count": 7,
+      "yelp_rating": 0,
+      "review_count": 7
+    },
+    "reviews": [
+      {
+        "author": "Laura Rosow",
+        "text": "We have adored C5 for our children. The teachers are all so kind and patient, and they quickly felt like an extension of our family. I love the school’s emphasis on child-led play and exploration. Kids are encouraged to get creative and have good, messy fun — as they should! Our children blossomed here, and our oldest was very well prepared for kindergarten when he graduated. They have a nice website with daily updates and loads of pictures. Oh, and I love that  food is included!",
+        "rating": 5,
+        "date": "2023-10-21",
+        "source": "Google"
+      },
+      {
+        "author": "Min P",
+        "text": "We love C5! Both of my kids attended the school and we've been there for more than four years. What we like best about C5 is the teachers. They are truly wonderful and care about the children. The school's focus on professional development ensures the teachers are current on the latest trends in education, plus we've experienced very little teacher turnover. We've had many of the same teachers over the years and of course some great new ones! During our time there, we've gotten to know many families who have been there for as long as we have if not longer, an awesome community.",
+        "rating": 5,
+        "date": "2018-03-20",
+        "source": "Google"
+      },
+      {
+        "author": "Jason Holzheimer",
+        "text": "Our family's experience at C5 has been fantastic. Our daughter started at 9 months and is now going on 14 months. We were looking for an environment focused on what's best for students (as opposed to parents and staff) and we found it. We feel very fortunate: no complaints and lots of highlights. The staff is energetic but calm, knowledgable but down-to-Earth. It's also been great to get to know the other parents.",
+        "rating": 5,
+        "date": "2017-09-13",
+        "source": "Google"
+      },
+      {
+        "author": "Orchid Bertelsen",
+        "text": "We could not be happier with C5. Our daughter loves her teacher, Mitch, who moved classrooms with her as she graduated from baby to toddler. They also provide meals and snacks that are nutrious and provide great variety.\n\nQuinn always has a smile on her face when I drop and pick her up. You really can't ask for more.",
+        "rating": 5,
+        "date": "2018-04-03",
+        "source": "Google"
+      },
+      {
+        "author": "Nicole Gorton",
+        "text": "This school has been amazing. The staff is so nurturing and kind. They support the family inside and outside of the program. This school has been a lifesaver for a single mother like myself.",
+        "rating": 5,
+        "date": "2023-10-19",
+        "source": "Google"
+      }
+    ],
+    "photos": [
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2_tgBqIAYLej2jxL2sRhAoXb_Vvpt9420gfWRfKtINW2sogLafj2OCWKBo9MmdzuvIA0fhcpUxvPp-pmeyzz7MenONHFpBzzGlxJAGMI4YH65rsMNcDpwR7vaKYGlbZtXmnU9oWKbVmSbQX9enA-WutB-tfz4EKHNIn6UmykkpNOtQU1315TEbwS4AuFg5ByGQiZ07DuSDAd8HVvghFubeGDxrSC5H4TrW3d5dTN85pnmC1wbYA4wtn9IztDt6DDS8NqP7LXky0ka6c144ccD2gF5hXvvDEk_5s6WzoA14-Q&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN3lQm0m-IUBJM5Sql6oy3Q1OWFaGaLGia_3oFScIb8ACveDXqgrDoqv30X987ZWxfqYusG7YP4AKfNQpHAD1TbR0aADLGE7bVgN4rK0r6cX_0SIwewrbZoyJw6ql55DBQGvutZxY3Vc9i6NnN3iBd6hnC_rFlwT5OxpUT8HbbIo7cOwxyLUpRIF0I9Wt05s6-RObh-NERSm4aCKakhJDPWZvNnnsgtpRZxPdreL28HRjk6lZpLjCVa6GsZyZ2Asm3tGinKVnvSOuoP0ht6LBfhWd1Tw-m_K7iRz94RFjkaiBQ&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN0mI9NBNXyjIMbIOPqmABAzS565qr-LrMI9vCsEoL-7M8AckT4Xwwb8Lf8HInb7SwjZyp961BXI5cWeRCnQMqhebzL_mmyEHSlzpC83faf93HF5jJwfbFDKxc8UfS8RQtt0oCC4ox2KOtcOBAWrOG-Hoz_23Nw-SqOgze3r7XCQqjsA22p2J04zZiCVt1UKQO3KDanurYChjR6QwYpvyLyr431ZlFBvjHcPXBLJythPklSB9w_BRYiJ-VFy5kTSo5JQnerYEjOShaqx4sIzuB34qpI4bp1YulmpZdUn0mDVMw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN2tQqv0iSUb58Orl-lvm3O4siGCWrmL1fCN5Fa0iVse_4Ro1GgOmvbq5j1DUXng9_hurKxLfOQgfyz0IvHpGjAfYw3X3kZ9Pk4ubUXcJewirBx0wpfeKtBJ6Yxbagko6fjBJruEzwqWtfQ7xdfA1Jt17A79DFhf0PcZW0_QzU7-fCyZtZA_PwVZNmJ_w9_AcskWtmd5vPelFDGQg8sbYGRD5znqgmRyL1e88PESSMjptRgMF6fteJgSPd_JFOT7MMxvyIY60HCuWUtrCtuSd5bPudcdV1QOgYFrdqU0BVbGVw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN1sR_uQZrXRQuNiAbwfzkbSF4xQ7oBcPxrEMqtUDnw0sZLG58byiL-zS_KnOtTOhGlIcxTb3hlb2Y3wWT6nAW5j4O69dgYSY9MOdR_GNi_maXbc4hPiCXVcPO7NjHDntOt109vUe5SY4xM_wk60T9Ir9Ngow2jL82Hn2IWwfTrO6atgeiISmUvCcI1yQrOHAkZQJ5Y_zAOd_FC-tB-NOnGkYopXz-Wk31YsOkMj4DaJlAfU8nM44t3_JFekIlX3Y-6W5DctZnKCFUbtqYUZfIJ1w-1JoZLRj0PcTwElHO7uEg&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN1bQXL-AReKTuRXg-RM7ZJjxyNEcKpmX4QP0p8W9IFo2ffQE25ShNJs8UsAaCWn1beR1rBZJk_VBZJu1N2rZ0tMT3vHUq_Kh9CiLz0LA3cTEfs0KcPq2V7aPsmNZtz90s0aRsJKFg4k85wrxVQHdoYbC5ZW9q0Vn-J2nm0irnSCUDiDP_CJMXNz8WTu1gX5DuaHr776ipvI9xA7s6rg0KIkXTzupifZOTuNTH2Xn8cZojlDBCwLky0qB376h3Blzd3Gda7SOZcyDIXIOw6axAxF2XlZWdPY9ibLGYPcO6dSEA&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN03-6hTnar0hywP9i-XSJx-ihjQHjXDkJXGrznnkmMs5Ac2Twphqx0IXTwDsdI_l6KytVsxR4vqCdfbf4z8SKxjkOrUghgl-Av2ZIDiEhikM4zyMS8ngc-f5-uwomH9b7gIG1ArIS2QTstq5tSKknOX72NrTROo91pp16TWh1Rjzs3NhmQmjEaePm-03ybIfDrbYg3WO6OWIi0AzGgZ1u3d0KV6PaHGuTQ8CLljA6VUCMZ2eIpmzVD2xnJhAaO6DMS0APmTDysmSJbm_gHSAA39iy-4tdc5ZurUn5DnlkTw6g&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN3co_ocQb0cp9B-irUYFNO_XQBdlxanN7MJ0ZN8A8Y49rrfHDD0U2f2-eM6r9az00BbIf8Jz24F0RiQXwZDPiWW7xyB7o2ln6ZB3WLEwXxA1DRcPsYvw7TOb5-PomZ-8AX_kwZEYV8N5tMD5eTybvAkN-BV4WtPZaPp4xW0MKtbdpp9ulwFNWVQXFZJQP8_riHUIWc9iK_MH4oI8qoKGlaqbop5cBoDeJ3lmc6VBieY8HYvzE06En87kpkKKTpexncKKi7_Fd7yl0XV6uxLkON09gwid7DMdxoKeV2eEEKP_w&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN3ZsQRfvbltOszPWW69VapVF2ihwzVc4YKvML1ynxuOswqY2xMeHB0OYuW9h1aH_jVmRLZBoYi1gmxNiXLd5bejWjimmriFocDzcK6rLr8kR50QEYly1SXuiLvE4GCJGBQKbMTBo4SUgTX9AaKQ9_C_hQD_P9vwWTzGMy0yZsuL-1RUae3l4duiCfTFaQfEVR96fogs1h89P79QuPAwuHOhoXKU3DtAUl-btELnDGGhjo9rG_of2Nuf_rflr2IWaQ7YHkQ0gdA-Gmjvtnzj9iBlmBXwRls9ml4f9Ka49OpJkQ&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
+      "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=AcnlKN0FLZCKE4PrRRT9VXo_K8TOgJSESU4Hc-khByYtkrPO2YG9EhoScQxQW60ACiUcfyOTlL53kSuqIG3IhRPRwdb5zJl7mBEmLNPTyoNSGNIsjtIKcAKq3OXYW12JIC6Zy5V3VGHAwN5u2VtNdebCMI3OTtc0amoQsnV3y_PQNObMuYoYVIDuj_GMlm64-FkEJpvnGT8viCsFpkfxizEBvrMDHiVKaACL2vYUiPuUL4FI021Maan0WjrL7ppUeAIYmcADzhyTt_1zp-ptfZrkQOSTD__ghrJQV0e7UtYHX-gJIQ&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc"
+    ],
+    "google_place_id": "ChIJ3UTZGJqAhYARJjhtX8QYTXo",
+    "verified": true,
+    "featured": false,
+    "created_at": "2026-01-13T06:46:24.915Z",
+    "updated_at": "2026-01-13T06:46:24.915Z"
+  }
+]

@@ -28,7 +28,11 @@
       "Bash(curl:*)",
       "Bash(npm run dev:*)",
       "Bash(npm run scrape:all:*)",
-      "Bash(timeout /t 30 node scripts/scrapers/ca-licensing-scraper.mjs)"
+      "Bash(timeout /t 30 node scripts/scrapers/ca-licensing-scraper.mjs)",
+      "Bash(npm run scrape:winnie:*)",
+      "Bash(npm run import:list:*)",
+      "Bash(npm run scrape:discover:*)",
+      "Bash(tee:*)"
     ]
   }
 }
