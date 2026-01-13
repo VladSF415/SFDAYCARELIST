@@ -11,6 +11,7 @@
     "bot": "node telegram-bot.js",
     "db:migrate": "node db/migrate.js",
     "db:seed": "node db/seed.js",
+    "db:reseed": "node scripts/reseed-production.mjs",
     "db:setup": "npm run db:migrate && npm run db:seed",
     "db:setup-complete": "node setup-db.js",
     "organize": "node scripts/auto-organize.mjs",
