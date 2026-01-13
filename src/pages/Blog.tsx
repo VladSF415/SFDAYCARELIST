@@ -93,8 +93,8 @@ export default function Blog() {
   return (
     <>
       <SocialMetaTags
-        title="Blog - AI Platforms List | Guides, Comparisons & Reviews"
-        description="Explore our comprehensive AI guides, tool comparisons, alternatives, and best-of lists. Stay informed about the latest AI platforms and make better decisions."
+        title="Blog - SF Daycare List | Guides, Comparisons & Reviews"
+        description="Explore our comprehensive AI guides, tool comparisons, alternatives, and best-of lists. Stay informed about the latest daycares and make better decisions."
         url="https://aiplatformslist.com/blog"
       />
 
@@ -694,7 +694,7 @@ export default function Blog() {
                 Want Your Tool Featured?
               </h3>
               <p style={{ fontFamily: "'Courier New', monospace", marginBottom: '1.5rem' }}>
-                Submit your AI platform to be included in our guides and comparisons.
+                Submit your daycares to be included in our guides and comparisons.
               </p>
               <Link
                 to="/submit"

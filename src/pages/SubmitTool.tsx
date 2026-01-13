@@ -179,7 +179,7 @@ function SubmitTool() {
           fontSize: '16px',
           color: '#666'
         }}>
-          Get listed in our directory of {totalPlatforms}+ curated AI platforms
+          Get listed in our directory of {totalPlatforms}+ curated daycares
         </p>
       </div>
 

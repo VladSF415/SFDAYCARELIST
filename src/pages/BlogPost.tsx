@@ -106,7 +106,7 @@ export default function BlogPost() {
   return (
     <>
       <SocialMetaTags
-        title={`${post.title} - AI Platforms List Blog`}
+        title={`${post.title} - SF Daycare List Blog`}
         description={post.metaDescription}
         url={`https://aiplatformslist.com/blog/${post.slug}`}
         type="article"
@@ -345,7 +345,7 @@ export default function BlogPost() {
                 letterSpacing: '2px',
                 marginTop: 0
               }}>
-                Explore AI Platforms
+                Browse Daycares
               </h3>
               <p style={{ fontFamily: "'Courier New', monospace", marginBottom: '1.5rem' }}>
                 Browse our comprehensive directory of 866+ AI tools and platforms.
