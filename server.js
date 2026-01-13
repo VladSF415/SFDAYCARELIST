@@ -2592,6 +2592,84 @@ const start = async () => {
     //   await initAnalyticsDB();
     // }
 
+    // Auto-sync database with JSON data on startup
+    try {
+      const countResult = await db.query('SELECT COUNT(*) FROM daycares');
+      const dbCount = parseInt(countResult.rows[0].count);
+      const jsonCount = daycaresData.length;
+
+      console.log(`📊 Database: ${dbCount} daycares, JSON: ${jsonCount} daycares`);
+
+      if (jsonCount > dbCount) {
+        console.log(`🔄 Syncing database with JSON data (${jsonCount - dbCount} new daycares)...`);
+
+        for (const d of daycaresData) {
+          await db.query(
+            `INSERT INTO daycares (
+              slug, name, description,
+              contact_phone, contact_email, contact_website,
+              location_address, location_city, location_state, location_zip,
+              location_neighborhood, location_latitude, location_longitude,
+              location_public_transit,
+              license_number, license_status, license_type, license_capacity,
+              license_data_source,
+              program_age_groups, program_ages_min_months, program_ages_max_years,
+              program_languages, program_curriculum,
+              hours,
+              pricing_infant_monthly, pricing_toddler_monthly, pricing_preschool_monthly,
+              ratings_overall, ratings_review_count,
+              verified, created_at, updated_at
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33)
+            ON CONFLICT (slug) DO UPDATE SET
+              name = EXCLUDED.name,
+              description = EXCLUDED.description,
+              updated_at = EXCLUDED.updated_at`,
+            [
+              d.slug || d.id,
+              d.name,
+              d.description || '',
+              d.contact?.phone || '',
+              d.contact?.email || '',
+              d.contact?.website || '',
+              d.location?.street || d.location?.address || '',
+              d.location?.city || 'San Francisco',
+              d.location?.state || 'CA',
+              d.location?.zip || '',
+              d.location?.neighborhood || '',
+              d.location?.latitude || 37.7749,
+              d.location?.longitude || -122.4194,
+              JSON.stringify(d.location?.public_transit || []),
+              d.licensing?.license_number || '',
+              d.licensing?.status || 'Licensed',
+              d.licensing?.type || 'Child Care Center',
+              d.licensing?.capacity || 0,
+              d.licensing?.data_source || 'Google Places',
+              d.program?.age_groups || ['infant', 'toddler', 'preschool'],
+              d.program?.ages_min_months || 0,
+              d.program?.ages_max_years || 5,
+              d.program?.languages || ['English'],
+              d.program?.curriculum || '',
+              JSON.stringify(d.hours || {}),
+              d.pricing?.infant_monthly || null,
+              d.pricing?.toddler_monthly || null,
+              d.pricing?.preschool_monthly || null,
+              d.ratings?.overall || d.ratings?.google_rating || 0,
+              d.ratings?.review_count || d.ratings?.google_review_count || 0,
+              d.verified || false,
+              d.created_at || new Date().toISOString(),
+              new Date().toISOString()
+            ]
+          );
+        }
+
+        console.log(`✅ Database synced with ${jsonCount} daycares`);
+      } else {
+        console.log('✅ Database already up to date');
+      }
+    } catch (syncError) {
+      console.warn('⚠️  Database sync failed (will retry next startup):', syncError.message);
+    }
+
     const port = process.env.PORT || 3001;
     await fastify.listen({ port, host: '0.0.0.0' });
     console.log(`🚀 SF Daycare List running on port ${port}`);
