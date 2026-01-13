@@ -3,12 +3,16 @@
 // ==============================================================================
 // Orchestrates all scrapers and merges data from multiple sources
 
+import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import scrapeCALicensing from './ca-licensing-scraper.mjs';
 import scrapeGooglePlaces from './google-places-scraper.mjs';
 import scrapeYelp from './yelp-scraper.mjs';
+
+// Load environment variables
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

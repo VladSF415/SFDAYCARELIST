@@ -1,65 +1,14 @@
 [
   {
-    "id": "little-stars-preschool-mission",
-    "name": "Little Stars Preschool",
-    "slug": "little-stars-preschool-mission",
-    "description": "Nurturing bilingual preschool in the heart of the Mission District. Our Reggio Emilia-inspired curriculum focuses on child-led exploration and creative expression. We offer a warm, inclusive environment where children ages 6 months to 5 years thrive in both English and Spanish. Our dedicated teachers create personalized learning experiences that honor each child's unique interests and developmental stage.",
+    "name": "LITTLE STARS DAYCARE",
     "contact": {
       "phone": "(415) 894-7908",
-      "email": "info@littlestarssf.com",
-      "website": "https://littlestarssf.com"
+      "website": ""
     },
     "location": {
-      "address": "2345 Mission Street",
-      "city": "San Francisco",
-      "state": "CA",
-      "zip": "94110",
-      "neighborhood": "mission-district",
-      "latitude": 37.7599,
-      "longitude": -122.4194,
-      "public_transit": [
-        "BART 24th St",
-        "Bus 14, 49"
-      ]
-    },
-    "licensing": {
-      "license_number": "384501234",
-      "status": "active",
-      "type": "Child Care Center",
-      "capacity": 45,
-      "issued_date": "2020-03-15",
-      "expiration_date": "2026-03-15",
-      "last_inspection": "2025-11-10",
-      "inspection_score": 95,
-      "violations": [],
-      "data_source": "CA Department of Social Services"
-    },
-    "program": {
-      "age_groups": [
-        "infant",
-        "toddler",
-        "preschool"
-      ],
-      "ages_min_months": 6,
-      "ages_max_years": 5,
-      "languages": [
-        "English",
-        "Spanish"
-      ],
-      "curriculum": "Reggio Emilia",
-      "special_programs": [
-        "Bilingual",
-        "Organic meals",
-        "Music enrichment"
-      ]
-    },
-    "availability": {
-      "accepting_enrollment": true,
-      "infant_spots": 0,
-      "toddler_spots": 2,
-      "preschool_spots": 5,
-      "waitlist_available": true,
-      "last_updated": "2026-01-08"
+      "address": "2752 Harrison St, San Francisco, CA 94110, USA",
+      "latitude": 37.753333,
+      "longitude": -122.412321
     },
     "hours": {
       "monday": "8:00 AM – 4:00 PM",
@@ -70,114 +19,27 @@
       "saturday": "Closed",
       "sunday": "Closed"
     },
-    "pricing": {
-      "infant_monthly": 2400,
-      "toddler_monthly": 2200,
-      "preschool_monthly": 1900,
-      "part_time_available": true,
-      "financial_aid": true,
-      "accepts_subsidy": [
-        "Title 5",
-        "CCPP"
-      ]
-    },
-    "features": [
-      "Outdoor play area",
-      "Organic meals included",
-      "Security cameras",
-      "Licensed teachers",
-      "Small class ratios (1:4 infants)",
-      "Nap rooms",
-      "Parent communication app"
-    ],
     "ratings": {
-      "overall": 4.7,
-      "safety": 4.9,
-      "education": 4.6,
-      "staff": 4.8,
-      "facilities": 4.5,
-      "nutrition": 4.7,
-      "review_count": 38,
-      "verified_reviews": 32,
-      "google_rating": 0,
-      "google_review_count": 0
+      "overall": 0,
+      "review_count": 0,
+      "source": "Google"
     },
     "reviews": [],
     "photos": [],
-    "premium": {
-      "is_premium": false,
-      "tier": null,
-      "featured_until": null
-    },
-    "verified": true,
-    "claimed_by_owner": false,
-    "owner_email": null,
-    "seo": {
-      "meta_title": "Little Stars Preschool - Mission District Bilingual Daycare",
-      "meta_description": "Nurturing bilingual preschool in Mission District. Licensed for ages 6mo-5yrs. Reggio Emilia curriculum, organic meals, 4.7★ rating."
-    },
-    "created_at": "2025-10-01T00:00:00Z",
-    "updated_at": "2026-01-13T05:29:22.019Z"
+    "business_status": "OPERATIONAL",
+    "scraped_at": "2026-01-13T05:29:17.753Z",
+    "original_id": "little-stars-preschool-mission"
   },
   {
-    "id": "sunshine-academy-noe-valley",
-    "name": "Sunshine Academy",
-    "slug": "sunshine-academy-noe-valley",
-    "description": "Montessori-based learning center in family-friendly Noe Valley. We provide a carefully prepared environment that encourages independence, curiosity, and a love of learning. Our certified Montessori teachers guide children through developmentally appropriate activities using authentic Montessori materials. Serving families since 2015.",
+    "name": "Sunshine Preschool Center",
     "contact": {
       "phone": "(415) 915-0187",
-      "email": "hello@sunshineacademy.com",
       "website": "http://daycaresanfrancisco.com/"
     },
     "location": {
-      "address": "3890 24th Street",
-      "city": "San Francisco",
-      "state": "CA",
-      "zip": "94114",
-      "neighborhood": "noe-valley",
-      "latitude": 37.7516,
-      "longitude": -122.4295,
-      "public_transit": [
-        "J Church",
-        "Bus 48"
-      ]
-    },
-    "licensing": {
-      "license_number": "384501567",
-      "status": "active",
-      "type": "Child Care Center",
-      "capacity": 32,
-      "issued_date": "2015-09-01",
-      "expiration_date": "2026-09-01",
-      "last_inspection": "2025-10-15",
-      "inspection_score": 98,
-      "violations": [],
-      "data_source": "CA Department of Social Services"
-    },
-    "program": {
-      "age_groups": [
-        "toddler",
-        "preschool"
-      ],
-      "ages_min_months": 18,
-      "ages_max_years": 6,
-      "languages": [
-        "English"
-      ],
-      "curriculum": "Montessori",
-      "special_programs": [
-        "Gardening",
-        "Music",
-        "Yoga"
-      ]
-    },
-    "availability": {
-      "accepting_enrollment": false,
-      "infant_spots": 0,
-      "toddler_spots": 0,
-      "preschool_spots": 0,
-      "waitlist_available": true,
-      "last_updated": "2026-01-05"
+      "address": "650 Andover St, San Francisco, CA 94110, USA",
+      "latitude": 37.7355049,
+      "longitude": -122.417006
     },
     "hours": {
       "monday": "7:30 AM – 6:00 PM",
@@ -188,33 +50,10 @@
       "saturday": "Closed",
       "sunday": "Closed"
     },
-    "pricing": {
-      "infant_monthly": 0,
-      "toddler_monthly": 2100,
-      "preschool_monthly": 1950,
-      "part_time_available": false,
-      "financial_aid": false,
-      "accepts_subsidy": []
-    },
-    "features": [
-      "Outdoor garden",
-      "Montessori materials",
-      "AMI certified teachers",
-      "Small class sizes (1:8 ratio)",
-      "Daily outdoor time",
-      "Parent education workshops"
-    ],
     "ratings": {
       "overall": 5,
-      "safety": 5,
-      "education": 4.9,
-      "staff": 4.8,
-      "facilities": 4.8,
-      "nutrition": 4.7,
-      "review_count": 52,
-      "verified_reviews": 48,
-      "google_rating": 5,
-      "google_review_count": 8
+      "review_count": 8,
+      "source": "Google"
     },
     "reviews": [
       {
@@ -265,81 +104,20 @@
       "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AcnlKN0S71_IWms9S9PjnLGhkm2E3JOkUbWzNCkfJ1BTGQ5ZPhJ1bFR03bjjDVIpEX860tWjBRavK8Hg1dyG6geKX_sxsCANZg7i8iW9rpiToCEnrvBDhJDogDJp14qLryBmK0NaoNmr6Plg7BIho9wZRWIQx-Ngon8FiFidh4k1GiczDv2aFI5uydRPEgtxuSuGBo2n-SfijF3mw5m6g0hyLjyrELrOgSCnrUoeXzpVGeaK6vktpOi4CF-hNK1Sdw121I5pX31OwmLkaA_g6BoRJosd_N8yIGkErDSAWCKNrhuVcQ&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc",
       "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AcnlKN0yLhoD4sLErP1mVMwX2Zw30nfnenrGTJe5Ifya-Ojh2SzwoUIpo42pyYCFntSazDZxV_Red-rrVI9JGjkJb7MjCNLyYtKiwPmK47rQ8JK5WXHHo759uGuQcY8JfWdx7O31CTPn4KcFPGVcZ5S-mnu01qMaApXwfX9K4uWKCneiUkZB6PxI7FemXtyb0Zydr2vhsJtGRhwew_74U7iWzjnRsu-EVuM8SUOUt7daRDRoRRe7lNo5sooHSd7c4pYjLLt1wpIyy4aeB6P5OP-d0xhyk_HiXhJ5TfBaFAGU8kccvg&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc"
     ],
-    "premium": {
-      "is_premium": true,
-      "tier": "premium",
-      "featured_until": "2026-12-31"
-    },
-    "verified": true,
-    "claimed_by_owner": true,
-    "owner_email": "director@sunshineacademy.com",
-    "seo": {
-      "meta_title": "Sunshine Academy - Noe Valley Montessori Preschool",
-      "meta_description": "AMI-certified Montessori preschool in Noe Valley. Ages 18mo-6yrs. Outdoor garden, small class sizes, 4.9★ rating. Established 2015."
-    },
-    "created_at": "2025-09-15T00:00:00Z",
-    "updated_at": "2026-01-13T05:29:22.019Z"
+    "business_status": "OPERATIONAL",
+    "scraped_at": "2026-01-13T05:29:18.803Z",
+    "original_id": "sunshine-academy-noe-valley"
   },
   {
-    "id": "rainbow-kids-castro",
-    "name": "Rainbow Kids Learning Center",
-    "slug": "rainbow-kids-castro",
-    "description": "Inclusive, LGBTQ+-affirming daycare in the Castro neighborhood. We celebrate diversity and create a safe, welcoming space for all families. Our play-based curriculum emphasizes social-emotional development, creativity, and building strong foundations for lifelong learning. We proudly serve families of all backgrounds and compositions.",
+    "name": "Our Rainbow Kids Family Childcare",
     "contact": {
       "phone": "(415) 810-5894",
-      "email": "info@rainbowkidssf.org",
-      "website": "https://rainbowkidssf.org"
+      "website": ""
     },
     "location": {
-      "address": "4120 18th Street",
-      "city": "San Francisco",
-      "state": "CA",
-      "zip": "94114",
-      "neighborhood": "castro",
-      "latitude": 37.7609,
-      "longitude": -122.435,
-      "public_transit": [
-        "Castro BART",
-        "F Market",
-        "Bus 33"
-      ]
-    },
-    "licensing": {
-      "license_number": "384502134",
-      "status": "active",
-      "type": "Child Care Center",
-      "capacity": 28,
-      "issued_date": "2018-06-01",
-      "expiration_date": "2026-06-01",
-      "last_inspection": "2025-12-01",
-      "inspection_score": 92,
-      "violations": [],
-      "data_source": "CA Department of Social Services"
-    },
-    "program": {
-      "age_groups": [
-        "toddler",
-        "preschool"
-      ],
-      "ages_min_months": 24,
-      "ages_max_years": 5,
-      "languages": [
-        "English"
-      ],
-      "curriculum": "Play-Based",
-      "special_programs": [
-        "Art",
-        "Inclusive practices",
-        "Diversity education"
-      ]
-    },
-    "availability": {
-      "accepting_enrollment": true,
-      "infant_spots": 0,
-      "toddler_spots": 1,
-      "preschool_spots": 3,
-      "waitlist_available": true,
-      "last_updated": "2026-01-07"
+      "address": "2566 23rd Ave, San Francisco, CA 94116, USA",
+      "latitude": 37.7397999,
+      "longitude": -122.4794291
     },
     "hours": {
       "monday": "8:30 AM – 5:30 PM",
@@ -350,35 +128,10 @@
       "saturday": "Closed",
       "sunday": "Closed"
     },
-    "pricing": {
-      "infant_monthly": 0,
-      "toddler_monthly": 2150,
-      "preschool_monthly": 1850,
-      "part_time_available": true,
-      "financial_aid": true,
-      "accepts_subsidy": [
-        "Title 5"
-      ]
-    },
-    "features": [
-      "LGBTQ+-affirming environment",
-      "Inclusive curriculum",
-      "Art studio",
-      "Rooftop play area",
-      "Parent support groups",
-      "Sliding scale tuition available"
-    ],
     "ratings": {
       "overall": 5,
-      "safety": 4.8,
-      "education": 4.5,
-      "staff": 4.7,
-      "facilities": 4.4,
-      "nutrition": 4.6,
-      "review_count": 29,
-      "verified_reviews": 25,
-      "google_rating": 5,
-      "google_review_count": 2
+      "review_count": 2,
+      "source": "Google"
     },
     "reviews": [
       {
@@ -397,82 +150,20 @@
       }
     ],
     "photos": [],
-    "premium": {
-      "is_premium": false,
-      "tier": null,
-      "featured_until": null
-    },
-    "verified": true,
-    "claimed_by_owner": true,
-    "owner_email": "director@rainbowkidssf.org",
-    "seo": {
-      "meta_title": "Rainbow Kids Learning Center - Inclusive Castro Daycare",
-      "meta_description": "LGBTQ+-affirming daycare in Castro. Ages 2-5yrs. Play-based curriculum, inclusive environment, 4.6★ rating. All families welcome."
-    },
-    "created_at": "2025-08-20T00:00:00Z",
-    "updated_at": "2026-01-13T05:29:22.019Z"
+    "business_status": "OPERATIONAL",
+    "scraped_at": "2026-01-13T05:29:19.801Z",
+    "original_id": "rainbow-kids-castro"
   },
   {
-    "id": "pacific-heights-childcare",
-    "name": "Pacific Heights Children's Center",
-    "slug": "pacific-heights-childcare",
-    "description": "Premium early learning center in prestigious Pacific Heights. We offer a structured academic curriculum with an emphasis on school readiness, STEAM education, and character development. Our state-of-the-art facility features modern classrooms, a library, and an indoor gym. Preparing children for success in San Francisco's top schools.",
+    "name": "Pac Heights Kidz Preschool & Daycare",
     "contact": {
       "phone": "(415) 610-9902",
-      "email": "admissions@phchildcare.com",
       "website": "http://www.pacheightskidz.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing"
     },
     "location": {
-      "address": "2301 Sacramento Street",
-      "city": "San Francisco",
-      "state": "CA",
-      "zip": "94115",
-      "neighborhood": "pacific-heights",
-      "latitude": 37.789,
-      "longitude": -122.4376,
-      "public_transit": [
-        "Bus 1, 3"
-      ]
-    },
-    "licensing": {
-      "license_number": "384500987",
-      "status": "active",
-      "type": "Child Care Center",
-      "capacity": 60,
-      "issued_date": "2012-01-15",
-      "expiration_date": "2027-01-15",
-      "last_inspection": "2025-09-20",
-      "inspection_score": 96,
-      "violations": [],
-      "data_source": "CA Department of Social Services"
-    },
-    "program": {
-      "age_groups": [
-        "infant",
-        "toddler",
-        "preschool"
-      ],
-      "ages_min_months": 3,
-      "ages_max_years": 5,
-      "languages": [
-        "English",
-        "Mandarin"
-      ],
-      "curriculum": "Academic-focused",
-      "special_programs": [
-        "STEAM",
-        "Mandarin immersion",
-        "Music",
-        "Chess"
-      ]
-    },
-    "availability": {
-      "accepting_enrollment": true,
-      "infant_spots": 1,
-      "toddler_spots": 2,
-      "preschool_spots": 4,
-      "waitlist_available": true,
-      "last_updated": "2026-01-09"
+      "address": "2710 Pine St, San Francisco, CA 94115, USA",
+      "latitude": 37.7872393,
+      "longitude": -122.4408567
     },
     "hours": {
       "monday": "8:00 AM – 5:00 PM",
@@ -483,35 +174,10 @@
       "saturday": "Closed",
       "sunday": "Closed"
     },
-    "pricing": {
-      "infant_monthly": 3200,
-      "toddler_monthly": 2900,
-      "preschool_monthly": 2600,
-      "part_time_available": false,
-      "financial_aid": false,
-      "accepts_subsidy": []
-    },
-    "features": [
-      "Indoor gym",
-      "Library",
-      "STEAM lab",
-      "Mandarin immersion program",
-      "Extended hours",
-      "School readiness focus",
-      "Security keycard entry",
-      "Daily photos via app"
-    ],
     "ratings": {
       "overall": 5,
-      "safety": 4.8,
-      "education": 4.7,
-      "staff": 4.3,
-      "facilities": 4.9,
-      "nutrition": 4.4,
-      "review_count": 41,
-      "verified_reviews": 35,
-      "google_rating": 5,
-      "google_review_count": 1
+      "review_count": 1,
+      "source": "Google"
     },
     "reviews": [
       {
@@ -525,122 +191,26 @@
     "photos": [
       "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AcnlKN03fnsTmHg9qiRqQal_kc7N22tdouOXNbgzy4CAzniFqiCpyT2Clrny5G43xvucUipel-Qen7nhez1hz6r80XWAsVGc6OS9Qh_WiP6-BWGoX_DAmEm0U9bzHeWtfYLIjIfziomfftHdioUhyfwdwVO8XSpym9j8SGvep8sY7ppOSkFR6kL7yNgLLM9ZNR8TjDcXQscGIxWTcIQHjwGsRB5p08tt_3eikuTwtylwwW3UzhG--jeF9eMYyPCbLavi5KHys2aB46p550FiLfdkaruK06F3qyyiOPlab6AcgeSlOw&key=AIzaSyCXjZD-7FlyRQIr9olu4KmWaN-LXJLkQLc"
     ],
-    "premium": {
-      "is_premium": true,
-      "tier": "premium_plus",
-      "featured_until": "2026-12-31"
-    },
-    "verified": true,
-    "claimed_by_owner": true,
-    "owner_email": "director@phchildcare.com",
-    "seo": {
-      "meta_title": "Pacific Heights Children's Center - Premium SF Daycare",
-      "meta_description": "Premium daycare in Pacific Heights. Ages 3mo-5yrs. STEAM curriculum, Mandarin immersion, state-of-the-art facility, 4.5★ rating."
-    },
-    "created_at": "2025-07-10T00:00:00Z",
-    "updated_at": "2026-01-13T05:29:22.020Z"
+    "business_status": "OPERATIONAL",
+    "scraped_at": "2026-01-13T05:29:20.984Z",
+    "original_id": "pacific-heights-childcare"
   },
   {
-    "id": "richmond-district-daycare",
-    "name": "Richmond Family Daycare",
-    "slug": "richmond-district-daycare",
-    "description": "Warm, home-like setting in the Richmond District. Our small, family-run daycare provides personalized attention in a nurturing environment. We focus on creating a second home for children where they feel safe, loved, and encouraged to explore. Mixed-age groups foster natural social development and sibling-like bonds.",
+    "name": "Richmond Academy",
     "contact": {
       "phone": "(415) 260-6847",
-      "email": "richmond@familydaycare.com",
       "website": "https://richmondacademy.com/contact-us/"
     },
     "location": {
-      "address": "567 Geary Boulevard",
-      "city": "San Francisco",
-      "state": "CA",
-      "zip": "94118",
-      "neighborhood": "richmond-inner",
-      "latitude": 37.7813,
-      "longitude": -122.4648,
-      "public_transit": [
-        "Bus 38, 2"
-      ]
+      "address": "3435 Geary Blvd, San Francisco, CA 94118, USA",
+      "latitude": 37.7810784,
+      "longitude": -122.4558416
     },
-    "licensing": {
-      "license_number": "384503456",
-      "status": "active",
-      "type": "Family Child Care Home",
-      "capacity": 12,
-      "issued_date": "2019-03-20",
-      "expiration_date": "2026-03-20",
-      "last_inspection": "2025-11-28",
-      "inspection_score": 94,
-      "violations": [],
-      "data_source": "CA Department of Social Services"
-    },
-    "program": {
-      "age_groups": [
-        "infant",
-        "toddler",
-        "preschool"
-      ],
-      "ages_min_months": 2,
-      "ages_max_years": 5,
-      "languages": [
-        "English",
-        "Cantonese"
-      ],
-      "curriculum": "Play-Based",
-      "special_programs": [
-        "Mixed-age groups",
-        "Outdoor play",
-        "Home cooking"
-      ]
-    },
-    "availability": {
-      "accepting_enrollment": true,
-      "infant_spots": 2,
-      "toddler_spots": 1,
-      "preschool_spots": 2,
-      "waitlist_available": false,
-      "last_updated": "2026-01-06"
-    },
-    "hours": {
-      "monday": "7:30 AM - 5:30 PM",
-      "tuesday": "7:30 AM - 5:30 PM",
-      "wednesday": "7:30 AM - 5:30 PM",
-      "thursday": "7:30 AM - 5:30 PM",
-      "friday": "7:30 AM - 5:30 PM",
-      "saturday": "Closed",
-      "sunday": "Closed"
-    },
-    "pricing": {
-      "infant_monthly": 1800,
-      "toddler_monthly": 1650,
-      "preschool_monthly": 1500,
-      "part_time_available": true,
-      "financial_aid": true,
-      "accepts_subsidy": [
-        "Title 5",
-        "CCPP"
-      ]
-    },
-    "features": [
-      "Home-like environment",
-      "Small group setting",
-      "Home-cooked meals",
-      "Backyard play space",
-      "Mixed-age groups",
-      "Flexible hours",
-      "Affordable rates"
-    ],
+    "hours": null,
     "ratings": {
       "overall": 5,
-      "safety": 4.9,
-      "education": 4.6,
-      "staff": 5,
-      "facilities": 4.5,
-      "nutrition": 4.9,
-      "review_count": 18,
-      "verified_reviews": 16,
-      "google_rating": 5,
-      "google_review_count": 6
+      "review_count": 6,
+      "source": "Google"
     },
     "reviews": [
       {
@@ -680,19 +250,8 @@
       }
     ],
     "photos": [],
-    "premium": {
-      "is_premium": false,
-      "tier": null,
-      "featured_until": null
-    },
-    "verified": true,
-    "claimed_by_owner": true,
-    "owner_email": "owner@richmondfamilydaycare.com",
-    "seo": {
-      "meta_title": "Richmond Family Daycare - Warm Inner Richmond Home Daycare",
-      "meta_description": "Family-run home daycare in Inner Richmond. Ages 2mo-5yrs. Small groups, home-cooked meals, bilingual Cantonese, 4.8★ rating. Affordable."
-    },
-    "created_at": "2025-11-01T00:00:00Z",
-    "updated_at": "2026-01-13T05:29:22.020Z"
+    "business_status": "OPERATIONAL",
+    "scraped_at": "2026-01-13T05:29:22.017Z",
+    "original_id": "richmond-district-daycare"
   }
 ]

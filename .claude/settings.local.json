@@ -26,7 +26,9 @@
       "Bash(npm run build:*)",
       "Bash(railway:*)",
       "Bash(curl:*)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(npm run scrape:all:*)",
+      "Bash(timeout /t 30 node scripts/scrapers/ca-licensing-scraper.mjs)"
     ]
   }
 }
