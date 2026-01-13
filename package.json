@@ -14,6 +14,7 @@
     "db:reseed": "node scripts/reseed-production.mjs",
     "db:setup": "npm run db:migrate && npm run db:seed",
     "db:setup-complete": "node setup-db.js",
+    "db:fix-slugs": "node fix-slugs.js",
     "organize": "node scripts/auto-organize.mjs",
     "organize:fix": "node scripts/auto-organize.mjs --fix",
     "organize:scrape": "node scripts/auto-organize.mjs --scrape --fix",
