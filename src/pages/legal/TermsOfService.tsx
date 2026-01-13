@@ -25,7 +25,7 @@ export default function TermsOfService() {
           <section>
             <h2>2. Description of Service</h2>
             <p>
-              SF Daycare List is a comprehensive directory of daycare, tools, and services operated by Badly Creative LLC. We provide information, comparisons, and resources to help users discover and evaluate AI solutions.
+              SF Daycare List is a comprehensive directory of licensed daycares and childcare facilities in San Francisco, operated by Badly Creative LLC. We provide information, reviews, and resources to help parents discover and evaluate quality childcare options.
             </p>
           </section>
 
@@ -44,10 +44,10 @@ export default function TermsOfService() {
               <li>Impersonate any person or entity</li>
             </ul>
 
-            <h3>3.2 Platform Submissions</h3>
-            <p>When submitting platforms, you represent that:</p>
+            <h3>3.2 Daycare Submissions</h3>
+            <p>When submitting daycare information, you represent that:</p>
             <ul>
-              <li>You have the right to submit the information</li>
+              <li>You have the authority to submit information about the daycare facility</li>
               <li>The information is accurate and not misleading</li>
               <li>The submission does not violate any third-party rights</li>
               <li>You grant us a license to display and distribute the information</li>
@@ -68,7 +68,7 @@ export default function TermsOfService() {
 
             <h3>4.3 Third-Party Content</h3>
             <p>
-              Platform listings, descriptions, and logos are property of their respective owners. We claim no ownership over third-party trademarks or content.
+              Daycare listings, descriptions, photos, and logos are property of their respective owners. We claim no ownership over third-party trademarks or content.
             </p>
           </section>
 
@@ -93,9 +93,9 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2>7. Affiliate Relationships</h2>
+            <h2>7. No Endorsement</h2>
             <p>
-              This website may contain affiliate links to products and services. We may receive compensation when you click on or make purchases through these links. This does not affect our editorial independence or the accuracy of our content.
+              The inclusion of a daycare in our directory does not constitute an endorsement. Parents should conduct their own research, visit facilities, check licensing status, and make their own informed decisions about childcare.
             </p>
           </section>
 
@@ -116,7 +116,7 @@ export default function TermsOfService() {
           <section>
             <h2>10. Content Removal</h2>
             <p>
-              We reserve the right to remove any content from the Service at our sole discretion, including platform listings that violate these Terms or are deemed inappropriate.
+              We reserve the right to remove any content from the Service at our sole discretion, including daycare listings that violate these Terms, are inaccurate, or are deemed inappropriate.
             </p>
           </section>
 

@@ -22,35 +22,35 @@ export default function Disclaimer() {
           <section>
             <h2>Information Accuracy</h2>
             <p>
-              The information on SF Daycare List is provided for general informational purposes only. While we strive for accuracy, we make no warranties about the completeness, reliability, or accuracy of this information.
+              The information on SF Daycare List is provided for general informational purposes only. While we strive for accuracy, we make no warranties about the completeness, reliability, or accuracy of this information. Daycare details, availability, and pricing may change without notice.
             </p>
           </section>
 
           <section>
             <h2>No Professional Advice</h2>
             <p>
-              Content on this site does not constitute professional advice. Always consult with qualified professionals for specific guidance related to your situation.
+              Content on this site does not constitute professional childcare advice or recommendations. Always conduct your own research, visit facilities in person, verify licensing status with California Department of Social Services, and consult with childcare professionals for specific guidance related to your family's needs.
             </p>
           </section>
 
           <section>
             <h2>Third-Party Content</h2>
             <p>
-              Platform descriptions, features, and pricing are provided by third parties or publicly available information. We are not responsible for inaccuracies in third-party content.
+              Daycare descriptions, photos, pricing, and availability information are provided by the facilities themselves or from publicly available sources. We are not responsible for inaccuracies in third-party content. Parents should verify all information directly with the daycare facility.
             </p>
           </section>
 
           <section>
-            <h2>Affiliate Disclosure</h2>
+            <h2>Licensing Verification</h2>
             <p>
-              This website contains affiliate links. We may earn a commission when you click on or make purchases through these links at no additional cost to you.
+              While we list licensing information, parents are strongly encouraged to independently verify the current licensing status, inspection records, and compliance history of any daycare facility through the California Department of Social Services website.
             </p>
           </section>
 
           <section>
             <h2>No Endorsement</h2>
             <p>
-              Listing a platform does not constitute an endorsement. Users should conduct their own research before making any decisions.
+              Listing a daycare in our directory does not constitute an endorsement or recommendation. Parents should conduct their own thorough research, visit facilities, check references, and make informed decisions about childcare.
             </p>
           </section>
 

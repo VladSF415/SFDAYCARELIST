@@ -26,9 +26,9 @@ export default function PrivacyPolicy() {
             <h2>2. Information We Collect</h2>
             <h3>2.1 Information You Provide</h3>
             <ul>
-              <li>Platform submissions (name, email, platform details)</li>
+              <li>Daycare submissions (facility name, contact details, licensing information)</li>
               <li>Contact form submissions</li>
-              <li>Newsletter subscriptions (if applicable)</li>
+              <li>Reviews and ratings (if applicable)</li>
               <li>Comments and feedback</li>
             </ul>
 
@@ -46,10 +46,10 @@ export default function PrivacyPolicy() {
             <h2>3. How We Use Your Information</h2>
             <p>We use collected information for:</p>
             <ul>
-              <li>Operating and improving our directory service</li>
-              <li>Reviewing and adding submitted daycares</li>
+              <li>Operating and improving our daycare directory service</li>
+              <li>Reviewing and adding submitted daycare listings</li>
               <li>Responding to your inquiries</li>
-              <li>Sending updates (with your consent)</li>
+              <li>Sending updates about new daycares and childcare resources (with your consent)</li>
               <li>Analyzing site usage and trends</li>
               <li>Preventing fraud and abuse</li>
               <li>Complying with legal obligations</li>
@@ -75,10 +75,10 @@ export default function PrivacyPolicy() {
             <h2>5. Third-Party Services</h2>
             <p>We may use third-party services including:</p>
             <ul>
-              <li><strong>Analytics:</strong> Google Analytics, Plausible, or similar services</li>
+              <li><strong>Analytics:</strong> Google Analytics or similar services</li>
               <li><strong>Hosting:</strong> Railway, Vercel, or similar providers</li>
-              <li><strong>CDN:</strong> Cloudflare or similar services</li>
-              <li><strong>Affiliate Networks:</strong> Impact, PartnerStack, ShareASale</li>
+              <li><strong>Maps:</strong> Mapbox for displaying daycare locations</li>
+              <li><strong>Communication:</strong> Email service providers for notifications</li>
             </ul>
             <p>These services have their own privacy policies governing their use of your information.</p>
           </section>
