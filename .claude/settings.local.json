@@ -25,7 +25,8 @@
       "Bash(test:*)",
       "Bash(npm run build:*)",
       "Bash(railway:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run dev:*)"
     ]
   }
 }
