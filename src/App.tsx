@@ -20,7 +20,7 @@ import DMCA from './pages/legal/DMCA';
 import Disclaimer from './pages/legal/Disclaimer';
 import Footer from './components/Footer';
 import type { Daycare } from './types/components';
-import daycaresData from '../data/daycares.json';
+import daycaresData from './data/daycares.json';
 
 // Lazy load neighborhood page
 const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
