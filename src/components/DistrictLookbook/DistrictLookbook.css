@@ -1,0 +1,328 @@
+/* ==============================================================================
+   DISTRICT LOOKBOOK - Neighborhood Tips and Information
+   ============================================================================== */
+
+.district-lookbook {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: var(--spacing-3xl) auto;
+  padding: 0 var(--container-padding);
+}
+
+/* ==============================================================================
+   LOOKBOOK HEADER
+   ============================================================================== */
+
+.lookbook-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.lookbook-icon {
+  font-size: 64px;
+  margin-bottom: var(--spacing-md);
+}
+
+.lookbook-title {
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.lookbook-subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--color-gray-600);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================================================================
+   BEST FOR TAGS
+   ============================================================================== */
+
+.lookbook-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-lg);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-lg);
+}
+
+.lookbook-tags-label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lookbook-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  background: white;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lookbook-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==============================================================================
+   TIPS GRID
+   ============================================================================== */
+
+.lookbook-tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.lookbook-tip-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  border-top: 4px solid;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.lookbook-tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.lookbook-tip-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.lookbook-tip-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.lookbook-tip-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0;
+}
+
+.lookbook-tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.lookbook-tip-item {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-gray-700);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.lookbook-tip-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+
+/* ==============================================================================
+   CALL TO ACTION
+   ============================================================================== */
+
+.lookbook-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-xl);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.lookbook-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.lookbook-cta-content {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.lookbook-cta-title {
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 700;
+  color: white;
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.lookbook-cta-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
+.lookbook-cta-btn {
+  padding: 14px 32px;
+  background: white;
+  color: var(--primary-navy);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  position: relative;
+  z-index: 1;
+}
+
+.lookbook-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================================================================
+   RESPONSIVE - TABLET
+   ============================================================================== */
+
+@media (max-width: 1024px) {
+  .lookbook-tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==============================================================================
+   RESPONSIVE - MOBILE
+   ============================================================================== */
+
+@media (max-width: 768px) {
+  .district-lookbook {
+    margin: var(--spacing-2xl) auto;
+  }
+
+  .lookbook-icon {
+    font-size: 48px;
+  }
+
+  .lookbook-title {
+    font-size: 28px;
+  }
+
+  .lookbook-subtitle {
+    font-size: 14px;
+  }
+
+  .lookbook-tags {
+    padding: var(--spacing-md);
+  }
+
+  .lookbook-tips-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .lookbook-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-lg);
+  }
+
+  .lookbook-cta-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lookbook-tags {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lookbook-tag {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .lookbook-tip-card {
+    padding: var(--spacing-md);
+  }
+
+  .lookbook-tip-title {
+    font-size: 16px;
+  }
+
+  .lookbook-tip-item {
+    font-size: 13px;
+  }
+
+  .lookbook-cta-title {
+    font-size: 20px;
+  }
+
+  .lookbook-cta-text {
+    font-size: 14px;
+  }
+}
+
+/* ==============================================================================
+   ACCESSIBILITY
+   ============================================================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .lookbook-tag,
+  .lookbook-tip-card,
+  .lookbook-cta-btn {
+    transition: none;
+  }
+
+  .lookbook-tag:hover,
+  .lookbook-tip-card:hover,
+  .lookbook-cta-btn:hover {
+    transform: none;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.lookbook-cta-btn:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}

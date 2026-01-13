@@ -1,8 +1,9 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { trackPageView } from './utils/analytics';
 import Navigation from './components/Navigation';
 import ScrollButtons from './components/ScrollButtons';
+import LiveActivityFeed from './components/LiveActivityFeed/LiveActivityFeed';
 // import ChatWidget from './components/ChatWidget'; // REMOVED - AI Platforms leftover
 import Home from './pages/Home';
 import DaycareDetail from './pages/DaycareDetail';
@@ -18,6 +19,8 @@ import CookiePolicy from './pages/legal/CookiePolicy';
 import DMCA from './pages/legal/DMCA';
 import Disclaimer from './pages/legal/Disclaimer';
 import Footer from './components/Footer';
+import type { Daycare } from './types/components';
+import daycaresData from '../data/daycares.json';
 
 // Lazy load neighborhood page
 const NeighborhoodPage = lazy(() => import('./pages/NeighborhoodPage'));
@@ -35,6 +38,13 @@ function PageViewTracker() {
 }
 
 function App() {
+  const [daycares, setDaycares] = useState<Daycare[]>([]);
+
+  // Load daycares data on mount
+  useEffect(() => {
+    setDaycares(daycaresData as Daycare[]);
+  }, []);
+
   return (
     <Router>
       <PageViewTracker />
@@ -73,6 +83,8 @@ function App() {
           </Routes>
         </Suspense>
         <ScrollButtons />
+        {/* Live Activity Feed - Real-time notifications */}
+        <LiveActivityFeed daycares={daycares} enabled={true} />
         {/* <ChatWidget /> */} {/* REMOVED - AI Platforms leftover */}
         <Footer />
       </div>

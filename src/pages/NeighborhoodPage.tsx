@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import DaycareGrid from '../components/DaycareGrid';
+import DistrictLookbook from '../components/DistrictLookbook/DistrictLookbook';
+import { neighborhoodThemes, defaultTheme } from '../components/DistrictLookbook/neighborhoodThemes';
+import type { Neighborhood as NeighborhoodType } from '../types/components';
 import '../styles/NeighborhoodPage.css';
 
 interface Neighborhood {
@@ -80,6 +83,25 @@ function NeighborhoodPage() {
         setLoading(false);
       });
   }, [slug]);
+
+  // Apply dynamic neighborhood theming
+  useEffect(() => {
+    if (!neighborhood) return;
+
+    const theme = neighborhoodThemes[neighborhood.slug] || defaultTheme;
+
+    // Inject CSS custom properties for dynamic theming
+    document.documentElement.style.setProperty('--theme-primary', theme.primary);
+    document.documentElement.style.setProperty('--theme-secondary', theme.secondary);
+    document.documentElement.style.setProperty('--theme-gradient', theme.gradient);
+
+    // Cleanup on unmount
+    return () => {
+      document.documentElement.style.removeProperty('--theme-primary');
+      document.documentElement.style.removeProperty('--theme-secondary');
+      document.documentElement.style.removeProperty('--theme-gradient');
+    };
+  }, [neighborhood]);
 
   if (loading) {
     return (
@@ -198,6 +220,9 @@ function NeighborhoodPage() {
           )}
         </div>
       </section>
+
+      {/* District Lookbook - Neighborhood Tips & Information */}
+      <DistrictLookbook neighborhood={neighborhood as NeighborhoodType} />
     </div>
   );
 }

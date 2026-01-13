@@ -1,0 +1,168 @@
+{
+  "bart_stations": [
+    {
+      "name": "Embarcadero",
+      "lat": 37.7929,
+      "lng": -122.3968,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "Montgomery St",
+      "lat": 37.7894,
+      "lng": -122.4017,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "Powell St",
+      "lat": 37.7844,
+      "lng": -122.4079,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "Civic Center / UN Plaza",
+      "lat": 37.7796,
+      "lng": -122.4137,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "16th St Mission",
+      "lat": 37.7656,
+      "lng": -122.4197,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "24th St Mission",
+      "lat": 37.7522,
+      "lng": -122.4183,
+      "type": "bart",
+      "lines": ["Red", "Yellow", "Blue", "Green"]
+    },
+    {
+      "name": "Glen Park",
+      "lat": 37.7329,
+      "lng": -122.4340,
+      "type": "bart",
+      "lines": ["Red", "Yellow"]
+    },
+    {
+      "name": "Balboa Park",
+      "lat": 37.7213,
+      "lng": -122.4474,
+      "type": "bart",
+      "lines": ["Red", "Yellow"]
+    }
+  ],
+  "muni_lines": [
+    {
+      "name": "J Church",
+      "color": "#FF6B35",
+      "type": "muni",
+      "coordinates": [
+        [37.7698, -122.4265],
+        [37.7745, -122.4230],
+        [37.7793, -122.4195],
+        [37.7845, -122.4078]
+      ]
+    },
+    {
+      "name": "K Ingleside",
+      "color": "#60A5FA",
+      "type": "muni",
+      "coordinates": [
+        [37.7600, -122.4550],
+        [37.7650, -122.4450],
+        [37.7700, -122.4350],
+        [37.7793, -122.4195]
+      ]
+    },
+    {
+      "name": "L Taraval",
+      "color": "#A7C957",
+      "type": "muni",
+      "coordinates": [
+        [37.7430, -122.5050],
+        [37.7480, -122.4850],
+        [37.7530, -122.4650],
+        [37.7793, -122.4195]
+      ]
+    },
+    {
+      "name": "M Ocean View",
+      "color": "#FFB800",
+      "type": "muni",
+      "coordinates": [
+        [37.7200, -122.4650],
+        [37.7300, -122.4550],
+        [37.7400, -122.4450],
+        [37.7793, -122.4195]
+      ]
+    },
+    {
+      "name": "N Judah",
+      "color": "#B8A9E5",
+      "type": "muni",
+      "coordinates": [
+        [37.7600, -122.5100],
+        [37.7650, -122.4900],
+        [37.7700, -122.4700],
+        [37.7793, -122.4195]
+      ]
+    },
+    {
+      "name": "T Third",
+      "color": "#FF8C42",
+      "type": "muni",
+      "coordinates": [
+        [37.7120, -122.3900],
+        [37.7300, -122.3950],
+        [37.7500, -122.4000],
+        [37.7793, -122.4195]
+      ]
+    }
+  ],
+  "slow_streets": [
+    {
+      "name": "JFK Drive - Golden Gate Park",
+      "color": "#52C41A",
+      "type": "slow-street",
+      "coordinates": [
+        [37.7700, -122.4860],
+        [37.7700, -122.4760],
+        [37.7700, -122.4660],
+        [37.7700, -122.4560]
+      ]
+    },
+    {
+      "name": "Valencia Slow Street",
+      "color": "#52C41A",
+      "type": "slow-street",
+      "coordinates": [
+        [37.7550, -122.4216],
+        [37.7600, -122.4216],
+        [37.7650, -122.4216],
+        [37.7700, -122.4216]
+      ]
+    },
+    {
+      "name": "Page Street Slow Street",
+      "color": "#52C41A",
+      "type": "slow-street",
+      "coordinates": [
+        [37.7730, -122.4450],
+        [37.7730, -122.4350],
+        [37.7730, -122.4250]
+      ]
+    }
+  ],
+  "sf_bounds": {
+    "north": 37.81,
+    "south": 37.70,
+    "east": -122.35,
+    "west": -122.52
+  }
+}

@@ -1,0 +1,195 @@
+/* ==============================================================================
+   LIVE ACTIVITY FEED - Toast Notifications
+   ============================================================================== */
+
+.live-activity-feed {
+  position: fixed;
+  top: calc(var(--nav-height) + 20px);
+  right: 20px;
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  pointer-events: none;
+}
+
+.live-activity-feed > * {
+  pointer-events: auto;
+}
+
+/* ==============================================================================
+   ACTIVITY TOAST
+   ============================================================================== */
+
+.activity-toast {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 4px solid var(--primary-orange);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  min-width: 320px;
+}
+
+.activity-toast:hover {
+  transform: translateX(-4px);
+  box-shadow: 0 16px 40px rgba(26, 35, 50, 0.15);
+}
+
+.activity-toast:active {
+  transform: translateX(-2px);
+}
+
+/* Toast Icon */
+.activity-toast-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Toast Content */
+.activity-toast-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.activity-toast-message {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.activity-toast-time {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-gray-500);
+}
+
+/* Dismiss Button */
+.activity-toast-dismiss {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: var(--color-gray-400);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  padding: 0;
+}
+
+.activity-toast-dismiss:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.activity-toast-dismiss:active {
+  background-color: var(--color-gray-200);
+}
+
+/* ==============================================================================
+   RESPONSIVE - MOBILE
+   ============================================================================== */
+
+@media (max-width: 768px) {
+  .live-activity-feed {
+    top: auto;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+
+  .activity-toast {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .activity-toast:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Reduce font sizes slightly on mobile */
+  .activity-toast-message {
+    font-size: 13px;
+  }
+
+  .activity-toast-time {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-activity-feed {
+    gap: 8px;
+    bottom: 60px;
+    left: 12px;
+    right: 12px;
+  }
+
+  .activity-toast {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .activity-toast-icon {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ==============================================================================
+   ACCESSIBILITY
+   ============================================================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .activity-toast {
+    transition: none;
+  }
+
+  .activity-toast:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .activity-toast {
+    border: 2px solid var(--color-gray-900);
+  }
+
+  .activity-toast-message {
+    font-weight: 700;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.activity-toast:focus-visible {
+  outline: 3px solid var(--primary-orange);
+  outline-offset: 2px;
+}
+
+.activity-toast-dismiss:focus-visible {
+  outline: 2px solid var(--primary-orange);
+  outline-offset: 2px;
+}

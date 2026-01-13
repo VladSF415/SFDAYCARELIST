@@ -10,6 +10,12 @@ import sharp from 'sharp';
 import geoip from 'geoip-lite';
 import rateLimit from '@fastify/rate-limit';
 import db from './db/index.js';
+import {
+  generateDaycareCard,
+  generateComparisonCard,
+  generateOGImage,
+  generateShareCard
+} from './lib/image-generator.js';
 
 // Use database-based analytics if DATABASE_URL is set, otherwise fallback to file-based
 // import { trackChatInteraction as trackDB, getAnalytics as getDB, initAnalyticsDB } from './db-analytics.js';
@@ -1842,6 +1848,128 @@ fastify.get('/og-image.png', async (request, reply) => {
   } catch (error) {
     console.error('[OG Image Error]', error);
     reply.code(500).send({ error: 'Failed to generate OG image' });
+  }
+});
+
+// ========================================
+// IMAGE GENERATION API ROUTES
+// ========================================
+
+/**
+ * Generate daycare card image
+ * GET /api/image/daycare-card
+ * Query params: name, neighborhood, rating, reviewCount, ageRange, monthlyPrice
+ */
+fastify.get('/api/image/daycare-card', async (request, reply) => {
+  try {
+    const {
+      name = 'Daycare Name',
+      neighborhood = 'San Francisco',
+      rating = 0,
+      reviewCount = 0,
+      ageRange = 'All Ages',
+      monthlyPrice = 0,
+    } = request.query;
+
+    const png = await generateDaycareCard({
+      name,
+      neighborhood,
+      rating: parseFloat(rating),
+      reviewCount: parseInt(reviewCount),
+      ageRange,
+      monthlyPrice: parseInt(monthlyPrice),
+    });
+
+    reply
+      .type('image/png')
+      .header('Cache-Control', 'public, max-age=3600')
+      .send(png);
+  } catch (error) {
+    console.error('[Daycare Card Error]', error);
+    reply.code(500).send({ error: 'Failed to generate daycare card' });
+  }
+});
+
+/**
+ * Generate comparison card for 2 daycares
+ * POST /api/image/comparison-card
+ * Body: { daycare1: {...}, daycare2: {...} }
+ */
+fastify.post('/api/image/comparison-card', async (request, reply) => {
+  try {
+    const { daycare1, daycare2 } = request.body;
+
+    if (!daycare1 || !daycare2) {
+      return reply.code(400).send({ error: 'Both daycare1 and daycare2 are required' });
+    }
+
+    const png = await generateComparisonCard({ daycare1, daycare2 });
+
+    reply
+      .type('image/png')
+      .header('Cache-Control', 'public, max-age=3600')
+      .send(png);
+  } catch (error) {
+    console.error('[Comparison Card Error]', error);
+    reply.code(500).send({ error: 'Failed to generate comparison card' });
+  }
+});
+
+/**
+ * Generate generic OG image
+ * GET /api/image/og
+ * Query params: title, subtitle, badge
+ */
+fastify.get('/api/image/og', async (request, reply) => {
+  try {
+    const {
+      title = 'SF Daycare List',
+      subtitle = 'Find trusted SF daycares',
+      badge,
+    } = request.query;
+
+    const png = await generateOGImage({
+      title,
+      subtitle,
+      badge,
+    });
+
+    reply
+      .type('image/png')
+      .header('Cache-Control', 'public, max-age=86400')
+      .send(png);
+  } catch (error) {
+    console.error('[OG Image Error]', error);
+    reply.code(500).send({ error: 'Failed to generate OG image' });
+  }
+});
+
+/**
+ * Generate square share card (Instagram-optimized)
+ * GET /api/image/share-card
+ * Query params: name, rating, neighborhood
+ */
+fastify.get('/api/image/share-card', async (request, reply) => {
+  try {
+    const {
+      name = 'Daycare Name',
+      rating = 5.0,
+      neighborhood = 'San Francisco',
+    } = request.query;
+
+    const png = await generateShareCard({
+      name,
+      rating: parseFloat(rating),
+      neighborhood,
+    });
+
+    reply
+      .type('image/png')
+      .header('Cache-Control', 'public, max-age=3600')
+      .send(png);
+  } catch (error) {
+    console.error('[Share Card Error]', error);
+    reply.code(500).send({ error: 'Failed to generate share card' });
   }
 });
 

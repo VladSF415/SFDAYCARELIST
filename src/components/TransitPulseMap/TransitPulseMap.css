@@ -1,0 +1,528 @@
+/* ==============================================================================
+   TRANSIT PULSE MAP - Interactive Map with Transit Layers
+   ============================================================================== */
+
+.transit-pulse-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: var(--map-height);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.transit-pulse-map {
+  width: 100%;
+  height: 100%;
+}
+
+/* ==============================================================================
+   MAP CONTROLS
+   ============================================================================== */
+
+.map-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: var(--z-map-controls);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.map-controls-group {
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.map-control-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: none;
+  border-bottom: 1px solid var(--color-gray-200);
+  color: var(--color-gray-700);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.map-control-btn:last-child {
+  border-bottom: none;
+}
+
+.map-control-btn:hover {
+  background-color: var(--color-gray-50);
+  color: var(--primary-orange);
+}
+
+.map-control-btn.active {
+  background-color: var(--primary-orange);
+  color: white;
+}
+
+.map-control-icon {
+  font-size: 18px;
+}
+
+/* ==============================================================================
+   COMMUTE OVERLAY
+   ============================================================================== */
+
+.commute-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 500px;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: var(--spacing-lg);
+  z-index: var(--z-map-controls);
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.commute-overlay.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.commute-overlay-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.commute-overlay-title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0;
+}
+
+.commute-overlay-close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: var(--color-gray-400);
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.commute-overlay-close:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.commute-overlay-form {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.commute-overlay-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.commute-overlay-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-gray-900);
+  transition: border-color var(--transition-fast);
+}
+
+.commute-overlay-input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+}
+
+.commute-overlay-input::placeholder {
+  color: var(--color-gray-400);
+}
+
+/* Autocomplete Suggestions */
+.commute-overlay-suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 10;
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.commute-overlay-suggestion {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background: white;
+  border: none;
+  border-bottom: 1px solid var(--color-gray-100);
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-gray-900);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.commute-overlay-suggestion:last-child {
+  border-bottom: none;
+}
+
+.commute-overlay-suggestion:hover {
+  background-color: var(--color-gray-50);
+}
+
+.suggestion-icon {
+  font-size: 16px;
+}
+
+.commute-overlay-btn {
+  padding: 12px 24px;
+  background: var(--primary-orange);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.commute-overlay-btn:hover:not(:disabled) {
+  background-color: var(--terracotta);
+  transform: translateY(-2px);
+}
+
+.commute-overlay-btn:disabled {
+  background-color: var(--color-gray-300);
+  cursor: not-allowed;
+}
+
+.commute-overlay-info {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-gray-50);
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  color: var(--color-gray-700);
+}
+
+.info-icon {
+  color: var(--color-success);
+  margin-right: var(--spacing-xs);
+}
+
+/* ==============================================================================
+   MAP LEGEND
+   ============================================================================== */
+
+.map-legend {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-md);
+  z-index: var(--z-map-controls);
+  max-width: 200px;
+}
+
+.map-legend h4 {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+  font-size: 13px;
+  color: var(--color-gray-700);
+}
+
+.legend-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-marker.standard {
+  background: var(--primary-navy);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary-navy);
+}
+
+.legend-marker.has-openings {
+  background: var(--primary-orange);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px var(--primary-orange), 0 0 12px var(--map-glow-color);
+}
+
+.legend-marker.premium {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #FFD700;
+}
+
+.legend-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* ==============================================================================
+   DAYCARE MARKERS
+   ============================================================================== */
+
+.daycare-marker {
+  width: var(--map-marker-size);
+  height: var(--map-marker-size);
+  border-radius: 50%;
+  background: var(--primary-navy);
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.daycare-marker:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.daycare-marker.has-openings {
+  background: var(--primary-orange);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px var(--map-glow-color);
+  animation: pulse-glow 2s infinite;
+}
+
+.daycare-marker.highlighted {
+  background: var(--sage-green);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 24px rgba(167, 201, 87, 0.8);
+  transform: scale(1.1);
+}
+
+.daycare-marker.premium::after {
+  content: '⭐';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 16px;
+}
+
+/* Pulse glow animation for immediate openings */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 16px var(--map-glow-color);
+  }
+  50% {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 32px var(--map-glow-color);
+  }
+}
+
+/* BART Station Markers */
+.bart-station-marker {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.bart-station-marker:hover {
+  transform: scale(1.2);
+}
+
+/* ==============================================================================
+   MAP POPUP
+   ============================================================================== */
+
+.mapboxgl-popup-content {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.map-popup h4 {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.map-popup p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-gray-600);
+  margin: 0 0 var(--spacing-sm) 0;
+  text-transform: capitalize;
+}
+
+.map-popup-rating {
+  display: flex;
+  gap: var(--spacing-sm);
+  font-size: 12px;
+  color: var(--color-gray-600);
+  margin-bottom: var(--spacing-sm);
+}
+
+.map-popup-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--primary-orange);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ==============================================================================
+   RESPONSIVE - MOBILE
+   ============================================================================== */
+
+@media (max-width: 768px) {
+  .transit-pulse-map-wrapper {
+    height: calc(100vh - var(--nav-height) - 40px);
+    min-height: 500px;
+    border-radius: 0;
+  }
+
+  .map-controls {
+    top: 10px;
+    right: 10px;
+  }
+
+  .map-legend {
+    top: 10px;
+    left: 10px;
+    padding: var(--spacing-sm);
+    font-size: 12px;
+  }
+
+  .legend-item {
+    font-size: 11px;
+  }
+
+  .commute-overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: none;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .commute-overlay-form {
+    flex-direction: column;
+  }
+
+  .commute-overlay-btn {
+    width: 100%;
+  }
+
+  .daycare-marker {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-controls-group {
+    flex-direction: row;
+  }
+
+  .map-control-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    border-right: 1px solid var(--color-gray-200);
+    border-bottom: none;
+  }
+
+  .map-control-btn:last-child {
+    border-right: none;
+  }
+
+  .map-legend h4 {
+    font-size: 12px;
+  }
+
+  .legend-marker {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* ==============================================================================
+   ACCESSIBILITY
+   ============================================================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .daycare-marker,
+  .bart-station-marker,
+  .commute-overlay {
+    transition: none;
+  }
+
+  .daycare-marker.has-openings {
+    animation: none;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.map-control-btn:focus-visible,
+.commute-overlay-close:focus-visible,
+.commute-overlay-btn:focus-visible {
+  outline: 2px solid var(--primary-orange);
+  outline-offset: 2px;
+}
+
+.commute-overlay-input:focus-visible {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.2);
+}

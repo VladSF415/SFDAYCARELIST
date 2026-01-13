@@ -1,7 +1,13 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import DaycareGrid from '../components/DaycareGrid';
-import FilterPanel, { FilterState } from '../components/FilterPanel';
+import FilterPanel from '../components/FilterPanel';
+import BentoGrid from '../components/BentoGrid/BentoGrid';
+import MatchmakerQuiz from '../components/MatchmakerQuiz/MatchmakerQuiz';
+import type { ViewMode, Daycare as DaycareType, FilterState } from '../types/components';
 import '../styles/Home.css';
+
+// Lazy load map component for better performance
+const TransitPulseMap = lazy(() => import('../components/TransitPulseMap/TransitPulseMap'));
 
 // Import data directly for now (later we'll fetch from API)
 import daycaresData from '../../data/daycares.json';
@@ -67,6 +73,8 @@ function Home() {
     verified: null,
     priceRange: { min: null, max: null }
   });
+  const [viewMode, setViewMode] = useState<ViewMode>('grid');
+  const [showQuiz, setShowQuiz] = useState(false);
 
   const resultsRef = useRef<HTMLDivElement>(null);
 
@@ -102,7 +110,7 @@ function Home() {
     // Apply age group filter
     if (filters.ageGroups.length > 0) {
       filtered = filtered.filter((d) =>
-        filters.ageGroups.some((age) => d.program.age_groups.includes(age))
+        filters.ageGroups.some((age: string) => d.program.age_groups.includes(age))
       );
     }
 
@@ -186,6 +194,18 @@ function Home() {
               </button>
             </div>
           </form>
+
+          {/* Quiz CTA */}
+          <div className="hero-quiz-cta">
+            <p className="quiz-cta-text">Not sure where to start?</p>
+            <button
+              className="quiz-cta-btn"
+              onClick={() => setShowQuiz(true)}
+            >
+              <span className="quiz-cta-icon">🎯</span>
+              Find My Perfect Match
+            </button>
+          </div>
 
           {/* Quick Stats */}
           <div className="hero-stats">
@@ -274,33 +294,67 @@ function Home() {
           {/* Main Content */}
           <main className="main-content">
             <div className="content-header">
-              {searchQuery && (
-                <div className="search-results-header">
-                  <h2 className="results-title">
-                    Search results for "{searchQuery}"
-                  </h2>
-                  <button
-                    className="clear-search-btn"
-                    onClick={() => setSearchQuery('')}
-                  >
-                    Clear search
-                  </button>
+              <div className="header-row">
+                <div className="header-text">
+                  {searchQuery && (
+                    <div className="search-results-header">
+                      <h2 className="results-title">
+                        Search results for "{searchQuery}"
+                      </h2>
+                      <button
+                        className="clear-search-btn"
+                        onClick={() => setSearchQuery('')}
+                      >
+                        Clear search
+                      </button>
+                    </div>
+                  )}
+                  {!searchQuery && filters.neighborhoods.length === 0 && (
+                    <h2 className="results-title">All Daycares</h2>
+                  )}
+                  {filters.neighborhoods.length > 0 && (
+                    <h2 className="results-title">
+                      Daycares in{' '}
+                      {filters.neighborhoods
+                        .map(
+                          (slug: string) =>
+                            neighborhoods.find((n) => n.slug === slug)?.name || slug
+                        )
+                        .join(', ')}
+                    </h2>
+                  )}
                 </div>
-              )}
-              {!searchQuery && filters.neighborhoods.length === 0 && (
-                <h2 className="results-title">All Daycares</h2>
-              )}
-              {filters.neighborhoods.length > 0 && (
-                <h2 className="results-title">
-                  Daycares in{' '}
-                  {filters.neighborhoods
-                    .map(
-                      (slug) =>
-                        neighborhoods.find((n) => n.slug === slug)?.name || slug
-                    )
-                    .join(', ')}
-                </h2>
-              )}
+
+                {/* View Mode Toggle */}
+                {filteredDaycares.length > 0 && (
+                  <div className="view-mode-toggle">
+                    <button
+                      className={`view-mode-btn ${viewMode === 'grid' ? 'active' : ''}`}
+                      onClick={() => setViewMode('grid')}
+                      title="List View"
+                    >
+                      <span className="view-mode-icon">☰</span>
+                      List
+                    </button>
+                    <button
+                      className={`view-mode-btn ${viewMode === 'bento' ? 'active' : ''}`}
+                      onClick={() => setViewMode('bento')}
+                      title="Bento View"
+                    >
+                      <span className="view-mode-icon">▦</span>
+                      Bento
+                    </button>
+                    <button
+                      className={`view-mode-btn ${viewMode === 'map' ? 'active' : ''}`}
+                      onClick={() => setViewMode('map')}
+                      title="Map View"
+                    >
+                      <span className="view-mode-icon">🗺️</span>
+                      Map
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
 
             {filteredDaycares.length === 0 ? (
@@ -327,7 +381,23 @@ function Home() {
                 </button>
               </div>
             ) : (
-              <DaycareGrid daycares={filteredDaycares} />
+              <>
+                {/* List View */}
+                {viewMode === 'grid' && <DaycareGrid daycares={filteredDaycares} />}
+
+                {/* Bento Grid View */}
+                {viewMode === 'bento' && <BentoGrid daycares={filteredDaycares as DaycareType[]} />}
+
+                {/* Map View */}
+                {viewMode === 'map' && (
+                  <Suspense fallback={<div className="map-loading">Loading map...</div>}>
+                    <TransitPulseMap
+                      daycares={filteredDaycares as DaycareType[]}
+                      filters={filters}
+                    />
+                  </Suspense>
+                )}
+              </>
             )}
           </main>
         </div>
@@ -354,6 +424,21 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Matchmaker Quiz Modal */}
+      {showQuiz && (
+        <MatchmakerQuiz
+          daycares={daycares as DaycareType[]}
+          onComplete={(matches) => {
+            setFilteredDaycares(matches as Daycare[]);
+            setShowQuiz(false);
+            if (resultsRef.current) {
+              resultsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}
+          onClose={() => setShowQuiz(false)}
+        />
+      )}
     </div>
   );
 }

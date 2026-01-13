@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
+import type { FilterState } from '../types/components';
 import '../styles/FilterPanel.css';
-
-export interface FilterState {
-  neighborhoods: string[];
-  ageGroups: string[];
-  acceptingEnrollment: boolean | null;
-  verified: boolean | null;
-  priceRange: {
-    min: number | null;
-    max: number | null;
-  };
-}
 
 interface FilterPanelProps {
   neighborhoods: Array<{
@@ -31,10 +21,14 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
 }) => {
   const [isExpanded, setIsExpanded] = useState(true);
 
-  const ageGroupOptions = [
-    { value: 'infant', label: 'Infant (0-12 months)', icon: '👶' },
-    { value: 'toddler', label: 'Toddler (1-3 years)', icon: '🧒' },
-    { value: 'preschool', label: 'Preschool (3-5 years)', icon: '👧' }
+  const ageGroupOptions: Array<{
+    value: 'infant' | 'toddler' | 'preschool';
+    label: string;
+    icon: string;
+  }> = [
+    { value: 'infant' as const, label: 'Infant (0-12 months)', icon: '👶' },
+    { value: 'toddler' as const, label: 'Toddler (1-3 years)', icon: '🧒' },
+    { value: 'preschool' as const, label: 'Preschool (3-5 years)', icon: '👧' }
   ];
 
   const handleNeighborhoodToggle = (neighborhoodSlug: string) => {
@@ -48,7 +42,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({
     });
   };
 
-  const handleAgeGroupToggle = (ageGroup: string) => {
+  const handleAgeGroupToggle = (ageGroup: 'infant' | 'toddler' | 'preschool') => {
     const newAgeGroups = filters.ageGroups.includes(ageGroup)
       ? filters.ageGroups.filter(a => a !== ageGroup)
       : [...filters.ageGroups, ageGroup];

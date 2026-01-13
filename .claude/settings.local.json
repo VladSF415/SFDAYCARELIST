@@ -21,7 +21,10 @@
       "Bash(railway whoami:*)",
       "Bash(railway status:*)",
       "Bash(npm install:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(test:*)",
+      "Bash(npm run build:*)",
+      "Bash(railway:*)"
     ]
   }
 }
