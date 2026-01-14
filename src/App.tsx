@@ -46,7 +46,7 @@ function App() {
         const response = await fetch('/api/daycares');
         if (response.ok) {
           const data = await response.json();
-          setDaycares(data);
+          setDaycares(data.daycares || []);
         }
       } catch (error) {
         console.error('Error fetching daycares:', error);

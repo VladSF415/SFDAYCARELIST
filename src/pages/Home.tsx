@@ -81,8 +81,8 @@ function Home() {
         // Fetch daycares from API
         const daycaresResponse = await fetch('/api/daycares');
         if (daycaresResponse.ok) {
-          const daycaresData = await daycaresResponse.json();
-          setDaycares(daycaresData);
+          const response = await daycaresResponse.json();
+          setDaycares(response.daycares || []);
         }
 
         // Fetch neighborhoods from API
